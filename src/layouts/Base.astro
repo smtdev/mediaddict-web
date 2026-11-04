@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import { href, ui, EMAIL, type Lang, type Slug } from '../i18n';
+
+interface Props { lang: Lang; slug: Slug; title: string; description: string }
+const { lang, slug, title, description } = Astro.props;
+const t = ui[lang];
+const site = 'https://mediaddict.app';
+const abs = (l: Lang) => (l === 'es' && slug === '' ? site : site + href(l, slug));
+const canonical = abs(lang);
+---
+<!doctype html>
+<html lang={t.htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#1B1311" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es" href={abs('es')} />
+    <link rel="alternate" hreflang="en" href={abs('en')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href={href(lang, '')}>Mediaddict</a>
+        <nav class="lang" aria-label="Idioma / Language">
+          {lang === 'es' ? <span aria-current="true">ES</span> : <a href={href('es', slug)} hreflang="es" lang="es">ES</a>}
+          {lang === 'en' ? <span aria-current="true">EN</span> : <a href={href('en', slug)} hreflang="en" lang="en">EN</a>}
+        </nav>
+      </div>
+    </header>
+    <main class="wrap"><slot /></main>
+    <footer class="site">
+      <div class="wrap">
+        <nav>
+          <a href={href(lang, 'privacy')}>{t.privacy}</a>
+          <a href={href(lang, 'terms')}>{t.terms}</a>
+          <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+        </nav>
+        <p>{t.attrTmdb}</p>
+        <p>
+          {t.attrData}{' '}
+          <a href="https://simkl.com" rel="noopener">Simkl</a>,{' '}
+          <a href="https://trakt.tv" rel="noopener">Trakt</a>{t.and}<a href="https://thetvdb.com" rel="noopener">TheTVDB</a>.
+        </p>
+        <p>{t.attrNotAffiliated}</p>
+        <p>© 2026 Mediaddict</p>
+      </div>
+    </footer>
+  </body>
+</html>

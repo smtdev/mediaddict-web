@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { ui, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const t = ui[lang];
+---
+<Base lang={lang} slug="" title={t.homeTitle} description={t.homeDesc}>
+  <section class="hero">
+    <h1>Mediaddict</h1>
+    <p class="tag">{t.tagline}</p>
+    <p class="sub">{t.sub}</p>
+  </section>
+  <section class="grid">
+    {t.points.map(([h, p]) => (
+      <div class="card"><h2>{h}</h2><p>{p}</p></div>
+    ))}
+  </section>
+</Base>
