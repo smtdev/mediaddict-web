@@ -1,5 +1,9 @@
 ---
+import '@fontsource-variable/bricolage-grotesque/index.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/600.css';
 import '../styles/global.css';
+import appIcon from '../assets/app-icon.svg?raw';
 import { href, ui, EMAIL, type Lang, type Slug } from '../i18n';
 
 interface Props { lang: Lang; slug: Slug; title: string; description: string }
@@ -29,7 +33,7 @@ const canonical = abs(lang);
   <body>
     <header class="site">
       <div class="wrap">
-        <a class="brand" href={href(lang, '')}>Mediaddict</a>
+        <a class="brand" href={href(lang, '')}><span class="ico" set:html={appIcon}></span>Mediaddict</a>
         <nav class="lang" aria-label="Idioma / Language">
           {lang === 'es' ? <span aria-current="true">ES</span> : <a href={href('es', slug)} hreflang="es" lang="es">ES</a>}
           {lang === 'en' ? <span aria-current="true">EN</span> : <a href={href('en', slug)} hreflang="en" lang="en">EN</a>}

@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { EMAIL, type Lang } from '../i18n';
+import { EMAIL, href, type Lang } from '../i18n';
 const { lang } = Astro.props as { lang: Lang };
 const es = lang === 'es';
 ---
@@ -8,141 +8,247 @@ const es = lang === 'es';
   lang={lang}
   slug="privacy"
   title={es ? 'Política de privacidad · Mediaddict' : 'Privacy policy · Mediaddict'}
-  description={es ? 'Cómo trata Mediaddict tus datos.' : 'How Mediaddict handles your data.'}
+  description={es ? 'Cómo trata Mediaddict tus datos: qué se guarda, qué sale del móvil, con quién se habla y qué control tienes.' : 'How Mediaddict handles your data: what is stored, what leaves your phone, who it talks to and what control you have.'}
 >
   {es ? (
     <article class="legal">
       <h1>Política de privacidad</h1>
-      <p class="updated">Última actualización: 4 de noviembre de 2026</p>
+      <p class="updated">Última actualización: 6 de noviembre de 2026</p>
 
-      <p>Mediaddict es una app para Android para llevar el control de las películas, series y anime que ves. Esta política explica qué datos maneja la app, adónde van y qué control tienes. Aplica a la app Mediaddict y a este sitio web, mediaddict.app.</p>
+      <p>Mediaddict es una app para Android para llevar el control de las películas, series y anime que ves. Esta política explica qué datos maneja la app, adónde van, para qué se usan y qué control tienes sobre ellos. Aplica a la app Mediaddict y a este sitio web, mediaddict.app. Está escrita para que se entienda: si algo no queda claro, escríbenos.</p>
 
-      <h2>1. Resumen</h2>
+      <h2 id="responsable">Quién es el responsable</h2>
+      <p>El responsable del tratamiento es <strong>Sergio Martín</strong>, persona física y desarrollador independiente de Mediaddict. No es una empresa. Contacto para cualquier asunto de privacidad: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+
+      <h2 id="resumen">Resumen</h2>
       <ul>
-        <li>Mediaddict <strong>no tiene servidores propios</strong>: no recibimos ni almacenamos tu biblioteca, tus cuentas ni tus datos personales.</li>
-        <li>Tu biblioteca vive en tu teléfono.</li>
-        <li>La app no incluye publicidad, analítica de uso ni informes de errores automáticos.</li>
-        <li>No vendemos ni cedemos tus datos a nadie.</li>
+        <li>Mediaddict <strong>no tiene servidores propios</strong> donde guardar tu biblioteca: no recibimos ni almacenamos tu lista ni tus cuentas. Tu biblioteca vive en tu teléfono.</li>
+        <li>La app <strong>no incluye publicidad</strong> y no vendemos ni cedemos tus datos a nadie.</li>
+        <li>La app sí envía a Google, a través de Firebase, <strong>informes de fallos y estadísticas de uso</strong>. Están activados por defecto y tienen dos interruptores en Ajustes. Hay una sección entera sobre ello más abajo.</li>
+        <li>La app se conecta directamente desde tu teléfono a servicios de terceros (TMDB, Trakt, Simkl…) para funcionar. Cada uno ve tu dirección IP, como cualquier servidor al que te conectas.</li>
+        <li>Puedes usarla sin ninguna cuenta.</li>
       </ul>
 
-      <h2>2. Datos que se guardan en tu teléfono</h2>
-      <p>La app guarda en tu dispositivo tu biblioteca (títulos, lo que has visto, valoraciones, notas, listas), tus ajustes y datos de caché para funcionar sin conexión. Si conectas una cuenta de Trakt o de Simkl, los tokens de acceso se guardan <strong>cifrados</strong> en el teléfono con una clave del sistema Android (Android Keystore). La app no pide tu contraseña de esos servicios: el inicio de sesión se hace en el navegador, en la página del propio servicio.</p>
-      <p>Estos datos no salen del teléfono salvo lo descrito en los apartados siguientes. La app excluye sus datos de la copia de seguridad automática de Android y de la transferencia entre dispositivos.</p>
+      <h2 id="telefono">Datos que se guardan en tu teléfono</h2>
+      <p>La app guarda en tu dispositivo: tu biblioteca (títulos, lo que has visto, valoraciones, notas, listas), tus ajustes y datos de caché para funcionar sin conexión. Si conectas una cuenta de Trakt o de Simkl, los tokens de acceso se guardan <strong>cifrados</strong> en el teléfono; la app no guarda tu contraseña, porque el inicio de sesión se hace en la web del propio servicio.</p>
+      <p>Estos datos no salen del teléfono salvo lo descrito en los apartados siguientes. La app excluye sus datos de la copia de seguridad automática de Android y de la transferencia entre dispositivos (<code>allowBackup</code> desactivado), de modo que no acaban en tu copia de Google salvo que tú actives expresamente la copia de Mediaddict en Drive.</p>
 
-      <h2>3. Servicios de terceros con los que habla la app</h2>
-      <p>Para funcionar, la app se conecta directamente desde tu teléfono a estos servicios. Cada uno recibe lo mínimo necesario y, como en cualquier conexión a internet, ve tu dirección IP. Se rigen por sus propias políticas de privacidad.</p>
+      <h2 id="permisos">Permisos de Android</h2>
+      <p>La app solo pide tres permisos:</p>
       <ul>
-        <li><strong>Trakt</strong> (trakt.tv) y <strong>Simkl</strong> (simkl.com): solo si decides conectar tu cuenta. La app lee y escribe tu historial, listas, valoraciones y notas en esa cuenta, con tu autorización. Puedes usar la app sin ninguna cuenta.</li>
-        <li><strong>TMDB</strong> (themoviedb.org): fichas de títulos, reparto, imágenes y descubrimiento de contenido.</li>
-        <li><strong>TheTVDB</strong> (thetvdb.com): información de episodios, usada para casar tus episodios vistos al pasar tu biblioteca entre servicios.</li>
-        <li><strong>Wikidata</strong> (wikidata.org): premios y nominaciones de los títulos, y datos auxiliares de algunas series.</li>
-        <li><strong>KLIPY</strong> (klipy.com): búsqueda de GIF cuando escribes un comentario en Trakt. Se envía lo que buscas y un identificador aleatorio de la instalación, que no está ligado a tu identidad.</li>
-        <li><strong>Google Drive</strong>: solo si activas la copia de seguridad en Drive (ver apartado 4).</li>
+        <li><strong>Internet y estado de la red:</strong> para hablar con los servicios de la sección siguiente y saber si hay conexión.</li>
+        <li><strong>Notificaciones</strong> (Android 13 o posterior): para los avisos de estreno. Solo se te pide si los activas.</li>
       </ul>
-      <p>A estos servicios (excepto Trakt, Simkl y Google Drive, que usan tu cuenta) se les pide información sobre títulos concretos; no se les envía tu nombre, correo ni tu biblioteca.</p>
+      <p>No pide acceso a tu ubicación, contactos, cámara, micrófono, SMS ni archivos. Si eliges una carpeta para la copia de seguridad, Android te pide acceso solo a esa carpeta.</p>
 
-      <h2>4. Copia de seguridad (opcional)</h2>
-      <p>Puedes crear copias de seguridad de tu biblioteca y ajustes en una carpeta de tu teléfono que elijas, y, si lo activas, en tu <strong>Google Drive</strong>.</p>
+      <h2 id="terceros">Servicios de terceros con los que habla la app</h2>
+      <p>Para funcionar, la app se conecta <strong>directamente desde tu teléfono</strong> a estos servicios. Cada uno recibe lo mínimo necesario y, como en cualquier conexión a internet, ve tu dirección IP. Cada uno se rige por su propia política de privacidad, que conviene que leas.</p>
       <ul>
-        <li>La copia en Drive usa un único permiso de Google: <code>drive.appdata</code> (&laquo;Ver, crear y eliminar sus propios datos de configuración en Google Drive&raquo;). Es una carpeta oculta de la app dentro de tu propio Drive.</li>
+        <li><strong>Trakt</strong> (<a href="https://trakt.tv" rel="noopener">trakt.tv</a>) y <strong>Simkl</strong> (<a href="https://simkl.com" rel="noopener">simkl.com</a>): solo si decides conectar tu cuenta. Con tu autorización, la app lee y escribe tu historial, listas, valoraciones y notas en esa cuenta. El inicio de sesión se hace en su web, no en la app. Puedes usar la app sin ninguna cuenta. Simkl aplica un límite diario de peticiones a tu cuenta, compartido con todas las apps que conectes.</li>
+        <li><strong>TMDB</strong> (<a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org</a>): fichas de títulos, reparto, imágenes, plataformas donde ver y descubrimiento de contenido. Se le piden datos de títulos concretos y el idioma de contenido que elijas.</li>
+        <li><strong>JustWatch</strong> (<a href="https://www.justwatch.com" rel="noopener">justwatch.com</a>): los datos de «Dónde ver» llegan a través de TMDB, que los obtiene de JustWatch. La app no se conecta a JustWatch por su cuenta, salvo para abrir su enlace si lo tocas.</li>
+        <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): información de episodios, usada para casar tus episodios vistos al pasar tu biblioteca entre servicios.</li>
+        <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): premios y nominaciones de los títulos, y datos auxiliares de algunas series.</li>
+        <li><strong>KLIPY</strong> (<a href="https://klipy.com" rel="noopener">klipy.com</a>): búsqueda de GIF cuando escribes un comentario en Trakt. Se envía lo que buscas y un identificador aleatorio de la instalación, que no está ligado a tu identidad.</li>
+        <li><strong>Google</strong>: Google Drive, solo si activas la copia de seguridad en Drive (ver más abajo); y Firebase, para los informes de fallos y estadísticas de uso (ver más abajo).</li>
+      </ul>
+      <p>A estos servicios (excepto Trakt, Simkl y Google, que usan tu cuenta cuando tú la conectas) se les pide información sobre títulos concretos; no se les envía tu nombre, tu correo ni tu biblioteca.</p>
+
+      <h2 id="copia">Copia de seguridad (opcional)</h2>
+      <p>Puedes crear copias de seguridad de tu biblioteca y ajustes en una carpeta de tu teléfono que elijas y, si lo activas, en tu <strong>Google Drive</strong>.</p>
+      <ul>
+        <li>La copia en Drive usa un único permiso de Google: <code>drive.appdata</code> («Ver, crear y eliminar sus propios datos de configuración en Google Drive»). Es una carpeta oculta de la app dentro de tu propio Drive.</li>
         <li>Solo Mediaddict puede leer esa carpeta. La app <strong>no accede a ningún otro archivo</strong> de tu Drive y nosotros no tenemos acceso a tu cuenta de Google ni a esos archivos.</li>
         <li>La app no guarda el token de acceso de Google: lo pide al sistema cada vez que lo necesita.</li>
-        <li>Puedes desconectar Drive en cualquier momento desde los ajustes de la app, lo que además revoca el acceso en Google. También puedes revocarlo en <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> y borrar los archivos de la app desde la configuración de Google Drive (Administrar aplicaciones).</li>
+        <li>Puedes desconectar Drive en cualquier momento desde los ajustes de la app, lo que además revoca el acceso en Google. También puedes revocarlo en <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> y borrar los archivos de la app desde la configuración de Drive.</li>
+        <li>Las copias contienen tu biblioteca y tus ajustes, no tus contraseñas ni tus tokens.</li>
       </ul>
 
-      <h2>5. Declaración de uso limitado de datos de usuario de Google</h2>
-      <p class="note">El uso que Mediaddict hace de la información recibida de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" rel="noopener">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado (Limited Use).</p>
-      <p>En concreto: usamos el acceso a Google Drive únicamente para guardar, listar, descargar y borrar las copias de seguridad de la app en su carpeta oculta, a petición tuya o con la copia automática que hayas activado. No transferimos esos datos a terceros, no los usamos para publicidad ni para crear perfiles, y ningún humano los lee.</p>
+      <h2 id="google-limited">Declaración de uso limitado de datos de usuario de Google</h2>
+      <p class="note">El uso que Mediaddict hace de la información recibida de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" rel="noopener">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+      <p>En concreto: usamos el acceso a Google Drive únicamente para guardar, listar, descargar y borrar las copias de seguridad de la app en su carpeta oculta, a petición tuya o con la copia automática que hayas activado. No transferimos esos datos a terceros, no los usamos para publicidad y ninguna persona los lee.</p>
 
-      <h2>6. Notificaciones</h2>
+      <h2 id="firebase">Informes de fallos y estadísticas de uso (Firebase)</h2>
+      <p>Para saber cuántos móviles usan la app, qué versiones y cuándo falla, la app usa <strong>Firebase</strong>, un servicio de Google: <strong>Crashlytics</strong> (informes de fallos) y <strong>Analytics</strong> (estadísticas de uso).</p>
+      <ul>
+        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Uso». Al apagarlos, la app deja de enviar esos datos.</li>
+        <li><strong>Identificador de instalación:</strong> Firebase genera en tu móvil un identificador por instalación. No lo enlazamos con tu nombre ni con tus cuentas de Simkl o Trakt, y se renueva al reinstalar la app. Es un seudónimo, y la ley lo trata como dato personal.</li>
+        <li><strong>Qué se envía con cada informe:</strong> modelo del móvil, versión de Android y de la app, idioma y país aproximado (deducido) y, si hay un fallo, la traza del error y el estado de la app en ese momento. Tu dirección IP llega a Google al enviarlo, como a cualquier servidor al que te conectas.</li>
+        <li><strong>Estadísticas de uso:</strong> un conjunto cerrado de acciones (por ejemplo, que se abre la ficha de una película, serie o anime, o que se marca algo como visto y desde qué pantalla), la fuente activa (Simkl, Trakt o sin cuenta) y el tamaño aproximado de tu biblioteca, por tramos.</li>
+        <li><strong>Lo que no enviamos:</strong> el contenido de tu lista (títulos, notas, fechas) ni los datos de tus cuentas (usuario, correo, claves). Lo comprobamos con pruebas automáticas y filtramos los mensajes de error, pero el texto de un error de una librería podría llevar algún dato inesperado.</li>
+      </ul>
+      <p>Google trata estos datos según las <a href="https://firebase.google.com/support/privacy" rel="noopener">condiciones de privacidad de Firebase</a> y puede procesarlos en servidores fuera de la Unión Europea.</p>
+
+      <h2 id="notificaciones">Notificaciones</h2>
       <p>Si lo permites, la app muestra avisos de estrenos. Se generan en tu teléfono a partir de tu biblioteca; no usamos un servicio de notificaciones push propio.</p>
 
-      <h2>7. Sitio web</h2>
-      <p>Este sitio es estático: no usa cookies ni herramientas de analítica. Como cualquier alojamiento web, el proveedor que lo sirve (Cloudflare) puede registrar datos técnicos de conexión, como la dirección IP, con fines de seguridad y funcionamiento.</p>
-
-      <h2>8. Tus derechos y cómo borrar tus datos</h2>
+      <h2 id="uso">Para qué usamos los datos y con qué base legal</h2>
       <ul>
-        <li><strong>Datos del teléfono:</strong> borra los datos de la app en los ajustes de Android o desinstálala. La app también ofrece borrar tu biblioteca local.</li>
-        <li><strong>Cuentas:</strong> cierra sesión en la app; puedes revocar el acceso de Mediaddict desde la configuración de tu cuenta de Trakt o Simkl y borrar allí tus datos.</li>
-        <li><strong>Google Drive:</strong> desconecta Drive en la app, revoca el acceso en tu cuenta de Google y elimina los archivos de la app como se indica arriba.</li>
-        <li>Como no tenemos tus datos en servidores propios, no hay nada más que borrar de nuestro lado. Si estás en el Espacio Económico Europeo u otra jurisdicción con derechos de acceso, rectificación, supresión o portabilidad, y tienes cualquier duda, escríbenos.</li>
+        <li><strong>Hacer funcionar la app</strong> (tu biblioteca, tu cuenta de Trakt o Simkl, la copia de seguridad, los avisos): ocurre en tu teléfono o con los servicios que tú conectas, a petición tuya. La base es que lo pides al usar la app.</li>
+        <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes.</li>
+        <li><strong>Atender tus mensajes:</strong> si nos escribes, usamos tu correo y tu mensaje solo para responderte.</li>
+      </ul>
+      <p>No tomamos decisiones automatizadas sobre ti ni elaboramos perfiles, y no vendemos ni compartimos datos con fines publicitarios de terceros.</p>
+
+      <h2 id="conservacion">Cuánto tiempo conservamos los datos</h2>
+      <ul>
+        <li><strong>Datos del teléfono:</strong> mientras no los borres, desinstales la app o borres sus datos en Android.</li>
+        <li><strong>Cuentas de Trakt, Simkl y Google:</strong> las gestionan ellos; conservan lo que tú tengas allí hasta que lo borres tú.</li>
+        <li><strong>Informes de fallos y estadísticas de uso:</strong> los conserva Firebase durante los plazos que fija Google para esos servicios. Los ajustaremos al mínimo razonable y los reflejaremos en esta política.</li>
+        <li><strong>Correos que nos envíes:</strong> el tiempo necesario para atenderte.</li>
       </ul>
 
-      <h2>9. Menores</h2>
-      <p>Mediaddict no está dirigida a menores de 14 años (o de la edad mínima de consentimiento digital de tu país) y no recopilamos a sabiendas datos de menores.</p>
+      <h2 id="transferencias">Transferencias internacionales</h2>
+      <p>Algunos de los servicios con los que habla la app (por ejemplo Google, TMDB, Trakt o Simkl) tienen servidores fuera del Espacio Económico Europeo, entre ellos en Estados Unidos. Al conectarte a ellos, tu dirección IP y los datos de la petición viajan a esos países. Cada servicio indica en su política qué garantías aplica a esas transferencias (por ejemplo, decisiones de adecuación de la Comisión Europea o cláusulas contractuales tipo).</p>
 
-      <h2>10. Cambios en esta política</h2>
-      <p>Podemos actualizar esta política, por ejemplo si la app añade nuevas funciones. Publicaremos aquí la versión vigente con su fecha de última actualización.</p>
+      <h2 id="seguridad">Seguridad</h2>
+      <p>Las conexiones de la app usan HTTPS. Los tokens de Trakt y Simkl se guardan cifrados en el teléfono, y las claves que dan acceso a servicios no se incluyen en las copias de seguridad. Aun así, ningún sistema es completamente seguro y no podemos garantizar una protección absoluta.</p>
 
-      <h2>11. Contacto</h2>
-      <p>Para cualquier pregunta sobre privacidad: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+      <h2 id="derechos">Tus derechos y cómo ejercerlos</h2>
+      <p>Si estás en el Espacio Económico Europeo (o en otra jurisdicción con derechos equivalentes), puedes pedir el <strong>acceso</strong>, la <strong>rectificación</strong>, la <strong>supresión</strong>, la <strong>limitación</strong>, la <strong>oposición</strong> y la <strong>portabilidad</strong> de tus datos, y retirar tu consentimiento cuando se base en él.</p>
+      <ul>
+        <li><strong>Datos del teléfono:</strong> bórralos en los ajustes de Android o desinstala la app. La app también ofrece borrar tu biblioteca local.</li>
+        <li><strong>Informes de fallos y estadísticas:</strong> apaga los interruptores en Ajustes para que dejen de enviarse.</li>
+        <li><strong>Cuentas:</strong> cierra sesión en la app; puedes revocar el acceso de Mediaddict desde la configuración de tu cuenta de Trakt o Simkl y borrar allí tus datos.</li>
+        <li><strong>Google Drive:</strong> desconecta Drive en la app, revoca el acceso en tu cuenta de Google y elimina los archivos de la app como se indica arriba.</li>
+        <li><strong>Cualquier otra petición:</strong> escribe a <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Responderemos como máximo en un mes.</li>
+      </ul>
+      <p>Como no tenemos tu biblioteca en servidores propios, no hay nada más que borrar de nuestro lado. Si crees que tratamos tus datos de forma incorrecta, puedes presentar una reclamación ante la autoridad de protección de datos de tu país; en España, la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos</a>.</p>
+
+      <h2 id="menores">Menores</h2>
+      <p>Mediaddict no está dirigida a menores de 14 años (o de la edad mínima de consentimiento digital de tu país) y no recopilamos a sabiendas datos de menores. Si crees que un menor nos ha facilitado datos, escríbenos y los borraremos.</p>
+
+      <h2 id="web">Sitio web</h2>
+      <p>Este sitio es estático: no usa cookies ni herramientas de analítica, y sirve sus tipografías desde el propio sitio. La demostración de la portada carga los carteles desde los servidores de TMDB (image.tmdb.org), que ven tu dirección IP. Como cualquier alojamiento web, el proveedor que lo sirve (Cloudflare) puede registrar datos técnicos de conexión, como la dirección IP, con fines de seguridad y funcionamiento. El botón de Google Play te lleva a la tienda de Google, que tiene su propia política.</p>
+
+      <h2 id="enlaces">Enlaces a otros sitios</h2>
+      <p>Este sitio y la app enlazan a páginas de terceros (servicios, tiendas, documentación). No controlamos esas páginas ni su tratamiento de datos; consulta su política antes de dejar tus datos en ellas.</p>
+
+      <h2 id="cambios">Cambios en esta política</h2>
+      <p>Podemos actualizar esta política, por ejemplo si la app añade nuevas funciones o servicios. Publicaremos aquí la versión vigente con su fecha de última actualización. Si el cambio es importante, te lo diremos en la app antes de aplicarlo.</p>
+
+      <h2 id="contacto">Contacto</h2>
+      <p>Responsable: Sergio Martín (persona física). Para cualquier pregunta sobre privacidad: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Las condiciones de uso están en <a href={href('es', 'terms')}>Condiciones del servicio</a>.</p>
     </article>
   ) : (
     <article class="legal">
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated: November 4, 2026</p>
+      <p class="updated">Last updated: November 6, 2026</p>
 
-      <p>Mediaddict is an Android app to keep track of the movies, TV shows and anime you watch. This policy explains what data the app handles, where it goes and what control you have. It applies to the Mediaddict app and to this website, mediaddict.app.</p>
+      <p>Mediaddict is an Android app to keep track of the movies, TV shows and anime you watch. This policy explains what data the app handles, where it goes, what it is used for and what control you have over it. It applies to the Mediaddict app and to this website, mediaddict.app. It is written to be understood: if something is unclear, write to us.</p>
 
-      <h2>1. Summary</h2>
+      <h2 id="controller">Who is responsible</h2>
+      <p>The data controller is <strong>Sergio Martín</strong>, an individual and the independent developer of Mediaddict. It is not a company. Contact for any privacy matter: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+
+      <h2 id="summary">Summary</h2>
       <ul>
-        <li>Mediaddict has <strong>no servers of its own</strong>: we do not receive or store your library, your accounts or your personal data.</li>
-        <li>Your library lives on your phone.</li>
-        <li>The app contains no advertising, no usage analytics and no automatic crash reporting.</li>
-        <li>We do not sell or share your data with anyone.</li>
+        <li>Mediaddict has <strong>no servers of its own</strong> to keep your library: we do not receive or store your list or your accounts. Your library lives on your phone.</li>
+        <li>The app <strong>contains no advertising</strong>, and we do not sell or share your data with anyone.</li>
+        <li>The app does send Google, through Firebase, <strong>crash reports and usage statistics</strong>. They are on by default and have two switches in Settings. There is a full section on this below.</li>
+        <li>The app connects directly from your phone to third-party services (TMDB, Trakt, Simkl…) to work. Each one sees your IP address, as any server you connect to does.</li>
+        <li>You can use it with no account at all.</li>
       </ul>
 
-      <h2>2. Data stored on your phone</h2>
-      <p>The app stores on your device your library (titles, what you have watched, ratings, notes, lists), your settings and cached data so it can work offline. If you connect a Trakt or Simkl account, the access tokens are stored <strong>encrypted</strong> on the phone with a key held by the Android system (Android Keystore). The app never asks for your password for those services: sign-in happens in your browser, on the service's own page.</p>
-      <p>This data does not leave the phone except as described below. The app excludes its data from Android's automatic backup and device-to-device transfer.</p>
+      <h2 id="phone">Data stored on your phone</h2>
+      <p>The app stores on your device: your library (titles, what you have watched, ratings, notes, lists), your settings and cached data so it can work offline. If you connect a Trakt or Simkl account, the access tokens are stored <strong>encrypted</strong> on the phone; the app does not store your password, because sign-in happens on the service's own website.</p>
+      <p>This data does not leave the phone except as described in the following sections. The app excludes its data from Android's automatic backup and device-to-device transfer (<code>allowBackup</code> turned off), so it does not end up in your Google backup unless you expressly turn on Mediaddict's Drive backup.</p>
 
-      <h2>3. Third-party services the app talks to</h2>
-      <p>To work, the app connects directly from your phone to these services. Each receives the minimum necessary and, as with any internet connection, sees your IP address. They are governed by their own privacy policies.</p>
+      <h2 id="permissions">Android permissions</h2>
+      <p>The app asks for only three permissions:</p>
       <ul>
-        <li><strong>Trakt</strong> (trakt.tv) and <strong>Simkl</strong> (simkl.com): only if you choose to connect your account. With your authorization, the app reads and writes your history, lists, ratings and notes in that account. You can use the app with no account at all.</li>
-        <li><strong>TMDB</strong> (themoviedb.org): title details, cast, images and content discovery.</li>
-        <li><strong>TheTVDB</strong> (thetvdb.com): episode information, used to match your watched episodes when moving your library between services.</li>
-        <li><strong>Wikidata</strong> (wikidata.org): awards and nominations for titles, and auxiliary data for some series.</li>
-        <li><strong>KLIPY</strong> (klipy.com): GIF search when you write a Trakt comment. What you search for and a random per-installation identifier, not tied to your identity, are sent.</li>
-        <li><strong>Google Drive</strong>: only if you turn on Drive backup (see section 4).</li>
+        <li><strong>Internet and network state:</strong> to talk to the services in the next section and to know whether there is a connection.</li>
+        <li><strong>Notifications</strong> (Android 13 or later): for release alerts. You are only asked if you turn them on.</li>
       </ul>
-      <p>These services (other than Trakt, Simkl and Google Drive, which use your account) are asked about specific titles; your name, email or library are not sent to them.</p>
+      <p>It does not ask for your location, contacts, camera, microphone, SMS or files. If you pick a folder for backup, Android grants access only to that folder.</p>
 
-      <h2>4. Backup (optional)</h2>
+      <h2 id="third-parties">Third-party services the app talks to</h2>
+      <p>To work, the app connects <strong>directly from your phone</strong> to these services. Each receives the minimum necessary and, as with any internet connection, sees your IP address. Each is governed by its own privacy policy, which you should read.</p>
+      <ul>
+        <li><strong>Trakt</strong> (<a href="https://trakt.tv" rel="noopener">trakt.tv</a>) and <strong>Simkl</strong> (<a href="https://simkl.com" rel="noopener">simkl.com</a>): only if you choose to connect your account. With your authorization, the app reads and writes your history, lists, ratings and notes in that account. Sign-in happens on their website, not in the app. You can use the app with no account. Simkl applies a daily request limit to your account, shared with every app you connect.</li>
+        <li><strong>TMDB</strong> (<a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org</a>): title details, cast, images, where to watch and content discovery. It is asked about specific titles and the content language you choose.</li>
+        <li><strong>JustWatch</strong> (<a href="https://www.justwatch.com" rel="noopener">justwatch.com</a>): the "Where to watch" data arrives through TMDB, which gets it from JustWatch. The app does not connect to JustWatch on its own, except to open its link if you tap it.</li>
+        <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): episode information, used to match your watched episodes when moving your library between services.</li>
+        <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): awards and nominations for titles, and auxiliary data for some series.</li>
+        <li><strong>KLIPY</strong> (<a href="https://klipy.com" rel="noopener">klipy.com</a>): GIF search when you write a Trakt comment. What you search for and a random per-installation identifier, not tied to your identity, are sent.</li>
+        <li><strong>Google</strong>: Google Drive, only if you turn on Drive backup (see below); and Firebase, for crash reports and usage statistics (see below).</li>
+      </ul>
+      <p>These services (other than Trakt, Simkl and Google, which use your account when you connect it) are asked about specific titles; your name, email or library are not sent to them.</p>
+
+      <h2 id="backup">Backup (optional)</h2>
       <p>You can back up your library and settings to a folder on your phone that you choose and, if you turn it on, to your <strong>Google Drive</strong>.</p>
       <ul>
-        <li>Drive backup uses a single Google permission: <code>drive.appdata</code> (&ldquo;See, create and delete its own configuration data in your Google Drive&rdquo;). It is a hidden app folder inside your own Drive.</li>
+        <li>Drive backup uses a single Google permission: <code>drive.appdata</code> ("See, create and delete its own configuration data in your Google Drive"). It is a hidden app folder inside your own Drive.</li>
         <li>Only Mediaddict can read that folder. The app <strong>does not access any other file</strong> in your Drive, and we have no access to your Google account or to those files.</li>
         <li>The app does not store the Google access token: it asks the system for it each time it needs it.</li>
-        <li>You can disconnect Drive at any time in the app's settings, which also revokes access at Google. You can also revoke it at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> and delete the app's files from Google Drive settings (Manage apps).</li>
+        <li>You can disconnect Drive at any time in the app's settings, which also revokes access at Google. You can also revoke it at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> and delete the app's files from Drive's settings.</li>
+        <li>Copies contain your library and settings, not your passwords or tokens.</li>
       </ul>
 
-      <h2>5. Google user data: Limited Use disclosure</h2>
+      <h2 id="google-limited">Google user data: Limited Use disclosure</h2>
       <p class="note">Mediaddict's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-      <p>Specifically: we use access to Google Drive only to save, list, download and delete the app's backup copies in its hidden folder, at your request or through the automatic backup you have turned on. We do not transfer that data to third parties, we do not use it for advertising or to build profiles, and no human reads it.</p>
+      <p>Specifically: we use access to Google Drive only to save, list, download and delete the app's backup copies in its hidden folder, at your request or through the automatic backup you have turned on. We do not transfer that data to third parties, we do not use it for advertising, and no human reads it.</p>
 
-      <h2>6. Notifications</h2>
+      <h2 id="firebase">Crash reports and usage statistics (Firebase)</h2>
+      <p>To know how many phones use the app, which versions, and when it crashes, the app uses <strong>Firebase</strong>, a Google service: <strong>Crashlytics</strong> (crash reports) and <strong>Analytics</strong> (usage statistics).</p>
+      <ul>
+        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage". When you turn them off, the app stops sending that data.</li>
+        <li><strong>Installation identifier:</strong> Firebase generates an identifier per installation on your phone. We do not link it to your name or to your Simkl or Trakt accounts, and it is renewed when you reinstall the app. It is a pseudonym, and the law treats it as personal data.</li>
+        <li><strong>What is sent with each report:</strong> phone model, Android and app version, language and approximate country (inferred) and, for a crash, the error trace and the state of the app at that moment. Your IP address reaches Google when it is sent, as with any server you connect to.</li>
+        <li><strong>Usage statistics:</strong> a closed set of actions (for example, that a movie, show or anime page is opened, or that something is marked as watched and from which screen), the active source (Simkl, Trakt or no account) and the approximate size of your library, in ranges.</li>
+        <li><strong>What we do not send:</strong> the contents of your list (titles, notes, dates) or your account details (username, email, keys). We check this with automated tests and filter error messages, but the error text of a library could carry some unexpected data.</li>
+      </ul>
+      <p>Google handles this data under <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy terms</a> and may process it on servers outside the European Union.</p>
+
+      <h2 id="notifications">Notifications</h2>
       <p>If you allow it, the app shows release alerts. They are generated on your phone from your library; we do not run a push notification service of our own.</p>
 
-      <h2>7. Website</h2>
-      <p>This site is static: it uses no cookies and no analytics tools. As with any web hosting, the provider that serves it (Cloudflare) may log technical connection data, such as the IP address, for security and operation.</p>
-
-      <h2>8. Your rights and how to delete your data</h2>
+      <h2 id="use">What we use the data for and on what legal basis</h2>
       <ul>
-        <li><strong>Data on your phone:</strong> clear the app's data in Android settings or uninstall it. The app also offers to delete your local library.</li>
-        <li><strong>Accounts:</strong> sign out in the app; you can revoke Mediaddict's access from your Trakt or Simkl account settings and delete your data there.</li>
-        <li><strong>Google Drive:</strong> disconnect Drive in the app, revoke access in your Google account and delete the app's files as described above.</li>
-        <li>Since we hold no data of yours on servers of our own, there is nothing further to delete on our side. If you are in the European Economic Area or another jurisdiction with rights of access, rectification, erasure or portability, and have any question, write to us.</li>
+        <li><strong>Making the app work</strong> (your library, your Trakt or Simkl account, backup, alerts): it happens on your phone or with the services you connect, at your request. The basis is that you ask for it by using the app.</li>
+        <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings.</li>
+        <li><strong>Answering your messages:</strong> if you write to us, we use your email and your message only to reply.</li>
+      </ul>
+      <p>We make no automated decisions about you and build no profiles, and we do not sell or share data for third-party advertising.</p>
+
+      <h2 id="retention">How long we keep data</h2>
+      <ul>
+        <li><strong>Data on the phone:</strong> until you delete it, uninstall the app or clear its data in Android.</li>
+        <li><strong>Trakt, Simkl and Google accounts:</strong> they run them; they keep what you have there until you delete it.</li>
+        <li><strong>Crash reports and usage statistics:</strong> kept by Firebase for the periods Google sets for those services. We will set them to the reasonable minimum and reflect them in this policy.</li>
+        <li><strong>Emails you send us:</strong> for as long as needed to help you.</li>
       </ul>
 
-      <h2>9. Children</h2>
-      <p>Mediaddict is not directed at children under 14 (or the minimum age of digital consent in your country) and we do not knowingly collect data from children.</p>
+      <h2 id="transfers">International transfers</h2>
+      <p>Some of the services the app talks to (for example Google, TMDB, Trakt or Simkl) have servers outside the European Economic Area, including in the United States. When you connect to them, your IP address and the request data travel to those countries. Each service states in its own policy what safeguards it applies to those transfers (for example, European Commission adequacy decisions or standard contractual clauses).</p>
 
-      <h2>10. Changes to this policy</h2>
-      <p>We may update this policy, for example when the app adds new features. The current version will be published here with its last-updated date.</p>
+      <h2 id="security">Security</h2>
+      <p>The app's connections use HTTPS. Trakt and Simkl tokens are stored encrypted on the phone, and keys that give access to services are not included in backups. Even so, no system is completely secure and we cannot guarantee absolute protection.</p>
 
-      <h2>11. Contact</h2>
-      <p>For any privacy question: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+      <h2 id="rights">Your rights and how to exercise them</h2>
+      <p>If you are in the European Economic Area (or another jurisdiction with equivalent rights), you can request <strong>access</strong>, <strong>rectification</strong>, <strong>erasure</strong>, <strong>restriction</strong>, <strong>objection</strong> and <strong>portability</strong> of your data, and withdraw your consent where it is based on consent.</p>
+      <ul>
+        <li><strong>Data on your phone:</strong> delete it in Android settings or uninstall the app. The app also offers to delete your local library.</li>
+        <li><strong>Crash reports and statistics:</strong> turn the switches off in Settings so they stop being sent.</li>
+        <li><strong>Accounts:</strong> sign out in the app; you can revoke Mediaddict's access from your Trakt or Simkl account settings and delete your data there.</li>
+        <li><strong>Google Drive:</strong> disconnect Drive in the app, revoke access in your Google account and delete the app's files as described above.</li>
+        <li><strong>Any other request:</strong> write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We will reply within one month at most.</li>
+      </ul>
+      <p>Since we hold no library of yours on servers of our own, there is nothing further to delete on our side. If you believe we are handling your data incorrectly, you can lodge a complaint with the data protection authority of your country; in Spain, the <a href="https://www.aepd.es" rel="noopener">Spanish Data Protection Agency</a>.</p>
+
+      <h2 id="children">Children</h2>
+      <p>Mediaddict is not directed at children under 14 (or the minimum age of digital consent in your country) and we do not knowingly collect data from children. If you believe a child has given us data, write to us and we will delete it.</p>
+
+      <h2 id="website">Website</h2>
+      <p>This site is static: it uses no cookies and no analytics tools, and serves its fonts from the site itself. The demo on the home page loads posters from TMDB servers (image.tmdb.org), which see your IP address. As with any web hosting, the provider that serves it (Cloudflare) may log technical connection data, such as the IP address, for security and operation. The Google Play button takes you to Google's store, which has its own policy.</p>
+
+      <h2 id="links">Links to other sites</h2>
+      <p>This site and the app link to third-party pages (services, stores, documentation). We do not control those pages or how they handle data; read their policy before leaving your data on them.</p>
+
+      <h2 id="changes">Changes to this policy</h2>
+      <p>We may update this policy, for example when the app adds new features or services. The current version will be published here with its last-updated date. If the change is important, we will tell you in the app before applying it.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Controller: Sergio Martín (individual). For any privacy question: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. The terms of use are in the <a href={href('en', 'terms')}>Terms of service</a>.</p>
     </article>
   )}
 </Base>
