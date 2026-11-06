@@ -1,0 +1,639 @@
+{
+ "tv": [
+  {
+   "q": "Will Trent",
+   "id": 208569,
+   "type": "tv",
+   "name": "Will Trent",
+   "poster": "/qG5O46gUxxYGImld03tl2zLhvrg.jpg",
+   "backdrop": "/9pGzG5CYx2XM8JFFQvMk9Z3z9ze.jpg",
+   "vote": 7.313,
+   "date": "2023-01-03",
+   "overview": "Special Agent Will Trent was abandoned at birth and endured a harsh coming-of-age in Atlanta's overwhelmed foster care system. Determined to make sure no one feels as he did, he now has the highest clearance rate."
+  },
+  {
+   "q": "Your Friends & Neighbors",
+   "id": 241609,
+   "type": "tv",
+   "name": "Your Friends & Neighbors",
+   "poster": "/lcp63INKEsVHUly9eayx7gEEOcG.jpg",
+   "backdrop": "/e0mloha4ZQfLVZj0nsUtU7AoRs4.jpg",
+   "vote": 7.765,
+   "date": "2025-04-10",
+   "overview": "When a financial titan suddenly finds himself divorced and jobless, he starts robbing his wealthy neighbors to stay afloat. Stealing from his own social circle strangely exhilarates him—but he gradually gets tangled in a deadly web."
+  },
+  {
+   "q": "Tracker",
+   "id": 211288,
+   "type": "tv",
+   "name": "Tracker",
+   "poster": "/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+   "backdrop": "/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
+   "vote": 7.6,
+   "date": "2024-02-11",
+   "overview": "Lone-wolf survivalist Colter Shaw roams the country as a “reward seeker,” using his expert tracking skills to help private citizens and law enforcement solve all manner of mysteries while contending with his own fractured family."
+  },
+  {
+   "q": "SPY x FAMILY",
+   "id": 120089,
+   "type": "tv",
+   "name": "SPY x FAMILY",
+   "poster": "/7NAvPYPAu7MeHwP8E9sn81PqsRh.jpg",
+   "backdrop": "/lysUnU6V0VfcthDbviuVlIqgHOR.jpg",
+   "vote": 8.492,
+   "date": "2022-04-09",
+   "overview": "A spy, an assassin and a telepath come together to pose as a family, each for their own reasons, while hiding their true identities from each other."
+  },
+  {
+   "q": "ONE PIECE",
+   "id": 111110,
+   "type": "tv",
+   "name": "ONE PIECE",
+   "poster": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+   "backdrop": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+   "vote": 8.104,
+   "date": "2023-08-31",
+   "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure."
+  },
+  {
+   "q": "Nippon Sangoku",
+   "id": 312474,
+   "type": "tv",
+   "name": "NIPPON SANGOKU: The Three Nations of the Crimson Sun",
+   "poster": "/sM7zYE6xOmaNwC28LR7cEneAtuN.jpg",
+   "backdrop": "/seKQ4siIyJZAt3Xubijt5iXfjvA.jpg",
+   "vote": 8.7,
+   "date": "2026-04-05",
+   "overview": "A revolution sparked by nuclear war, natural disaster, and misrule leads to the collapse of Japanese society. The country splits into three nations vying for hegemony, and the Sangoku era begins. Aoteru Misumi, a former agricultural officer, vows to reunify Japan. He rises through the ranks with only his knowledge and eloquence. Witness the legend of the man later hailed as a genius strategist."
+  },
+  {
+   "q": "Ranma 1/2",
+   "id": 259140,
+   "type": "tv",
+   "name": "Ranma1/2",
+   "poster": "/cDThx8yRYbdPOSgHbjihS4q7GYc.jpg",
+   "backdrop": "/xvD9urN8lUtWw5fm4a87Rl3dCZn.jpg",
+   "vote": 8.1,
+   "date": "2024-10-06",
+   "overview": "Akane Tendo meets her new fiancé, Ranma Saotome, a martial arts prodigy with a twist: he magically transforms into a girl upon touching cold water."
+  },
+  {
+   "q": "The Apothecary Diaries",
+   "id": 220542,
+   "type": "tv",
+   "name": "The Apothecary Diaries",
+   "poster": "/sJZcy8QsOPuRPiCfoCWVB3r9Ohg.jpg",
+   "backdrop": "/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
+   "vote": 8.7,
+   "date": "2023-10-22",
+   "overview": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!"
+  },
+  {
+   "q": "Scrubs",
+   "id": 4556,
+   "type": "tv",
+   "name": "Scrubs",
+   "poster": "/w7ri7byEYLdciSZOwWHj6TUAX7j.jpg",
+   "backdrop": "/rRKTV46DKVP8AfdCQDyQMAtJeCl.jpg",
+   "vote": 8.172,
+   "date": "2001-10-02",
+   "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life."
+  },
+  {
+   "q": "Nobody Wants This",
+   "id": 250923,
+   "type": "tv",
+   "name": "Nobody Wants This",
+   "poster": "/1RNtqMeSNNBkXqK8WPUMf72vGrt.jpg",
+   "backdrop": "/77sozyYenyY1JraK6YzLfDlTMpp.jpg",
+   "vote": 7.3,
+   "date": "2024-09-26",
+   "overview": "An agnostic sex podcaster and a newly single rabbi fall in love, but can their relationship survive their wildly different lives and meddling families?"
+  },
+  {
+   "q": "VisionQuest",
+   "id": 213375,
+   "type": "tv",
+   "name": "VisionQuest",
+   "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "backdrop": "/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
+   "vote": 8.649,
+   "date": "2026-10-13",
+   "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive."
+  },
+  {
+   "q": "Tougen Anki",
+   "id": 253811,
+   "type": "tv",
+   "name": "Tougen Anki",
+   "poster": "/vnasRNhwT5M3OvTAMzYn4i5fQcT.jpg",
+   "backdrop": "/k7h9p81H6X6TGV70TgOp4TmjXco.jpg",
+   "vote": 7.7,
+   "date": "2025-07-11",
+   "overview": "After a Momotaro assassin suddenly kills his adoptive father, Shiki vows to avenge him. But first, he must learn to control his newly awakened Oni blood."
+  },
+  {
+   "q": "Sheriff Country",
+   "id": 253391,
+   "type": "tv",
+   "name": "Sheriff Country",
+   "poster": "/hBrbAYp4SGMkNYZGPeFhEd0xW7Z.jpg",
+   "backdrop": "/mhTIUNa9BI019NuXrUBYYCkZ199.jpg",
+   "vote": 7.352,
+   "date": "2025-10-17",
+   "overview": "Mickey Fox investigates criminal activity and patrols the streets of small-town Edgewater while contending with her ex-con father and a mysterious incident involving her wayward daughter."
+  },
+  {
+   "q": "Marshals",
+   "id": 290856,
+   "type": "tv",
+   "name": "Marshals",
+   "poster": "/zV1MRb6eqx6Uj3NSXquZFfz75pa.jpg",
+   "backdrop": "/yGJGwt7DdIWTUXuahLfhcH1gi7G.jpg",
+   "vote": 7.966,
+   "date": "2026-03-01",
+   "overview": "With the Yellowstone Ranch behind him, Kayce Dutton joins an elite unit of U.S. Marshals, combining his skills as a cowboy and Navy SEAL to bring range justice to Montana, where he and his teammates must balance family, duty and the high psychological cost that comes with serving as the last line of defense in the region's war on violence."
+  },
+  {
+   "q": "Percy Jackson and the Olympians",
+   "id": 103540,
+   "type": "tv",
+   "name": "Percy Jackson and the Olympians",
+   "poster": "/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+   "backdrop": "/sAxx25ijwYQ8xsT56wu2IzvIRss.jpg",
+   "vote": 7.3,
+   "date": "2023-12-19",
+   "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be."
+  },
+  {
+   "q": "Mandy's First Marriage",
+   "id": 243875,
+   "type": "tv",
+   "name": "Georgie & Mandy's First Marriage",
+   "poster": "/3z2mYFxUkzanb2eeIcVyfJq0G3q.jpg",
+   "backdrop": "/h927CLfeAjiy0MNKRxWZgEq7bHR.jpg",
+   "vote": 8.038,
+   "date": "2024-10-17",
+   "overview": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage."
+  },
+  {
+   "q": "9-1-1: Nashville",
+   "id": 284838,
+   "type": "tv",
+   "name": "9-1-1: Nashville",
+   "poster": "/63JFLM8L8H1Jlp62kZGPvSKc50j.jpg",
+   "backdrop": "/ubqZEVCDp86myrZwJpyNwocLrce.jpg",
+   "vote": 8,
+   "date": "2025-10-09",
+   "overview": "Follow heroic first responders, as well as their family saga of power and glamour, in one of America's most diverse and dynamic cities: Nashville, Tennessee."
+  },
+  {
+   "q": "Elsbeth",
+   "id": 226285,
+   "type": "tv",
+   "name": "Elsbeth",
+   "poster": "/7lnNSbT90qwtrn1h9TvEkVFMz2P.jpg",
+   "backdrop": "/t7kDn4X7JpRnBlKN0vPVy5RXZlA.jpg",
+   "vote": 6.679,
+   "date": "2024-02-29",
+   "overview": "After her successful career in Chicago, Elsbeth Tascioni, an astute but unconventional attorney, utilizes her singular point of view to make unique observations and corner brilliant criminals alongside the NYPD."
+  },
+  {
+   "q": "Grey's Anatomy",
+   "id": 1416,
+   "type": "tv",
+   "name": "Grey's Anatomy",
+   "poster": "/gO8Fo47KV1opiutRDdBS5jclTQB.jpg",
+   "backdrop": "/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
+   "vote": 8.202,
+   "date": "2005-03-27",
+   "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital."
+  },
+  {
+   "q": "Mobland",
+   "id": 247718,
+   "type": "tv",
+   "name": "MobLand",
+   "poster": "/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+   "backdrop": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+   "vote": 8.617,
+   "date": "2025-03-30",
+   "overview": "Two mob families clash in a war that threatens to topple empires and lives."
+  },
+  {
+   "q": "South Park",
+   "id": 2190,
+   "type": "tv",
+   "name": "South Park",
+   "poster": "/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
+   "backdrop": "/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+   "vote": 8.333,
+   "date": "1997-08-13",
+   "overview": "Follow the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."
+  },
+  {
+   "q": "The Big Bang Theory",
+   "id": 1418,
+   "type": "tv",
+   "name": "The Big Bang Theory",
+   "poster": "/euKFiO5M125rpngFRBbSW83beeI.jpg",
+   "backdrop": "/rwYvhVv0vwbulMwxOfEsuAr1JrT.jpg",
+   "vote": 7.929,
+   "date": "2007-09-24",
+   "overview": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door."
+  },
+  {
+   "q": "Friends",
+   "id": 1668,
+   "type": "tv",
+   "name": "Friends",
+   "poster": "/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg",
+   "backdrop": "/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg",
+   "vote": 8.406,
+   "date": "1994-09-22",
+   "overview": "Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life."
+  }
+ ],
+ "movie": [
+  {
+   "q": "Wicked: For Good",
+   "id": 967941,
+   "type": "movie",
+   "name": "Wicked: For Good",
+   "poster": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
+   "backdrop": "/cGbPBHKSFO7hSIjxkb3KOaGdOep.jpg",
+   "vote": 6.565,
+   "date": "2025-11-19",
+   "overview": "As an angry mob rises against the Wicked Witch, Glinda and Elphaba must unite one last time with honesty and empathy to fulfill their shared destiny and change the fate of Oz forever."
+  },
+  {
+   "q": "Unabomber",
+   "id": 1492640,
+   "type": "movie",
+   "name": "UNABOMBER",
+   "poster": "/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+   "backdrop": "/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
+   "vote": 6.573,
+   "date": "2026-09-25",
+   "overview": "Follow Ted Kaczynski's transformation from Harvard prodigy into the infamous Unabomber. Subjected to controversial psychological experiments by Professor Henry Murray, Kaczynski's troubled past resurfaces decades later when his manhunt, led by FBI agent Joanne Miller, brings to light the chilling consequences of ambition and isolation."
+  },
+  {
+   "q": "One Night Only",
+   "id": 1433367,
+   "type": "movie",
+   "name": "One Night Only",
+   "poster": "/f1v8IcYcQggeq1N0unoMJMrzTd9.jpg",
+   "backdrop": "/3afHil7EVm655wO2NS6RHxuyicE.jpg",
+   "vote": 6.401,
+   "date": "2026-08-06",
+   "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex."
+  },
+  {
+   "q": "Office Romance",
+   "id": 1358005,
+   "type": "movie",
+   "name": "Office Romance",
+   "poster": "/1HRUTqEVDmJC4L6tp6zd85MI6uH.jpg",
+   "backdrop": "/1N5yz1IDw6Ci8le1YgeM6xtBijA.jpg",
+   "vote": 6.414,
+   "date": "2026-06-04",
+   "overview": "Jackie, President and CEO of Air Cruz, runs a tight ship in her business, including a rigid anti-fraternization policy for all her employees. When a new sexy lawyer begins working for her, that policy becomes very tested."
+  },
+  {
+   "q": "The Furious",
+   "id": 1280738,
+   "type": "movie",
+   "name": "The Furious",
+   "poster": "/ivQ1Z3lI1xWvAeGDHBw3CCYZDGJ.jpg",
+   "backdrop": "/i0eR9O1FnCgBm1cH8WwqxGbAXMS.jpg",
+   "vote": 8.241,
+   "date": "2026-06-10",
+   "overview": "When Wang Wei's daughter is abducted by a criminal organization and law enforcement declines to intervene due to corruption, Wei embarks on a solo mission to find her. His sole ally is Navin, a determined journalist whose wife has also mysteriously disappeared. Together, this improbable pair confronts the kidnappers in a fierce martial arts confrontation, driven by an intense desire for retribution."
+  },
+  {
+   "q": "Supergirl",
+   "id": 1081003,
+   "type": "movie",
+   "name": "Supergirl",
+   "poster": "/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+   "backdrop": "/heZQmyNvkH236ha2M3JckdUQQqb.jpg",
+   "vote": 6.635,
+   "date": "2026-06-24",
+   "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice."
+  },
+  {
+   "q": "Now You See Me: Now You Don't",
+   "id": 425274,
+   "type": "movie",
+   "name": "Now You See Me: Now You Don't",
+   "poster": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+   "backdrop": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+   "vote": 6.435,
+   "date": "2025-11-12",
+   "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet."
+  },
+  {
+   "q": "Avatar: Fire and Ash",
+   "id": 83533,
+   "type": "movie",
+   "name": "Avatar: Fire and Ash",
+   "poster": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+   "backdrop": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+   "vote": 7.646,
+   "date": "2025-12-17",
+   "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits."
+  },
+  {
+   "q": "Good Luck, Have Fun, Don't Die",
+   "id": 1119449,
+   "type": "movie",
+   "name": "Good Luck, Have Fun, Don't Die",
+   "poster": "/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
+   "backdrop": "/drRxbu2OHG0DEENptZ8wI5f0uEU.jpg",
+   "vote": 7.11,
+   "date": "2026-02-13",
+   "overview": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence."
+  },
+  {
+   "q": "Remarkably Bright Creatures",
+   "id": 1330021,
+   "type": "movie",
+   "name": "Remarkably Bright Creatures",
+   "poster": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+   "backdrop": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+   "vote": 8.35,
+   "date": "2026-05-07",
+   "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again."
+  },
+  {
+   "q": "The Super Mario Galaxy Movie",
+   "id": 1226863,
+   "type": "movie",
+   "name": "The Super Mario Galaxy Movie",
+   "poster": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+   "backdrop": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+   "vote": 8.189,
+   "date": "2026-04-01",
+   "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade."
+  },
+  {
+   "q": "Normal",
+   "id": 1242332,
+   "type": "movie",
+   "name": "Normal",
+   "poster": "/bIwQxcZl2CdyhVRNDtQl36YCZVr.jpg",
+   "backdrop": "/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
+   "vote": 7.234,
+   "date": "2026-04-16",
+   "overview": "An unassuming substitute sheriff with a troubled past responds to a bank robbery in a small, sleepy town and unknowingly uncovers something far more explosive."
+  },
+  {
+   "q": "Resident Evil",
+   "id": 1423191,
+   "type": "movie",
+   "name": "Resident Evil",
+   "poster": "/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
+   "backdrop": "/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+   "vote": 7.5,
+   "date": "2026-09-16",
+   "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos."
+  },
+  {
+   "q": "Primetime",
+   "id": 1375441,
+   "type": "movie",
+   "name": "Primetime",
+   "poster": "/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+   "backdrop": "/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
+   "vote": 6.8,
+   "date": "2026-09-23",
+   "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice."
+  },
+  {
+   "q": "Verity",
+   "id": 1283515,
+   "type": "movie",
+   "name": "Verity",
+   "poster": "/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
+   "backdrop": "/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
+   "vote": 6.978,
+   "date": "2026-09-30",
+   "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy."
+  }
+ ],
+ "vq": {
+  "det": {
+   "name": "VisionQuest",
+   "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+   "backdrop": "/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
+   "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "status": "Returning Series",
+   "seasons": 1,
+   "eps": 8,
+   "runtime": [],
+   "vote": 8.659,
+   "votes": 264,
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Drama"
+   ],
+   "type": "Miniseries",
+   "created": [
+    "Terry Matalas"
+   ],
+   "networks": [
+    {
+     "name": "Disney+",
+     "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+    }
+   ]
+  },
+  "cast": [
+   {
+    "name": "Paul Bettany",
+    "role": "Vision",
+    "img": "/awlH20l93cgHOIDPNP6FCnGuIJy.jpg",
+    "eps": 8
+   },
+   {
+    "name": "James Spader",
+    "role": "Ultron",
+    "img": "/3gurW3OgDOD4hcqDfgcqUnoNg34.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Ruaridh Mollica",
+    "role": "Thomas",
+    "img": "/ArI6IyrJWtHHogUWtu3UmyOiPlU.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Todd Stashwick",
+    "role": "Paladin",
+    "img": "/seKRXV2HMS36ip4SfQq6PLRiLL2.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Lauren Morais",
+    "role": "Lisa Molinari",
+    "img": "/7Eur3EddzlvXTYzKAGkRmo87xcS.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Orla Brady",
+    "role": "F.R.I.D.A.Y.",
+    "img": "/wjo8xposTE0HenFopy6KELCWoD0.jpg",
+    "eps": 8
+   }
+  ],
+  "crew": [
+   {
+    "name": "Francesca Morgan",
+    "job": "Draughtsman",
+    "img": null
+   },
+   {
+    "name": "Maisie Robinson",
+    "job": "Graphic Designer",
+    "img": null
+   },
+   {
+    "name": "Magda Kronenber-Seweryn",
+    "job": "Draughtsman",
+    "img": null
+   },
+   {
+    "name": "Romain Hémeray",
+    "job": "Concept Artist",
+    "img": null
+   },
+   {
+    "name": "Lou-Lilâ Masson-Lacroix",
+    "job": "Assistant Set Decoration",
+    "img": null
+   }
+  ],
+  "season": {
+   "name": "Miniseries",
+   "overview": "The Vision, rebooted and having escaped from those who sought to weaponize him, has been in hiding. Searching for new meaning, he consults the AI personas embedded in his programming, including Friday, Edith, Jarvis, and the infamous Ultron. His discreet existence ends when a bounty placed on his head thrusts him on the run with Thomas Shepherd, a mysterious boy who may be Vision's son reincarnate. As Vision evades capture, he must confront his nature, resist Ultron's influence, and unravel the enigma that is his young companion if he's to survive.",
+   "date": "2026-10-13",
+   "poster": "/mKOj29RCB0pNqnXL3CTlMLPUWNg.jpg",
+   "vote": 7.6,
+   "eps": [
+    {
+     "n": 1,
+     "name": "No Strings",
+     "date": "2026-10-13",
+     "runtime": 56,
+     "vote": 7.4,
+     "still": "/zNV1OOF71fzTYand5duFx3uaWlE.jpg",
+     "overview": "Vision embarks on a journey of self-discovery and finds himself haunted by a deadly force."
+    },
+    {
+     "n": 2,
+     "name": "Theseus",
+     "date": "2026-10-13",
+     "runtime": 48,
+     "vote": 7.5,
+     "still": "/sPFlMWA0YzOfuwys7BumrOJP5HR.jpg",
+     "overview": "Vision comes face to face with his assailant while investigating whether Tommy Shepherd is his son."
+    },
+    {
+     "n": 3,
+     "name": "Reboot",
+     "date": "2026-10-20",
+     "runtime": 54,
+     "vote": 7.3,
+     "still": "/u2YwlI82Nm6pM3jFijt00lxY2Be.jpg",
+     "overview": "Vision and Tommy Shepherd join forces in order to survive while a terrifying killer strikes again."
+    },
+    {
+     "n": 4,
+     "name": "Malware",
+     "date": "2026-10-20",
+     "runtime": 51,
+     "vote": 7.8,
+     "still": "/6eVHqUOPEe1CIbvg4Dx6H4awFBR.jpg",
+     "overview": "As Vision confronts a new enemy, Ultron and Tommy Shepherd come face to face."
+    },
+    {
+     "n": 5,
+     "name": "Firewall",
+     "date": "2026-10-27",
+     "runtime": 48,
+     "vote": 7.611,
+     "still": "/6aBaiK5WPQrJ5L5cyBXJQwu4iGE.jpg",
+     "overview": "Ultron and Jocasta join forces. Lisa comes to Vision's aid to help him evade capture."
+    },
+    {
+     "n": 6,
+     "name": "Deadlock",
+     "date": "2026-10-27",
+     "runtime": 57,
+     "vote": 7.9,
+     "still": "/6R8uiUzWH4ht7EFhDgwH4u0wZxc.jpg",
+     "overview": "Vision and Paladin form an uneasy alliance as Thomas finally learns the truth about his past."
+    },
+    {
+     "n": 7,
+     "name": "Immolation",
+     "date": "2026-11-03",
+     "runtime": 65,
+     "vote": 7.925,
+     "still": "/xesTTPkIZoKYAMT0PH0jl49hMaK.jpg",
+     "overview": "Vision and Ultron's twisted relationship comes undone."
+    },
+    {
+     "n": 8,
+     "name": "Forever",
+     "date": "2026-11-10",
+     "runtime": null,
+     "vote": 0,
+     "still": "/5nSEYG0U4boOIYeMUBUE8MQjAk.jpg",
+     "overview": ""
+    }
+   ]
+  },
+  "providers": {
+   "link": "https://www.themoviedb.org/tv/213375-visionquest/watch?locale=ES",
+   "flatrate": [
+    {
+     "logo_path": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+     "provider_id": 337,
+     "provider_name": "Disney Plus",
+     "display_priority": 3
+    }
+   ]
+  }
+ },
+ "providers": [
+  {
+   "name": "Netflix",
+   "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+  },
+  {
+   "name": "Amazon Prime Video",
+   "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+  },
+  {
+   "name": "Apple TV",
+   "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+  },
+  {
+   "name": "Disney Plus",
+   "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+  },
+  {
+   "name": "Movistar Plus+",
+   "logo": "/53JKjrhdG4z8DQ4pfdbHoAgPWeO.png"
+  },
+  {
+   "name": "SkyShowtime",
+   "logo": "/ube1pVpP3FklRkeyQjlDkkC3tL2.png"
+  },
+  {
+   "name": "HBO Max",
+   "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+  }
+ ]
+}
