@@ -1,0 +1,56 @@
+export const PLAY_URL = 'https://play.google.com/store/apps/details?id=me.smt.mediaddict';
+
+export const landing = {
+  es: {
+    title: 'Mediaddict: ¿por qué episodio ibas?',
+    desc: 'App para Android para seguir tus películas, series y anime con Trakt, Simkl o sin cuenta. Calendario, avisos de estreno y tus datos en tu móvil.',
+    nav: { features: 'Funciones', data: 'Tus datos', faq: 'Preguntas' },
+    play: { small: 'Disponible en', name: 'Google Play' },
+    s1: { h1a: '¿Por qué episodio', h1b: 'ibas?', lead: 'Mediaddict lo sabe. Y también qué se estrena esta semana y en qué plataforma.', hint: 'Toca el ✓ del móvil', tiny: 'Gratis · Sin anuncios · Para Android' },
+    s2: { time: '21:00', h2a: 'Hoy se estrena', h2b: 'tu serie.', lead: 'Te lo decimos en una notificación, con el episodio y la plataforma. Sin abrir nada.' },
+    s3: { h2a: 'Marcas el 4.', h2b: 'La temporada', h2c: 'se entera.', lead: 'Cada episodio, cada temporada y quién sale en ella. Toca la ficha del móvil y navega: es la app de verdad.' },
+    s4: { words: ['Pendiente', 'En curso', 'Visto'], keys: ['Pendiente', 'En curso', 'Visto'], lead: 'Tu lista, ordenada como piensas. Con tu cuenta de Trakt, con la de Simkl o sin ninguna.' },
+    float: { a: ['Aviso', 'estreno hoy'], b: ['Visto', 'un toque'] },
+    palette: 'Tu app, tus colores',
+    data: {
+      h2a: 'Tu biblioteca', h2b: 'es tuya.',
+      lead: 'Vive en tu móvil. No hay cuenta de Mediaddict, ni servidores nuestros con tu lista, ni anuncios. Si quieres copia de seguridad, en una carpeta o en tu propio Drive.',
+      fine: 'Para saber cuántos móviles usan la app o sufren un fallo, Firebase (de Google) genera un identificador de instalación y recibimos informes de fallos y estadísticas de uso. No enviamos el contenido de tu lista ni los datos de tus cuentas. Se apagan en Ajustes.',
+    },
+    faqTitle: 'Preguntas',
+    faq: [
+      ['¿Es gratis?', 'Sí, y sin anuncios.'],
+      ['¿Necesito una cuenta?', 'No. Puedes usarla sin cuenta, con tu biblioteca en el móvil, o conectar Trakt o Simkl cuando quieras.'],
+      ['¿Qué pasa con mis datos?', 'Viven en tu móvil. Si quieres copia de seguridad, en una carpeta o en tu propio Google Drive. El detalle completo está en la política de privacidad.', true],
+      ['¿Hay versión para iPhone?', 'Ahora mismo, sólo Android.'],
+      ['¿De dónde sale la información de series y películas?', 'De TMDB, y las plataformas donde verlas, de JustWatch. Si conectas tu cuenta, tu historial viene de Trakt o de Simkl.'],
+    ],
+    logos: 'La información viene de',
+  },
+  en: {
+    title: 'Mediaddict: which episode were you on?',
+    desc: 'Android app to track your movies, TV shows and anime with Trakt, Simkl or no account. Calendar, release alerts and your data on your phone.',
+    nav: { features: 'Features', data: 'Your data', faq: 'FAQ' },
+    play: { small: 'Get it on', name: 'Google Play' },
+    s1: { h1a: 'Which episode', h1b: 'were you on?', lead: 'Mediaddict knows. And what premieres this week, and on which platform.', hint: 'Tap the ✓ on the phone', tiny: 'Free · No ads · For Android' },
+    s2: { time: '9 PM', h2a: 'Your show', h2b: 'premieres tonight.', lead: 'We tell you with a notification, with the episode and the platform. No need to open anything.' },
+    s3: { h2a: 'You mark number 4.', h2b: 'The season', h2c: 'finds out.', lead: "Every episode, every season and who is in it. Tap the phone's detail page and explore: it's the real app." },
+    s4: { words: ['Pending', 'In progress', 'Watched'], keys: ['Pendiente', 'En curso', 'Visto'], lead: 'Your list, sorted the way you think. With your Trakt account, your Simkl account, or none.' },
+    float: { a: ['Alert', 'premiere today'], b: ['Watched', 'one tap'] },
+    palette: 'Your app, your colors',
+    data: {
+      h2a: 'Your library', h2b: 'is yours.',
+      lead: 'It lives on your phone. No Mediaddict account, no servers of ours holding your list, no ads. For a backup, a folder or your own Drive.',
+      fine: "To know how many phones use the app or crash, Firebase (by Google) creates an installation identifier and we receive crash reports and usage statistics. We don't send the contents of your list or your account details. You can turn them off in Settings.",
+    },
+    faqTitle: 'FAQ',
+    faq: [
+      ['Is it free?', 'Yes, and with no ads.'],
+      ['Do I need an account?', 'No. You can use it with no account and your library on your phone, or connect Trakt or Simkl whenever you like.'],
+      ['What happens to my data?', 'It lives on your phone. For a backup, a folder or your own Google Drive. The full details are in the privacy policy.', true],
+      ['Is there an iPhone version?', 'Android only, for now.'],
+      ['Where does the movie and show information come from?', 'From TMDB, and where to watch from JustWatch. If you connect your account, your history comes from Trakt or Simkl.'],
+    ],
+    logos: 'Information comes from',
+  },
+} as const;

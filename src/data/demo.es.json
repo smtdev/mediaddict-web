@@ -1,0 +1,639 @@
+{
+ "tv": [
+  {
+   "q": "Will Trent",
+   "id": 208569,
+   "type": "tv",
+   "name": "Will Trent, Agente Especial",
+   "poster": "/g3uXy5GZFKJflyHWEnU827q6qqM.jpg",
+   "backdrop": "/9pGzG5CYx2XM8JFFQvMk9Z3z9ze.jpg",
+   "vote": 7.313,
+   "date": "2023-01-03",
+   "overview": "El agente especial Will Trent del Gabinete de Investigación de Georgia (GBI) fue abandonado al nacer y creció en el complicado ambiente de las casas de acogida de Atlanta. Sin embargo, a día de hoy, está decidido a utilizar su inimitable agudeza para asegurarse de que a nadie lo abandonan como le hicieron a él. Will Trent cuenta con la tasa de resolución más alta del gabinete."
+  },
+  {
+   "q": "Your Friends & Neighbors",
+   "id": 241609,
+   "type": "tv",
+   "name": "Vicios ocultos",
+   "poster": "/nnhMYhoIZl997vJ03YWkulhUlQO.jpg",
+   "backdrop": "/e0mloha4ZQfLVZj0nsUtU7AoRs4.jpg",
+   "vote": 7.765,
+   "date": "2025-04-10",
+   "overview": "Cuando un titán financiero se encuentra de repente divorciado y en paro, empieza a robar a sus vecinos ricos para mantenerse a flote. Curiosamente, robar a su círculo social le entusiasma, pero poco a poco, va enredándose en una red mortal."
+  },
+  {
+   "q": "Tracker",
+   "id": 211288,
+   "type": "tv",
+   "name": "Tracker",
+   "poster": "/5PXqBrCQ0FdDDtFCVhUyLDSwZYF.jpg",
+   "backdrop": "/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
+   "vote": 7.6,
+   "date": "2024-02-11",
+   "overview": "Colter Shaw recorre el país en su vieja autocaravana para ayudar a la policía y a ciudadanos particulares a resolver crímenes y localizar a personas desaparecidas, hasta que su último caso lo cambia todo."
+  },
+  {
+   "q": "SPY x FAMILY",
+   "id": 120089,
+   "type": "tv",
+   "name": "SPY x FAMILY",
+   "poster": "/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+   "backdrop": "/lysUnU6V0VfcthDbviuVlIqgHOR.jpg",
+   "vote": 8.492,
+   "date": "2022-04-09",
+   "overview": "El espía \"Twilight\" recibe la misión de infiltrarse en la familia de un líder político. Para ello, crea una falsa familia con una hija que lee mentes y una esposa asesina, mientras ocultan sus secretos y viven juntos en una aventura peligrosa para mantener la paz mundial."
+  },
+  {
+   "q": "ONE PIECE",
+   "id": 111110,
+   "type": "tv",
+   "name": "ONE PIECE",
+   "poster": "/gCZ18cl7Pc4tgiwMPWHTgjABrhy.jpg",
+   "backdrop": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+   "vote": 8.1,
+   "date": "2023-08-31",
+   "overview": "El joven pirata Monkey D. Luffy y su variopinta tripulación emprenden un viaje épico en busca de un tesoro."
+  },
+  {
+   "q": "Nippon Sangoku",
+   "id": 312474,
+   "type": "tv",
+   "name": "Nippon Sangoku",
+   "poster": "/8XZoZBEAZ8Ktsq6PYJkReIpUhyv.jpg",
+   "backdrop": "/seKQ4siIyJZAt3Xubijt5iXfjvA.jpg",
+   "vote": 8.7,
+   "date": "2026-04-05",
+   "overview": "En un Japón de un futuro cercano donde la civilización ha retrocedido debido a la guerra nuclear, los desastres naturales y un gobierno corrupto. La nación se fractura en tres, sumergiéndose en una nueva era de Tres Reinos mientras cada uno lucha por la supremacía. Aoteru Misumi, antes un oscuro burócrata local, fija su objetivo en la reunificación de Japón. Armado con vastos conocimientos y una elocuencia excepcional, asciende gradualmente."
+  },
+  {
+   "q": "Ranma 1/2",
+   "id": 259140,
+   "type": "tv",
+   "name": "Ranma1/2",
+   "poster": "/xvgflNHdEClMcAR9RuPtJiPDPkp.jpg",
+   "backdrop": "/xvD9urN8lUtWw5fm4a87Rl3dCZn.jpg",
+   "vote": 8.077,
+   "date": "2024-10-06",
+   "overview": "Akane Tendô conoce a su prometido, Ranma Saotome, un prodigio de las artes marciales con una peculiaridad: se transforma mágicamente en chica al tocar el agua fría."
+  },
+  {
+   "q": "The Apothecary Diaries",
+   "id": 220542,
+   "type": "tv",
+   "name": "Los diarios de la boticaria",
+   "poster": "/bYPACmBf5Nomw3I2IEGGTNwgvWj.jpg",
+   "backdrop": "/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
+   "vote": 8.665,
+   "date": "2023-10-22",
+   "overview": "Maomao llevaba una vida tranquila ayudando a su padre, un boticario. Todo cambia el día que la venden como sirvienta al palacio del emperador, pero la vida entre nobles y realeza no es para ella. Cuando la familia imperial enferma, ella decide intervenir para encontrar una cura, lo que llama la atención de Jinshi, un guapo oficial de palacio que decide ascenderla como dama de compañía de una de las concubinas del emperador. ¡Su habilidad con la medicina la hará conocida en el palacio por ayudar a resolver muchos misterios!"
+  },
+  {
+   "q": "Scrubs",
+   "id": 4556,
+   "type": "tv",
+   "name": "Scrubs",
+   "poster": "/w7ri7byEYLdciSZOwWHj6TUAX7j.jpg",
+   "backdrop": "/rRKTV46DKVP8AfdCQDyQMAtJeCl.jpg",
+   "vote": 8.172,
+   "date": "2001-10-02",
+   "overview": "Scrubs es una serie de drama-comedia emitida entre octubre de 2001 y marzo de 2010. Sigue las vidas de los empleados del ficticio hospital universitario del Sagrado Corazón, donde no solo estudiarán medicina, sino que también aprenderán los caminos de la amistad y de la vida."
+  },
+  {
+   "q": "Nobody Wants This",
+   "id": 250923,
+   "type": "tv",
+   "name": "Nadie quiere esto",
+   "poster": "/kiMhxXmkmqtpeY9jB8il3KajrDu.jpg",
+   "backdrop": "/77sozyYenyY1JraK6YzLfDlTMpp.jpg",
+   "vote": 7.3,
+   "date": "2024-09-26",
+   "overview": "Una agnóstica podcastera sobre sexo y un rabino recién separado se enamoran, pero ¿sobrevivirá su relación a unas vidas tan radicalmente opuestas y a sus entrometidas familias?"
+  },
+  {
+   "q": "VisionQuest",
+   "id": 213375,
+   "type": "tv",
+   "name": "VisionQuest",
+   "poster": "/hXlvDq98VMg3WJWTDzwcPeMk39A.jpg",
+   "backdrop": "/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
+   "vote": 8.649,
+   "date": "2026-10-13",
+   "overview": "Tras reiniciarse, Visión ha estado huyendo de quienes pretenden convertirlo en un arma y ahora se encuentra escondido. Buscando un nuevo propósito, pide consejo a las distintas IA que están integradas en su programación, incluidos Friday, Edith, Jarvis y el infame Ultrón. Su discreta existencia llega a su fin cuando una recompensa por su cabeza le obliga a huir junto a Thomas Shepard, un misterioso joven que podría ser la reencarnación de su hijo. Mientras evita ser capturado, Visión tendrá que enfrentarse a su propia naturaleza, resistirse a la influencia de Ultrón y desentrañar el misterio que rodea a su joven compañero si quiere sobrevivir."
+  },
+  {
+   "q": "Tougen Anki",
+   "id": 253811,
+   "type": "tv",
+   "name": "Tougen Anki",
+   "poster": "/gphVuQrPLw5EaHr7xyutiYUHSU8.jpg",
+   "backdrop": "/k7h9p81H6X6TGV70TgOp4TmjXco.jpg",
+   "vote": 7.7,
+   "date": "2025-07-11",
+   "overview": "Los descendientes de Momotarou y Oni han tenido una rivalidad de siglos. Shiki Ichinose, un adolescente rebelde, descubre que su padre adoptivo, Tsuyoshi, ha estado ocultando su origen Oni. Cuando un Momotarou llega buscando a Shiki, Tsuyoshi muere protegiéndolo, revelando la verdad y despertando el poder Oni de Shiki, quien se transforma en un monstruo lleno de furia.  Atraído por este estallido, Naito Mudano, un profesor Oni, lo lleva a la Academia Rakshasa, donde Shiki debe aprender a controlar su naturaleza impulsiva y luchar contra su sangre demoníaca antes de buscar venganza."
+  },
+  {
+   "q": "Sheriff Country",
+   "id": 253391,
+   "type": "tv",
+   "name": "Sheriff Country",
+   "poster": "/hBrbAYp4SGMkNYZGPeFhEd0xW7Z.jpg",
+   "backdrop": "/mhTIUNa9BI019NuXrUBYYCkZ199.jpg",
+   "vote": 7.352,
+   "date": "2025-10-17",
+   "overview": "Mickey Fox investiga actividades criminales y patrulla las calles de la pequeña ciudad de Edgewater mientras lidia con su padre ex-convicto y un misterioso incidente que involucra a su caprichosa hija."
+  },
+  {
+   "q": "Marshals",
+   "id": 290856,
+   "type": "tv",
+   "name": "Marshals: Una historia de Yellowstone",
+   "poster": "/eYY0w7tyAQrwoAT6fpw8gIxeWhv.jpg",
+   "backdrop": "/yGJGwt7DdIWTUXuahLfhcH1gi7G.jpg",
+   "vote": 7.966,
+   "date": "2026-03-01",
+   "overview": "Kayce Dutton, un ex SEAL de la Marina, deja el rancho Yellowstone para unirse a los U.S. Marshals. Utiliza sus habilidades como vaquero y militar para luchar contra el crimen en Montana mientras lidia con los lazos familiares y el desgaste mental de las fuerzas del orden."
+  },
+  {
+   "q": "Percy Jackson and the Olympians",
+   "id": 103540,
+   "type": "tv",
+   "name": "Percy Jackson y los dioses del Olimpo",
+   "poster": "/zVcpkAw47UmTd2AXIhl3gOpeguT.jpg",
+   "backdrop": "/sAxx25ijwYQ8xsT56wu2IzvIRss.jpg",
+   "vote": 7.3,
+   "date": "2023-12-19",
+   "overview": "Percy Jackson emprende una peligrosa misión. Dejando atrás a los monstruos y burlando a los dioses, recorrerá Estados Unidos para devolver el Rayo Maestro de Zeus y evitar la guerra. Con ayuda de sus compañeros de misión, Annabeth y Grover, el viaje de Percy lo acercará más a las respuestas que busca: cómo encajar en un mundo que le es ajeno y si logrará entender su destino."
+  },
+  {
+   "q": "Mandy's First Marriage",
+   "id": 243875,
+   "type": "tv",
+   "name": "El primer matrimonio de Georgie y Mandy",
+   "poster": "/zsin2cqTLzXaiRtPaT3CSkCGXZy.jpg",
+   "backdrop": "/h927CLfeAjiy0MNKRxWZgEq7bHR.jpg",
+   "vote": 8.038,
+   "date": "2024-10-17",
+   "overview": "Georgie y Mandy crían a su joven familia en Texas mientras enfrentan los desafíos de la edad adulta, la crianza de su hija y el matrimonio."
+  },
+  {
+   "q": "9-1-1: Nashville",
+   "id": 284838,
+   "type": "tv",
+   "name": "9-1-1: Nashville",
+   "poster": "/63JFLM8L8H1Jlp62kZGPvSKc50j.jpg",
+   "backdrop": "/ubqZEVCDp86myrZwJpyNwocLrce.jpg",
+   "vote": 8,
+   "date": "2025-10-09",
+   "overview": "Sigue a los heroicos socorristas, así como a su saga familiar de poder y glamour, en una de las ciudades más diversas y dinámicas de Estados Unidos: Nashville, Tennessee."
+  },
+  {
+   "q": "Elsbeth",
+   "id": 226285,
+   "type": "tv",
+   "name": "Elsbeth",
+   "poster": "/7lnNSbT90qwtrn1h9TvEkVFMz2P.jpg",
+   "backdrop": "/t7kDn4X7JpRnBlKN0vPVy5RXZlA.jpg",
+   "vote": 6.679,
+   "date": "2024-02-29",
+   "overview": "Después de su exitosa carrera en Chicago, Elsbeth Tascioni, una abogada astuta pero poco convencional, utiliza su singular punto de vista para hacer observaciones únicas y arrinconar a criminales brillantes junto con la policía de Nueva York."
+  },
+  {
+   "q": "Grey's Anatomy",
+   "id": 1416,
+   "type": "tv",
+   "name": "Anatomía de Grey",
+   "poster": "/qn9yYUX73MqHRoivOiq1sAhcdbG.jpg",
+   "backdrop": "/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
+   "vote": 8.202,
+   "date": "2005-03-27",
+   "overview": "La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo sea de esos que te hacen la vida imposible. Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas más duro de la Facultad de Medicina de Harvard. Y ella lo va a comprobar. Pero no estará sola. Un elenco de compañeros de promoción tendrán que superar la misma prueba. Ahora están en el mundo real, son doctores del hospital. Y en un mundo donde la experiencia en el trabajo puede ser un factor de vida o muerte, todos ellos tendrán que lidiar con los altibajos de sus vidas personales."
+  },
+  {
+   "q": "Mobland",
+   "id": 247718,
+   "type": "tv",
+   "name": "Tierra de mafiosos",
+   "poster": "/xOBnonAeHiZuiTPOLBFMFSPI6jy.jpg",
+   "backdrop": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+   "vote": 8.616,
+   "date": "2025-03-30",
+   "overview": "El poder está en juego cuando los Harrigan y los Stevenson, dos familias criminales londinenses en guerra, se enfrentan en una batalla de matar o morir que amenaza con derribar imperios y arruinar vidas. Atrapado en el fuego cruzado está Harry Da Souza, el astuto \"solucionador\" tan peligroso como atractivo, que sabe muy bien dónde están las lealtades cuando las fuerzas opuestas chocan. A medida que los reinos se enfrentan, se cruzarán las líneas, y la única gracia salvadora es una garantía de vida o muerte: la familia por encima de todo."
+  },
+  {
+   "q": "South Park",
+   "id": 2190,
+   "type": "tv",
+   "name": "South Park",
+   "poster": "/w9Kz3tZsEn95F8WHh6ydFXaQIFO.jpg",
+   "backdrop": "/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+   "vote": 8.333,
+   "date": "1997-08-13",
+   "overview": "South Park es una serie de televisión estadounidense de animación, creada por Trey Parker y Matt Stone para el canal Comedy Central. Está dirigida al público adulto y se caracteriza por satirizar con humor negro la sociedad, actualidad y cultura estadounidense a través de las historias y situaciones surrealistas que les suceden a sus protagonistas, cuatro niños (Stan, Kyle, Cartman y Kenny) residentes en un pueblo ficticio de Colorado que se llama South Park."
+  },
+  {
+   "q": "The Big Bang Theory",
+   "id": 1418,
+   "type": "tv",
+   "name": "Big Bang",
+   "poster": "/2bDQWCvFxRGhdvThTJvVxueEoLl.jpg",
+   "backdrop": "/rwYvhVv0vwbulMwxOfEsuAr1JrT.jpg",
+   "vote": 7.929,
+   "date": "2007-09-24",
+   "overview": "Leonard y Sheldon son dos físicos superdotados que comparten piso. Ambos son capaces de calcular las probabilidades de existencia de vida en otros planetas, pero son incapaces de relacionarse con los demás y especialmente con las chicas. Penny, su nueva vecina, es el polo opuesto a ellos, por lo que su llegada al edificio alterará la tranquila vida sentimental de Leonard y el desorden obsesivo-compulsivo de Sheldon."
+  },
+  {
+   "q": "Friends",
+   "id": 1668,
+   "type": "tv",
+   "name": "Friends",
+   "poster": "/rkKCSlr8OH5tbKEdgwtzvEiemrl.jpg",
+   "backdrop": "/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg",
+   "vote": 8.406,
+   "date": "1994-09-22",
+   "overview": "Las aventuras de seis jóvenes neoyorquinos unidos por una divertida amistad. Entre el amor, el trabajo y la familia, comparten sus alegrías y preocupaciones en el Central Perk, su café favorito."
+  }
+ ],
+ "movie": [
+  {
+   "q": "Wicked: For Good",
+   "id": 967941,
+   "type": "movie",
+   "name": "Wicked Parte II",
+   "poster": "/xBfI3jboJ8zGXpoerp8Xk9ku9JN.jpg",
+   "backdrop": "/cGbPBHKSFO7hSIjxkb3KOaGdOep.jpg",
+   "vote": 6.565,
+   "date": "2025-11-19",
+   "overview": "Mientras la multitud alza su clamor contra la Bruja Malvada, Glinda y Elphaba deberán unirse una vez más. Con su singular amistad convertida en el punto de inflexión de su futuro, tendrán que mirarse a los ojos con honestidad y compasión para afrontar su transformación personal y cambiar el destino de todo Oz."
+  },
+  {
+   "q": "Unabomber",
+   "id": 1492640,
+   "type": "movie",
+   "name": "Unabomber",
+   "poster": "/crV6ba2FVfHW64PzjJehMxUj9e7.jpg",
+   "backdrop": "/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
+   "vote": 6.573,
+   "date": "2026-09-25",
+   "overview": "Un estudiante de Harvard se convierte en 'Unabomber' tras someterse a una serie de experimentos psicológicos. Años más tarde, la investigación de un agente del FBI revela cómo su pasado determinó la campaña mortal que se cobró la vida de tres personas e hirió a otras veintitrés entre 1978 y 1995."
+  },
+  {
+   "q": "One Night Only",
+   "id": 1433367,
+   "type": "movie",
+   "name": "Una noche al año",
+   "poster": "/85Fvq0lZ4hHTOj0KwAWfPlv8cFe.jpg",
+   "backdrop": "/3afHil7EVm655wO2NS6RHxuyicE.jpg",
+   "vote": 6.401,
+   "date": "2026-08-06",
+   "overview": "Dos extraños tratan de encontrar a alguien con quien acostarse en la única noche del año en la que es legal el sexo prematrimonial."
+  },
+  {
+   "q": "Office Romance",
+   "id": 1358005,
+   "type": "movie",
+   "name": "Turbulencia en la oficina",
+   "poster": "/46fpIuAydvL4wjGsH9zR4iLGgE0.jpg",
+   "backdrop": "/1N5yz1IDw6Ci8le1YgeM6xtBijA.jpg",
+   "vote": 6.414,
+   "date": "2026-06-04",
+   "overview": "Jennifer Lopez y Brett Goldstein protagonizan esta comedia romántica sobre un idilio secreto entre dos adictos al trabajo y sus problemas cuando deciden escuchar al corazón."
+  },
+  {
+   "q": "The Furious",
+   "id": 1280738,
+   "type": "movie",
+   "name": "The Furious",
+   "poster": "/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+   "backdrop": "/i0eR9O1FnCgBm1cH8WwqxGbAXMS.jpg",
+   "vote": 8.241,
+   "date": "2026-06-10",
+   "overview": "Rainy, hija del experto en artes marciales Wang Wei, es secuestrada por una red de tráfico de menores. En un frenético intento de recuperarla, el padre se lanza a la guerra, enfrentándose a numerosos obstáculos mientras lucha contra criminales y policías corruptos. En el camino conoce a Navin, un periodista en busca de su esposa desaparecida. Ambos despliegan sus habilidades de combate mientras aprenden las virtudes de la confianza mutua."
+  },
+  {
+   "q": "Supergirl",
+   "id": 1081003,
+   "type": "movie",
+   "name": "Supergirl",
+   "poster": "/Ao9ucdnMaBhNt528Z5S4Wxovgnf.jpg",
+   "backdrop": "/heZQmyNvkH236ha2M3JckdUQQqb.jpg",
+   "vote": 6.635,
+   "date": "2026-06-24",
+   "overview": "Kara Zor-El es una heroína errabunda que decide aliarse a regañadientes con un compañero improbable para comenzar un viaje épico e interestelar de venganza y justicia, en el cual deberá decidir si su fuerza sirve para destruir o para proteger."
+  },
+  {
+   "q": "Now You See Me: Now You Don't",
+   "id": 425274,
+   "type": "movie",
+   "name": "Ahora me ves 3",
+   "poster": "/Aspr0HcItNVbgLC8cV0ZAO0EBcc.jpg",
+   "backdrop": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+   "vote": 6.435,
+   "date": "2025-11-12",
+   "overview": "Los Cuatro Jinetes regresan junto a una nueva generación de ilusionistas en una extraordinaria aventura que contiene giros asombrosos, sorpresas alucinantes y trucos de magia nunca vistos en la gran pantalla."
+  },
+  {
+   "q": "Avatar: Fire and Ash",
+   "id": 83533,
+   "type": "movie",
+   "name": "Avatar: Fuego y ceniza",
+   "poster": "/4n1U0Mwn7djux6VKNYDRWPgS2x6.jpg",
+   "backdrop": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+   "vote": 7.646,
+   "date": "2025-12-17",
+   "overview": "Jake Sully y Neytiri enfrentan una nueva amenaza en Pandora: los Ash People, una tribu Na'vi violenta y sedienta de poder, liderada por la implacable Varang. Tras la devastadora guerra contra la RDA y la pérdida de su hijo mayor, la familia de Jake deberá luchar por su supervivencia y el futuro de Pandora en un conflicto que llevará a los personajes a sus límites emocionales y físicos. Con nuevos y antiguos aliados, esta épica visual y emocional redefine el destino de un mundo al borde del abismo."
+  },
+  {
+   "q": "Good Luck, Have Fun, Don't Die",
+   "id": 1119449,
+   "type": "movie",
+   "name": "Buena suerte, pásalo bien, no mueras",
+   "poster": "/vzJkrTx01ol7FTIhzS50pms5xEG.jpg",
+   "backdrop": "/drRxbu2OHG0DEENptZ8wI5f0uEU.jpg",
+   "vote": 7.111,
+   "date": "2026-02-13",
+   "overview": "Un hombre que afirma venir del futuro llega a un pequeño restaurante en Los Ángeles. Su misión: reclutar a los humanos descontentos para que, en el transcurso de una noche, formen parte de una misión global: detener a una inteligencia artificial que se ha vuelto rebelde y amenaza la supervivencia del mundo."
+  },
+  {
+   "q": "Remarkably Bright Creatures",
+   "id": 1330021,
+   "type": "movie",
+   "name": "Criaturas luminosas",
+   "poster": "/afCyi1YlcSq2BH14UJmFbqzzJ65.jpg",
+   "backdrop": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+   "vote": 8.35,
+   "date": "2026-05-07",
+   "overview": "En este drama, basado en el bestseller homónimo, una viuda forja un vínculo con un pulpo muy listo y un joven a la deriva mientras trabaja de noche en un pequeño acuario."
+  },
+  {
+   "q": "The Super Mario Galaxy Movie",
+   "id": 1226863,
+   "type": "movie",
+   "name": "Super Mario Galaxy la película",
+   "poster": "/79EVB4qhyfrdlMgT8GIRAikdzsQ.jpg",
+   "backdrop": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+   "vote": 8.189,
+   "date": "2026-04-01",
+   "overview": "Secuela de 'Super Mario Bros: La película', basada en la saga 'Mario Galaxy'. Los hermanos Mario y Luigi y la princesa Peach emprenden una aventura hasta los confines del espacio y a través de la galaxia."
+  },
+  {
+   "q": "Normal",
+   "id": 1242332,
+   "type": "movie",
+   "name": "Normal",
+   "poster": "/vEv0XaKUajU6Z8LiMLmgTDGmNBM.jpg",
+   "backdrop": "/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
+   "vote": 7.235,
+   "date": "2026-04-16",
+   "overview": "Ulysses es un sheriff sustituto que llega al tranquilo y apartado pueblo de Normal, Minnesota, huyendo de un pasado turbulento. Sin embargo, cuando el banco local es asaltado, su investigación desencadena una serie de eventos que revelan que el pueblo esconde una oscura y profunda red criminal."
+  },
+  {
+   "q": "Resident Evil",
+   "id": 1423191,
+   "type": "movie",
+   "name": "Resident Evil",
+   "poster": "/vrLEVObLGbUinE4sC4Lqao2dK0E.jpg",
+   "backdrop": "/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+   "vote": 7.5,
+   "date": "2026-09-16",
+   "overview": "Película basada en la saga de videojuegos de Capcom del mismo nombre. En una reinvención totalmente nueva, el mensajero médico Bryan se ve inmerso en una carrera de acción sin descanso por la supervivencia, mientras el caos se desata a su alrededor."
+  },
+  {
+   "q": "Primetime",
+   "id": 1375441,
+   "type": "movie",
+   "name": "Primetime",
+   "poster": "/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+   "backdrop": "/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
+   "vote": 6.807,
+   "date": "2026-09-23",
+   "overview": "En 2006, Chris Hansen, presentador de *To Catch a Predator*, se propone hacer historia en la televisión."
+  },
+  {
+   "q": "Verity",
+   "id": 1283515,
+   "type": "movie",
+   "name": "Verity. La sombra de un engaño",
+   "poster": "/5j1YUuamobLACkzlkzvWfNuzFNg.jpg",
+   "backdrop": "/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
+   "vote": 6.981,
+   "date": "2026-09-30",
+   "overview": "Lowen Ashleigh es contratada como escritora fantasma por Jeremy Crawford para escribir las novelas de su esposa Verity, autora de bestsellers, impedida tras un accidente. Lowen descubre las inquietantes verdades de Verity mientras reside en casa de los Crawford para trabajar."
+  }
+ ],
+ "vq": {
+  "det": {
+   "name": "VisionQuest",
+   "overview": "Tras reiniciarse, Visión ha estado huyendo de quienes pretenden convertirlo en un arma y ahora se encuentra escondido. Buscando un nuevo propósito, pide consejo a las distintas IA que están integradas en su programación, incluidos Friday, Edith, Jarvis y el infame Ultrón. Su discreta existencia llega a su fin cuando una recompensa por su cabeza le obliga a huir junto a Thomas Shepard, un misterioso joven que podría ser la reencarnación de su hijo. Mientras evita ser capturado, Visión tendrá que enfrentarse a su propia naturaleza, resistirse a la influencia de Ultrón y desentrañar el misterio que rodea a su joven compañero si quiere sobrevivir.",
+   "backdrop": "/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
+   "poster": "/hXlvDq98VMg3WJWTDzwcPeMk39A.jpg",
+   "status": "Returning Series",
+   "seasons": 1,
+   "eps": 8,
+   "runtime": [],
+   "vote": 8.642,
+   "votes": 265,
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Drama"
+   ],
+   "type": "Miniseries",
+   "created": [
+    "Terry Matalas"
+   ],
+   "networks": [
+    {
+     "name": "Disney+",
+     "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+    }
+   ]
+  },
+  "cast": [
+   {
+    "name": "Paul Bettany",
+    "role": "Vision",
+    "img": "/awlH20l93cgHOIDPNP6FCnGuIJy.jpg",
+    "eps": 8
+   },
+   {
+    "name": "James Spader",
+    "role": "Ultron",
+    "img": "/3gurW3OgDOD4hcqDfgcqUnoNg34.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Ruaridh Mollica",
+    "role": "Thomas",
+    "img": "/ArI6IyrJWtHHogUWtu3UmyOiPlU.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Todd Stashwick",
+    "role": "Paladin",
+    "img": "/seKRXV2HMS36ip4SfQq6PLRiLL2.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Lauren Morais",
+    "role": "Lisa Molinari",
+    "img": "/7Eur3EddzlvXTYzKAGkRmo87xcS.jpg",
+    "eps": 8
+   },
+   {
+    "name": "Orla Brady",
+    "role": "F.R.I.D.A.Y.",
+    "img": "/wjo8xposTE0HenFopy6KELCWoD0.jpg",
+    "eps": 8
+   }
+  ],
+  "crew": [
+   {
+    "name": "Romain Hémeray",
+    "job": "Concept Artist",
+    "img": null
+   },
+   {
+    "name": "Sofia James",
+    "job": "Petty Cash Buyer",
+    "img": null
+   },
+   {
+    "name": "Will Hughes-Jones",
+    "job": "Production Design",
+    "img": "/tJ4Tl7WxGc2c4X3yxmUOowXs3DS.jpg"
+   },
+   {
+    "name": "Mark Molnar",
+    "job": "Concept Artist",
+    "img": null
+   },
+   {
+    "name": "Caterina Da Vià",
+    "job": "Assistant Art Director",
+    "img": null
+   }
+  ],
+  "season": {
+   "name": "Temporada 1",
+   "overview": "Con una recompensa por su cabeza, Visión debe enfrentarse a su propia naturaleza y resistir la influencia de Ultrón para sobrevivir.",
+   "date": "2026-10-13",
+   "poster": "/nNm8aY8OjAm0Lyn1khmoPNPNvmh.jpg",
+   "vote": 7.6,
+   "eps": [
+    {
+     "n": 1,
+     "name": "Sin ataduras",
+     "date": "2026-10-13",
+     "runtime": 56,
+     "vote": 7.4,
+     "still": "/zNV1OOF71fzTYand5duFx3uaWlE.jpg",
+     "overview": "Visión se embarca en un viaje de autodescubrimiento y acaba huyendo de una amenaza letal."
+    },
+    {
+     "n": 2,
+     "name": "Teseo",
+     "date": "2026-10-13",
+     "runtime": 48,
+     "vote": 7.5,
+     "still": "/sPFlMWA0YzOfuwys7BumrOJP5HR.jpg",
+     "overview": "Visión se encuentra con su misterioso atacante mientras investiga si Tommy Shepherd es su hijo."
+    },
+    {
+     "n": 3,
+     "name": "Reinicio",
+     "date": "2026-10-20",
+     "runtime": 54,
+     "vote": 7.3,
+     "still": "/u2YwlI82Nm6pM3jFijt00lxY2Be.jpg",
+     "overview": "Vision y Tommy Shepherd unen fuerzas para sobrevivir mientras un aterrador asesino vuelve a actuar."
+    },
+    {
+     "n": 4,
+     "name": "Malware",
+     "date": "2026-10-20",
+     "runtime": 51,
+     "vote": 7.686,
+     "still": "/6eVHqUOPEe1CIbvg4Dx6H4awFBR.jpg",
+     "overview": "Mientras Vision se enfrenta a un nuevo enemigo, Ultrón y Tommy Shepherd se encuentran cara a cara."
+    },
+    {
+     "n": 5,
+     "name": "Firewall",
+     "date": "2026-10-27",
+     "runtime": 48,
+     "vote": 7.661,
+     "still": "/6aBaiK5WPQrJ5L5cyBXJQwu4iGE.jpg",
+     "overview": "Ultrón y Jocasta unen fuerzas. Lisa acude al auxilio de Visión para evitar que lo capturen."
+    },
+    {
+     "n": 6,
+     "name": "Bloqueo",
+     "date": "2026-10-27",
+     "runtime": 57,
+     "vote": 7.9,
+     "still": "/6R8uiUzWH4ht7EFhDgwH4u0wZxc.jpg",
+     "overview": "Visión y Paladín forjan una incómoda alianza. Thomas descubre por fin la verdad de su pasado."
+    },
+    {
+     "n": 7,
+     "name": "Inmolación",
+     "date": "2026-11-03",
+     "runtime": 65,
+     "vote": 7.9,
+     "still": "/xesTTPkIZoKYAMT0PH0jl49hMaK.jpg",
+     "overview": "La disfuncional relación de Visión y Ultrón se desmorona."
+    },
+    {
+     "n": 8,
+     "name": "Episodio 8",
+     "date": "2026-11-10",
+     "runtime": null,
+     "vote": 0,
+     "still": "/5nSEYG0U4boOIYeMUBUE8MQjAk.jpg",
+     "overview": ""
+    }
+   ]
+  },
+  "providers": {
+   "link": "https://www.themoviedb.org/tv/213375-visionquest/watch?locale=ES",
+   "flatrate": [
+    {
+     "logo_path": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+     "provider_id": 337,
+     "provider_name": "Disney Plus",
+     "display_priority": 3
+    }
+   ]
+  }
+ },
+ "providers": [
+  {
+   "name": "Netflix",
+   "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+  },
+  {
+   "name": "Amazon Prime Video",
+   "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+  },
+  {
+   "name": "Apple TV",
+   "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+  },
+  {
+   "name": "Disney Plus",
+   "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+  },
+  {
+   "name": "Movistar Plus+",
+   "logo": "/53JKjrhdG4z8DQ4pfdbHoAgPWeO.png"
+  },
+  {
+   "name": "SkyShowtime",
+   "logo": "/ube1pVpP3FklRkeyQjlDkkC3tL2.png"
+  },
+  {
+   "name": "HBO Max",
+   "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+  }
+ ]
+}
