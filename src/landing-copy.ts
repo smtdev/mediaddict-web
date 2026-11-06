@@ -15,7 +15,7 @@ export const landing = {
     data: {
       h2a: 'Tu biblioteca', h2b: 'es tuya.',
       lead: 'Vive en tu móvil. No hay cuenta de Mediaddict, ni servidores nuestros con tu lista, ni anuncios. Si quieres copia de seguridad, en una carpeta o en tu propio Drive.',
-      fine: 'Para saber cuántos móviles usan la app o sufren un fallo, Firebase (de Google) genera un identificador de instalación y recibimos informes de fallos y estadísticas de uso. No enviamos el contenido de tu lista ni los datos de tus cuentas. Se apagan en Ajustes.',
+      fine: 'A partir de la versión 0.8.0, para saber cuántos móviles usan la app o sufren un fallo, Firebase (de Google) genera un identificador de instalación y recibimos informes de fallos y estadísticas de uso. No enviamos el contenido de tu lista ni los datos de tus cuentas. Se apagan en Ajustes.',
     },
     faqTitle: 'Preguntas',
     faq: [
@@ -41,7 +41,7 @@ export const landing = {
     data: {
       h2a: 'Your library', h2b: 'is yours.',
       lead: 'It lives on your phone. No Mediaddict account, no servers of ours holding your list, no ads. For a backup, a folder or your own Drive.',
-      fine: "To know how many phones use the app or crash, Firebase (by Google) creates an installation identifier and we receive crash reports and usage statistics. We don't send the contents of your list or your account details. You can turn them off in Settings.",
+      fine: "From version 0.8.0, to know how many phones use the app or crash, Firebase (by Google) creates an installation identifier and we receive crash reports and usage statistics. We don't send the contents of your list or your account details. You can turn them off in Settings.",
     },
     faqTitle: 'FAQ',
     faq: [

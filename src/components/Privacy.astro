@@ -69,12 +69,14 @@ const es = lang === 'es';
       <p>En concreto: usamos el acceso a Google Drive únicamente para guardar, listar, descargar y borrar las copias de seguridad de la app en su carpeta oculta, a petición tuya o con la copia automática que hayas activado. No transferimos esos datos a terceros, no los usamos para publicidad y ninguna persona los lee.</p>
 
       <h2 id="firebase">Informes de fallos y estadísticas de uso (Firebase)</h2>
+      <p class="note"><strong>Esta recogida empieza con la versión 0.8.0 de la app.</strong> Hasta entonces la app no envía informes ni estadísticas.</p>
       <p>Para saber cuántos móviles usan la app, qué versiones y cuándo falla, la app usa <strong>Firebase</strong>, un servicio de Google: <strong>Crashlytics</strong> (informes de fallos) y <strong>Analytics</strong> (estadísticas de uso).</p>
       <ul>
         <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Estadísticas de uso». Al apagarlos, la app deja de enviar esos datos.</li>
         <li><strong>Identificador de instalación:</strong> Firebase genera en tu móvil un identificador por instalación. No lo enlazamos con tu nombre ni con tus cuentas de Simkl o Trakt, y se renueva al reinstalar la app. Es un seudónimo, y la ley lo trata como dato personal.</li>
         <li><strong>Qué se envía con cada informe:</strong> modelo del móvil, versión de Android y de la app, idioma y país aproximado (deducido) y, si hay un fallo, la traza del error y el estado de la app en ese momento. Tu dirección IP llega a Google al enviarlo, como a cualquier servidor al que te conectas.</li>
         <li><strong>Estadísticas de uso:</strong> un conjunto cerrado de acciones (por ejemplo, que se abre la ficha de una película, serie o anime, o que se marca algo como visto y desde qué pantalla), la fuente activa (Simkl, Trakt o sin cuenta) y el tamaño aproximado de tu biblioteca, por tramos.</li>
+        <li><strong>Ver tu identificador y pedir ayuda:</strong> en Ajustes › Privacidad podrás ver tu identificador de instalación y usar «Informar de un error», que abre un correo a app@mediaddict.app con una plantilla (versión de la app, de Android, modelo del móvil e identificador).</li>
         <li><strong>Lo que no enviamos:</strong> el contenido de tu lista (títulos, notas, fechas) ni los datos de tus cuentas (usuario, correo, claves). Lo comprobamos con pruebas automáticas y filtramos los mensajes de error, pero el texto de un error de una librería podría llevar algún dato inesperado.</li>
       </ul>
       <p>Google trata estos datos según las <a href="https://firebase.google.com/support/privacy" rel="noopener">condiciones de privacidad de Firebase</a> y puede procesarlos en servidores fuera de la Unión Europea.</p>
@@ -108,7 +110,7 @@ const es = lang === 'es';
       <p>Si estás en el Espacio Económico Europeo (o en otra jurisdicción con derechos equivalentes), puedes pedir el <strong>acceso</strong>, la <strong>rectificación</strong>, la <strong>supresión</strong>, la <strong>limitación</strong>, la <strong>oposición</strong> y la <strong>portabilidad</strong> de tus datos, y retirar tu consentimiento cuando se base en él.</p>
       <ul>
         <li><strong>Datos del teléfono:</strong> bórralos en los ajustes de Android o desinstala la app. La app también ofrece borrar tu biblioteca local.</li>
-        <li><strong>Informes de fallos y estadísticas:</strong> apaga los interruptores en Ajustes para que dejen de enviarse.</li>
+        <li><strong>Informes de fallos y estadísticas:</strong> apaga los interruptores en Ajustes para que dejen de enviarse. Apagarlos no borra lo ya enviado: para pedir el borrado de los datos asociados a tu identificador de instalación, escribe a <a href={`mailto:${EMAIL}`}>{EMAIL}</a> indicándolo (lo verás en Ajustes › Privacidad, desde la versión 0.8.0).</li>
         <li><strong>Cuentas:</strong> cierra sesión en la app; puedes revocar el acceso de Mediaddict desde la configuración de tu cuenta de Trakt o Simkl y borrar allí tus datos.</li>
         <li><strong>Google Drive:</strong> desconecta Drive en la app, revoca el acceso en tu cuenta de Google y elimina los archivos de la app como se indica arriba.</li>
         <li><strong>Cualquier otra petición:</strong> escribe a <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Responderemos como máximo en un mes.</li>
@@ -189,12 +191,14 @@ const es = lang === 'es';
       <p>Specifically: we use access to Google Drive only to save, list, download and delete the app's backup copies in its hidden folder, at your request or through the automatic backup you have turned on. We do not transfer that data to third parties, we do not use it for advertising, and no human reads it.</p>
 
       <h2 id="firebase">Crash reports and usage statistics (Firebase)</h2>
+      <p class="note"><strong>This collection starts with version 0.8.0 of the app.</strong> Until then the app sends no reports or statistics.</p>
       <p>To know how many phones use the app, which versions, and when it crashes, the app uses <strong>Firebase</strong>, a Google service: <strong>Crashlytics</strong> (crash reports) and <strong>Analytics</strong> (usage statistics).</p>
       <ul>
         <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage statistics". When you turn them off, the app stops sending that data.</li>
         <li><strong>Installation identifier:</strong> Firebase generates an identifier per installation on your phone. We do not link it to your name or to your Simkl or Trakt accounts, and it is renewed when you reinstall the app. It is a pseudonym, and the law treats it as personal data.</li>
         <li><strong>What is sent with each report:</strong> phone model, Android and app version, language and approximate country (inferred) and, for a crash, the error trace and the state of the app at that moment. Your IP address reaches Google when it is sent, as with any server you connect to.</li>
         <li><strong>Usage statistics:</strong> a closed set of actions (for example, that a movie, show or anime page is opened, or that something is marked as watched and from which screen), the active source (Simkl, Trakt or no account) and the approximate size of your library, in ranges.</li>
+        <li><strong>Seeing your identifier and asking for help:</strong> in Settings › Privacy you will be able to see your installation identifier and use "Report a problem", which opens an email to app@mediaddict.app with a template (app version, Android version, phone model and identifier).</li>
         <li><strong>What we do not send:</strong> the contents of your list (titles, notes, dates) or your account details (username, email, keys). We check this with automated tests and filter error messages, but the error text of a library could carry some unexpected data.</li>
       </ul>
       <p>Google handles this data under <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy terms</a> and may process it on servers outside the European Union.</p>
@@ -228,7 +232,7 @@ const es = lang === 'es';
       <p>If you are in the European Economic Area (or another jurisdiction with equivalent rights), you can request <strong>access</strong>, <strong>rectification</strong>, <strong>erasure</strong>, <strong>restriction</strong>, <strong>objection</strong> and <strong>portability</strong> of your data, and withdraw your consent where it is based on consent.</p>
       <ul>
         <li><strong>Data on your phone:</strong> delete it in Android settings or uninstall the app. The app also offers to delete your local library.</li>
-        <li><strong>Crash reports and statistics:</strong> turn the switches off in Settings so they stop being sent.</li>
+        <li><strong>Crash reports and statistics:</strong> turn the switches off in Settings so they stop being sent. Turning them off does not delete what was already sent: to ask for deletion of the data tied to your installation identifier, write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a> stating it (you will see it in Settings › Privacy, from version 0.8.0).</li>
         <li><strong>Accounts:</strong> sign out in the app; you can revoke Mediaddict's access from your Trakt or Simkl account settings and delete your data there.</li>
         <li><strong>Google Drive:</strong> disconnect Drive in the app, revoke access in your Google account and delete the app's files as described above.</li>
         <li><strong>Any other request:</strong> write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We will reply within one month at most.</li>
