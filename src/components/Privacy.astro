@@ -34,12 +34,12 @@ const es = lang === 'es';
       <p>Estos datos no salen del teléfono salvo lo descrito en los apartados siguientes. La app excluye sus datos de la copia de seguridad automática de Android y de la transferencia entre dispositivos (<code>allowBackup</code> desactivado), de modo que no acaban en tu copia de Google salvo que tú actives expresamente la copia de Mediaddict en Drive.</p>
 
       <h2 id="permisos">Permisos de Android</h2>
-      <p>La app solo pide tres permisos:</p>
+      <p>Los permisos que se te piden son:</p>
       <ul>
         <li><strong>Internet y estado de la red:</strong> para hablar con los servicios de la sección siguiente y saber si hay conexión.</li>
         <li><strong>Notificaciones</strong> (Android 13 o posterior): para los avisos de estreno. Solo se te pide si los activas.</li>
       </ul>
-      <p>No pide acceso a tu ubicación, contactos, cámara, micrófono, SMS ni archivos. Si eliges una carpeta para la copia de seguridad, Android te pide acceso solo a esa carpeta.</p>
+      <p>Android añade además permisos técnicos que no te pregunta: mantener tareas en segundo plano y arrancar tras reiniciar el móvil. La app no pide acceso a tu ubicación, contactos, cámara, micrófono, SMS ni archivos. Si eliges una carpeta para la copia de seguridad, Android te pide acceso solo a esa carpeta.</p>
 
       <h2 id="terceros">Servicios de terceros con los que habla la app</h2>
       <p>Para funcionar, la app se conecta <strong>directamente desde tu teléfono</strong> a estos servicios. Cada uno recibe lo mínimo necesario y, como en cualquier conexión a internet, ve tu dirección IP. Cada uno se rige por su propia política de privacidad, que conviene que leas.</p>
@@ -71,10 +71,11 @@ const es = lang === 'es';
       <h2 id="firebase">Informes de fallos y estadísticas de uso (Firebase)</h2>
       <p>Para saber cuántos móviles usan la app, qué versiones y cuándo falla, la app usa <strong>Firebase</strong>, un servicio de Google: <strong>Crashlytics</strong> (informes de fallos) y <strong>Analytics</strong> (estadísticas de uso).</p>
       <ul>
-        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Uso». Al apagarlos, la app deja de enviar esos datos.</li>
+        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Estadísticas de uso». Al apagarlos, la app deja de enviar esos datos.</li>
         <li><strong>Identificador de instalación:</strong> Firebase genera en tu móvil un identificador por instalación. No lo enlazamos con tu nombre ni con tus cuentas de Simkl o Trakt, y se renueva al reinstalar la app. Es un seudónimo, y la ley lo trata como dato personal.</li>
         <li><strong>Qué se envía con cada informe:</strong> modelo del móvil, versión de Android y de la app, idioma y país aproximado (deducido) y, si hay un fallo, la traza del error y el estado de la app en ese momento. Tu dirección IP llega a Google al enviarlo, como a cualquier servidor al que te conectas.</li>
         <li><strong>Estadísticas de uso:</strong> un conjunto cerrado de acciones (por ejemplo, que se abre la ficha de una película, serie o anime, o que se marca algo como visto y desde qué pantalla), la fuente activa (Simkl, Trakt o sin cuenta) y el tamaño aproximado de tu biblioteca, por tramos.</li>
+        <li><strong>Ver tu identificador y pedir ayuda:</strong> en Ajustes › Privacidad puedes ver tu identificador de instalación y usar «Informar de un error», que abre tu correo con un borrador dirigido a app@mediaddict.app: lo ves y lo envías tú, la app no envía nada sola. El borrador lleva (versión de la app, de Android, modelo del móvil, identificador y un espacio para describir el problema; sin listas, claves ni registros).</li>
         <li><strong>Lo que no enviamos:</strong> el contenido de tu lista (títulos, notas, fechas) ni los datos de tus cuentas (usuario, correo, claves). Lo comprobamos con pruebas automáticas y filtramos los mensajes de error, pero el texto de un error de una librería podría llevar algún dato inesperado.</li>
       </ul>
       <p>Google trata estos datos según las <a href="https://firebase.google.com/support/privacy" rel="noopener">condiciones de privacidad de Firebase</a> y puede procesarlos en servidores fuera de la Unión Europea.</p>
@@ -85,7 +86,7 @@ const es = lang === 'es';
       <h2 id="uso">Para qué usamos los datos y con qué base legal</h2>
       <ul>
         <li><strong>Hacer funcionar la app</strong> (tu biblioteca, tu cuenta de Trakt o Simkl, la copia de seguridad, los avisos): ocurre en tu teléfono o con los servicios que tú conectas, a petición tuya. La base es que lo pides al usar la app.</li>
-        <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes.</li>
+        <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes. Para ser claros: están activados desde el primer arranque, sin pedirte antes tu consentimiento, y por eso te avisamos y puedes apagarlos cuando quieras.</li>
         <li><strong>Atender tus mensajes:</strong> si nos escribes, usamos tu correo y tu mensaje solo para responderte.</li>
       </ul>
       <p>No tomamos decisiones automatizadas sobre ti ni elaboramos perfiles, y no vendemos ni compartimos datos con fines publicitarios de terceros.</p>
@@ -108,7 +109,7 @@ const es = lang === 'es';
       <p>Si estás en el Espacio Económico Europeo (o en otra jurisdicción con derechos equivalentes), puedes pedir el <strong>acceso</strong>, la <strong>rectificación</strong>, la <strong>supresión</strong>, la <strong>limitación</strong>, la <strong>oposición</strong> y la <strong>portabilidad</strong> de tus datos, y retirar tu consentimiento cuando se base en él.</p>
       <ul>
         <li><strong>Datos del teléfono:</strong> bórralos en los ajustes de Android o desinstala la app. La app también ofrece borrar tu biblioteca local.</li>
-        <li><strong>Informes de fallos y estadísticas:</strong> apaga los interruptores en Ajustes para que dejen de enviarse.</li>
+        <li><strong>Informes de fallos y estadísticas:</strong> apaga los interruptores en Ajustes para que dejen de enviarse. Apagarlos no borra lo ya enviado: para pedir el borrado de los datos asociados a tu identificador de instalación, escribe a <a href={`mailto:${EMAIL}`}>{EMAIL}</a> indicándolo (lo ves en Ajustes › Privacidad).</li>
         <li><strong>Cuentas:</strong> cierra sesión en la app; puedes revocar el acceso de Mediaddict desde la configuración de tu cuenta de Trakt o Simkl y borrar allí tus datos.</li>
         <li><strong>Google Drive:</strong> desconecta Drive en la app, revoca el acceso en tu cuenta de Google y elimina los archivos de la app como se indica arriba.</li>
         <li><strong>Cualquier otra petición:</strong> escribe a <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Responderemos como máximo en un mes.</li>
@@ -154,12 +155,12 @@ const es = lang === 'es';
       <p>This data does not leave the phone except as described in the following sections. The app excludes its data from Android's automatic backup and device-to-device transfer (<code>allowBackup</code> turned off), so it does not end up in your Google backup unless you expressly turn on Mediaddict's Drive backup.</p>
 
       <h2 id="permissions">Android permissions</h2>
-      <p>The app asks for only three permissions:</p>
+      <p>The permissions you are asked for are:</p>
       <ul>
         <li><strong>Internet and network state:</strong> to talk to the services in the next section and to know whether there is a connection.</li>
         <li><strong>Notifications</strong> (Android 13 or later): for release alerts. You are only asked if you turn them on.</li>
       </ul>
-      <p>It does not ask for your location, contacts, camera, microphone, SMS or files. If you pick a folder for backup, Android grants access only to that folder.</p>
+      <p>Android also adds technical permissions that it does not ask you about: keeping background tasks running and starting after the phone restarts. The app does not ask for your location, contacts, camera, microphone, SMS or files. If you pick a folder for backup, Android grants access only to that folder.</p>
 
       <h2 id="third-parties">Third-party services the app talks to</h2>
       <p>To work, the app connects <strong>directly from your phone</strong> to these services. Each receives the minimum necessary and, as with any internet connection, sees your IP address. Each is governed by its own privacy policy, which you should read.</p>
@@ -191,10 +192,11 @@ const es = lang === 'es';
       <h2 id="firebase">Crash reports and usage statistics (Firebase)</h2>
       <p>To know how many phones use the app, which versions, and when it crashes, the app uses <strong>Firebase</strong>, a Google service: <strong>Crashlytics</strong> (crash reports) and <strong>Analytics</strong> (usage statistics).</p>
       <ul>
-        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage". When you turn them off, the app stops sending that data.</li>
+        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage statistics". When you turn them off, the app stops sending that data.</li>
         <li><strong>Installation identifier:</strong> Firebase generates an identifier per installation on your phone. We do not link it to your name or to your Simkl or Trakt accounts, and it is renewed when you reinstall the app. It is a pseudonym, and the law treats it as personal data.</li>
         <li><strong>What is sent with each report:</strong> phone model, Android and app version, language and approximate country (inferred) and, for a crash, the error trace and the state of the app at that moment. Your IP address reaches Google when it is sent, as with any server you connect to.</li>
         <li><strong>Usage statistics:</strong> a closed set of actions (for example, that a movie, show or anime page is opened, or that something is marked as watched and from which screen), the active source (Simkl, Trakt or no account) and the approximate size of your library, in ranges.</li>
+        <li><strong>Seeing your identifier and asking for help:</strong> in Settings › Privacy you can see your installation identifier and use "Report a problem", which opens your email app with a draft addressed to app@mediaddict.app: you see it and you send it, the app sends nothing on its own. The draft carries (app version, Android version, phone model, identifier and a space to describe the problem; no lists, keys or logs).</li>
         <li><strong>What we do not send:</strong> the contents of your list (titles, notes, dates) or your account details (username, email, keys). We check this with automated tests and filter error messages, but the error text of a library could carry some unexpected data.</li>
       </ul>
       <p>Google handles this data under <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy terms</a> and may process it on servers outside the European Union.</p>
@@ -205,7 +207,7 @@ const es = lang === 'es';
       <h2 id="use">What we use the data for and on what legal basis</h2>
       <ul>
         <li><strong>Making the app work</strong> (your library, your Trakt or Simkl account, backup, alerts): it happens on your phone or with the services you connect, at your request. The basis is that you ask for it by using the app.</li>
-        <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings.</li>
+        <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings. To be clear: they are on from the first launch, without asking for your consent beforehand, which is why we tell you and you can turn them off whenever you like.</li>
         <li><strong>Answering your messages:</strong> if you write to us, we use your email and your message only to reply.</li>
       </ul>
       <p>We make no automated decisions about you and build no profiles, and we do not sell or share data for third-party advertising.</p>
@@ -228,7 +230,7 @@ const es = lang === 'es';
       <p>If you are in the European Economic Area (or another jurisdiction with equivalent rights), you can request <strong>access</strong>, <strong>rectification</strong>, <strong>erasure</strong>, <strong>restriction</strong>, <strong>objection</strong> and <strong>portability</strong> of your data, and withdraw your consent where it is based on consent.</p>
       <ul>
         <li><strong>Data on your phone:</strong> delete it in Android settings or uninstall the app. The app also offers to delete your local library.</li>
-        <li><strong>Crash reports and statistics:</strong> turn the switches off in Settings so they stop being sent.</li>
+        <li><strong>Crash reports and statistics:</strong> turn the switches off in Settings so they stop being sent. Turning them off does not delete what was already sent: to ask for deletion of the data tied to your installation identifier, write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a> stating it (you can see it in Settings › Privacy).</li>
         <li><strong>Accounts:</strong> sign out in the app; you can revoke Mediaddict's access from your Trakt or Simkl account settings and delete your data there.</li>
         <li><strong>Google Drive:</strong> disconnect Drive in the app, revoke access in your Google account and delete the app's files as described above.</li>
         <li><strong>Any other request:</strong> write to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We will reply within one month at most.</li>
