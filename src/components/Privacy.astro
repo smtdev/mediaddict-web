@@ -34,12 +34,12 @@ const es = lang === 'es';
       <p>Estos datos no salen del teléfono salvo lo descrito en los apartados siguientes. La app excluye sus datos de la copia de seguridad automática de Android y de la transferencia entre dispositivos (<code>allowBackup</code> desactivado), de modo que no acaban en tu copia de Google salvo que tú actives expresamente la copia de Mediaddict en Drive.</p>
 
       <h2 id="permisos">Permisos de Android</h2>
-      <p>La app solo pide tres permisos:</p>
+      <p>Los permisos que se te piden son:</p>
       <ul>
         <li><strong>Internet y estado de la red:</strong> para hablar con los servicios de la sección siguiente y saber si hay conexión.</li>
         <li><strong>Notificaciones</strong> (Android 13 o posterior): para los avisos de estreno. Solo se te pide si los activas.</li>
       </ul>
-      <p>No pide acceso a tu ubicación, contactos, cámara, micrófono, SMS ni archivos. Si eliges una carpeta para la copia de seguridad, Android te pide acceso solo a esa carpeta.</p>
+      <p>Android añade además permisos técnicos que no te pregunta: mantener tareas en segundo plano y arrancar tras reiniciar el móvil. La app no pide acceso a tu ubicación, contactos, cámara, micrófono, SMS ni archivos. Si eliges una carpeta para la copia de seguridad, Android te pide acceso solo a esa carpeta.</p>
 
       <h2 id="terceros">Servicios de terceros con los que habla la app</h2>
       <p>Para funcionar, la app se conecta <strong>directamente desde tu teléfono</strong> a estos servicios. Cada uno recibe lo mínimo necesario y, como en cualquier conexión a internet, ve tu dirección IP. Cada uno se rige por su propia política de privacidad, que conviene que leas.</p>
@@ -71,7 +71,7 @@ const es = lang === 'es';
       <h2 id="firebase">Informes de fallos y estadísticas de uso (Firebase)</h2>
       <p>Para saber cuántos móviles usan la app, qué versiones y cuándo falla, la app usa <strong>Firebase</strong>, un servicio de Google: <strong>Crashlytics</strong> (informes de fallos) y <strong>Analytics</strong> (estadísticas de uso).</p>
       <ul>
-        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Uso». Al apagarlos, la app deja de enviar esos datos.</li>
+        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Estadísticas de uso». Al apagarlos, la app deja de enviar esos datos.</li>
         <li><strong>Identificador de instalación:</strong> Firebase genera en tu móvil un identificador por instalación. No lo enlazamos con tu nombre ni con tus cuentas de Simkl o Trakt, y se renueva al reinstalar la app. Es un seudónimo, y la ley lo trata como dato personal.</li>
         <li><strong>Qué se envía con cada informe:</strong> modelo del móvil, versión de Android y de la app, idioma y país aproximado (deducido) y, si hay un fallo, la traza del error y el estado de la app en ese momento. Tu dirección IP llega a Google al enviarlo, como a cualquier servidor al que te conectas.</li>
         <li><strong>Estadísticas de uso:</strong> un conjunto cerrado de acciones (por ejemplo, que se abre la ficha de una película, serie o anime, o que se marca algo como visto y desde qué pantalla), la fuente activa (Simkl, Trakt o sin cuenta) y el tamaño aproximado de tu biblioteca, por tramos.</li>
@@ -154,12 +154,12 @@ const es = lang === 'es';
       <p>This data does not leave the phone except as described in the following sections. The app excludes its data from Android's automatic backup and device-to-device transfer (<code>allowBackup</code> turned off), so it does not end up in your Google backup unless you expressly turn on Mediaddict's Drive backup.</p>
 
       <h2 id="permissions">Android permissions</h2>
-      <p>The app asks for only three permissions:</p>
+      <p>The permissions you are asked for are:</p>
       <ul>
         <li><strong>Internet and network state:</strong> to talk to the services in the next section and to know whether there is a connection.</li>
         <li><strong>Notifications</strong> (Android 13 or later): for release alerts. You are only asked if you turn them on.</li>
       </ul>
-      <p>It does not ask for your location, contacts, camera, microphone, SMS or files. If you pick a folder for backup, Android grants access only to that folder.</p>
+      <p>Android also adds technical permissions that it does not ask you about: keeping background tasks running and starting after the phone restarts. The app does not ask for your location, contacts, camera, microphone, SMS or files. If you pick a folder for backup, Android grants access only to that folder.</p>
 
       <h2 id="third-parties">Third-party services the app talks to</h2>
       <p>To work, the app connects <strong>directly from your phone</strong> to these services. Each receives the minimum necessary and, as with any internet connection, sees your IP address. Each is governed by its own privacy policy, which you should read.</p>
@@ -191,7 +191,7 @@ const es = lang === 'es';
       <h2 id="firebase">Crash reports and usage statistics (Firebase)</h2>
       <p>To know how many phones use the app, which versions, and when it crashes, the app uses <strong>Firebase</strong>, a Google service: <strong>Crashlytics</strong> (crash reports) and <strong>Analytics</strong> (usage statistics).</p>
       <ul>
-        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage". When you turn them off, the app stops sending that data.</li>
+        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage statistics". When you turn them off, the app stops sending that data.</li>
         <li><strong>Installation identifier:</strong> Firebase generates an identifier per installation on your phone. We do not link it to your name or to your Simkl or Trakt accounts, and it is renewed when you reinstall the app. It is a pseudonym, and the law treats it as personal data.</li>
         <li><strong>What is sent with each report:</strong> phone model, Android and app version, language and approximate country (inferred) and, for a crash, the error trace and the state of the app at that moment. Your IP address reaches Google when it is sent, as with any server you connect to.</li>
         <li><strong>Usage statistics:</strong> a closed set of actions (for example, that a movie, show or anime page is opened, or that something is marked as watched and from which screen), the active source (Simkl, Trakt or no account) and the approximate size of your library, in ranges.</li>
