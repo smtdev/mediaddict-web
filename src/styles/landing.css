@@ -26,7 +26,7 @@ nav.top .lang b{background:var(--txt);color:#120d0b;border-color:var(--txt)}
 .eyebrow:before{content:"";width:22px;height:1px;background:currentColor}
 h1,h2{font-family:'Bricolage Grotesque Variable',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.98}
 h1{font-size:clamp(46px,6vw,84px)}h2{font-size:clamp(36px,4.2vw,60px)}
-h1 em,h2 em{font-style:normal;background:linear-gradient(100deg,var(--acc),var(--acc-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 em,h2 em{font-style:normal;background:linear-gradient(100deg,var(--acc),var(--acc-2));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.12em;margin-right:-.12em}
 .lead{margin:24px 0 30px;font-size:clamp(17px,1.5vw,20px);color:var(--mut);max-width:30em}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .play{display:inline-flex;align-items:center;gap:13px;background:#fff;color:#0d0907;padding:11px 22px 11px 16px;border-radius:14px;text-decoration:none;font-weight:600;line-height:1.1;box-shadow:0 14px 40px -12px rgba(255,255,255,.35);transition:transform .25s}
