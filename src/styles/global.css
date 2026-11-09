@@ -9,6 +9,7 @@
 }
 * { box-sizing: border-box; }
 html { color-scheme: dark; }
+html[data-theme="light"] { color-scheme: light; --bg: #faf5ec; --card: #ffffff; --line: #e4d8c4; --gold: #8a6200; --text: #1f1710; --muted: #6a5b49; }
 body {
   margin: 0;
   background: var(--bg);
@@ -25,7 +26,14 @@ header.site .wrap { display: flex; align-items: center; justify-content: space-b
 .brand .ico svg { width: 100%; height: 100%; display: block; }
 .lang { display: flex; gap: 6px; font-size: .9rem; }
 .lang a, .lang span { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); text-decoration: none; color: var(--muted); }
-.lang span { background: var(--gold); border-color: var(--gold); color: #1b1311; font-weight: 700; }
+.lang span { background: var(--gold); border-color: var(--gold); color: var(--bg); font-weight: 700; }
+.navr { display: flex; align-items: center; gap: 10px; }
+.themebtn { width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; padding: 0; }
+.themebtn:hover { color: var(--text); }
+.themebtn svg { width: 17px; height: 17px; grid-area: 1 / 1; }
+.themebtn .moon { display: none; }
+html[data-theme="light"] .themebtn .sun { display: none; }
+html[data-theme="light"] .themebtn .moon { display: block; }
 .hero { padding: 72px 0 40px; text-align: center; }
 .hero h1 { font-size: clamp(2.4rem, 8vw, 4rem); margin: 0 0 12px; color: var(--gold); line-height: 1.1; }
 .hero p.tag { font-size: clamp(1.15rem, 3.5vw, 1.6rem); margin: 0 0 8px; }

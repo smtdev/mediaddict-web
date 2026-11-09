@@ -12,6 +12,7 @@ const t = ui[lang];
 const site = 'https://mediaddict.app';
 const abs = (l: Lang) => (l === 'es' && slug === '' ? site : site + href(l, slug));
 const canonical = abs(lang);
+const sunMoon = `<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="currentColor"/></svg>`;
 ---
 <!doctype html>
 <html lang={t.htmlLang}>
@@ -21,6 +22,8 @@ const canonical = abs(lang);
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="theme-color" content="#1B1311" />
+    <meta name="color-scheme" content="dark light" />
+    <script is:inline src="/theme.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="es" href={abs('es')} />
@@ -34,10 +37,13 @@ const canonical = abs(lang);
     <header class="site">
       <div class="wrap">
         <a class="brand" href={href(lang, '')}><span class="ico" set:html={appIcon}></span>Mediaddict</a>
+        <div class="navr">
+        <button class="themebtn" type="button" data-theme-toggle aria-label={t.theme} title={t.theme} set:html={sunMoon}></button>
         <nav class="lang" aria-label="Idioma / Language">
           {lang === 'es' ? <span aria-current="true">ES</span> : <a href={href('es', slug)} hreflang="es" lang="es">ES</a>}
           {lang === 'en' ? <span aria-current="true">EN</span> : <a href={href('en', slug)} hreflang="en" lang="en">EN</a>}
         </nav>
+        </div>
       </div>
     </header>
     <main class="wrap"><slot /></main>

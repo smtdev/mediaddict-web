@@ -12,6 +12,7 @@ export function href(lang: Lang, slug: Slug): string {
 export const ui = {
   es: {
     htmlLang: 'es',
+    theme: 'Cambiar entre modo claro y oscuro',
     privacy: 'Privacidad',
     terms: 'Términos',
     attrTmdb: 'This product uses the TMDB API but is not endorsed or certified by TMDB.',
@@ -33,6 +34,7 @@ export const ui = {
   },
   en: {
     htmlLang: 'en',
+    theme: 'Switch between light and dark mode',
     privacy: 'Privacy',
     terms: 'Terms',
     attrTmdb: 'This product uses the TMDB API but is not endorsed or certified by TMDB.',

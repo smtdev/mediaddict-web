@@ -24,6 +24,7 @@ const t = ui[lang];
 const demo = lang === 'en' ? demoEn : demoEs;
 const site = 'https://mediaddict.app';
 const abs = (l: Lang) => (l === 'es' ? site : site + '/en/');
+const sunMoon = `<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="currentColor"/></svg>`;
 const logos = [
   { href: 'https://www.themoviedb.org', name: 'TMDB', cls: 'light', svg: tmdb },
   { href: 'https://trakt.tv', name: 'Trakt', cls: '', svg: trakt },
@@ -40,6 +41,8 @@ const logos = [
     <title>{c.title}</title>
     <meta name="description" content={c.desc} />
     <meta name="theme-color" content="#120d0b" />
+    <meta name="color-scheme" content="dark light" />
+    <script is:inline src="/theme.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={abs(lang)} />
     <link rel="alternate" hreflang="es" href={abs('es')} />
@@ -53,13 +56,17 @@ const logos = [
     <link rel="preconnect" href="https://image.tmdb.org" />
   </head>
   <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="contorno" x="-5%" y="-30%" width="110%" height="160%"><feMorphology in="SourceAlpha" operator="erode" radius="2" result="dentro"/><feComposite in="SourceGraphic" in2="dentro" operator="out"/></filter></svg>
     <div class="aurora"><i></i><i></i></div>
     <nav class="top">
       <a class="brand" href={href(lang, '')}><span class="ico" set:html={appIcon}></span>Mediaddict</a>
       <div class="links"><a href="#funciones">{c.nav.features}</a><a href="#datos">{c.nav.data}</a><a href="#preguntas">{c.nav.faq}</a></div>
+      <div class="navr">
+      <button class="themebtn" type="button" data-theme-toggle aria-label={t.theme} title={t.theme} set:html={sunMoon}></button>
       <div class="lang">
         {lang === 'es' ? <b>ES</b> : <a href="/" hreflang="es" lang="es">ES</a>}
         {lang === 'en' ? <b>EN</b> : <a href="/en/" hreflang="en" lang="en">EN</a>}
+      </div>
       </div>
     </nav>
 
@@ -84,9 +91,8 @@ const logos = [
           <div class="provline" id="provline"></div>
         </section>
         <section class="scene s3" data-go="ficha">
-          <h2>{c.s3.h2a}<br />{c.s3.h2b} <em>{c.s3.h2c}</em></h2>
+          <h2>{c.s3.h2a}<br /><em>{c.s3.h2c}</em></h2>
           <p class="lead">{c.s3.lead}</p>
-          <div class="castline" id="castline"></div>
         </section>
         <section class="scene s4" data-go="seguimiento">
           <h2 class="words">{c.s4.words.map((w, i) => <><span data-w={c.s4.keys[i]}>{w}.</span>{' '}</>)}</h2>
