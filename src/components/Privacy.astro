@@ -13,7 +13,7 @@ const es = lang === 'es';
   {es ? (
     <article class="legal">
       <h1>Política de privacidad</h1>
-      <p class="updated">Última actualización: 6 de noviembre de 2026</p>
+      <p class="updated">Última actualización: 9 de noviembre de 2026</p>
 
       <p>Mediaddict es una app para Android para llevar el control de las películas, series y anime que ves. Esta política explica qué datos maneja la app, adónde van, para qué se usan y qué control tienes sobre ellos. Aplica a la app Mediaddict y a este sitio web, mediaddict.app. Está escrita para que se entienda: si algo no queda claro, escríbenos.</p>
 
@@ -24,7 +24,7 @@ const es = lang === 'es';
       <ul>
         <li>Mediaddict <strong>no tiene servidores propios</strong> donde guardar tu biblioteca: no recibimos ni almacenamos tu lista ni tus cuentas. Tu biblioteca vive en tu teléfono.</li>
         <li>La app <strong>no incluye publicidad</strong> y no vendemos ni cedemos tus datos a nadie.</li>
-        <li>La app sí envía a Google, a través de Firebase, <strong>informes de fallos y estadísticas de uso</strong>. Están activados por defecto y tienen dos interruptores en Ajustes. Hay una sección entera sobre ello más abajo.</li>
+        <li>La app sí envía a Google, a través de Firebase, <strong>informes de fallos y estadísticas de uso</strong>. Tienen dos interruptores en Ajustes y están activados por defecto, pero no se recoge ni se envía nada hasta que ves el aviso inicial. Hay una sección entera sobre ello más abajo.</li>
         <li>La app se conecta directamente desde tu teléfono a servicios de terceros (TMDB, Trakt, Simkl…) para funcionar. Cada uno ve tu dirección IP, como cualquier servidor al que te conectas.</li>
         <li>Puedes usarla sin ninguna cuenta.</li>
       </ul>
@@ -46,6 +46,7 @@ const es = lang === 'es';
       <ul>
         <li><strong>Trakt</strong> (<a href="https://trakt.tv" rel="noopener">trakt.tv</a>) y <strong>Simkl</strong> (<a href="https://simkl.com" rel="noopener">simkl.com</a>): solo si decides conectar tu cuenta. Con tu autorización, la app lee y escribe tu historial, listas, valoraciones y notas en esa cuenta. El inicio de sesión se hace en su web, no en la app. Puedes usar la app sin ninguna cuenta. Simkl aplica un límite diario de peticiones a tu cuenta, compartido con todas las apps que conectes.</li>
         <li><strong>TMDB</strong> (<a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org</a>): fichas de títulos, reparto, imágenes, plataformas donde ver y descubrimiento de contenido. Se le piden datos de títulos concretos y el idioma de contenido que elijas.</li>
+        <li><strong>wsrv.nl</strong> (<a href="https://wsrv.nl" rel="noopener">wsrv.nl</a>; <a href="https://github.com/weserv/images/blob/5.x/Privacy-Policy.md" rel="noopener">su política de privacidad</a>): servicio gratuito de imágenes que Simkl recomienda para sus pósters, fondos y fotogramas. Cuando la app muestra una imagen que viene de Simkl, la pide a través de wsrv.nl, que recibe la dirección de esa imagen y tu dirección IP, como cualquier servidor. Según su política, guarda registros de conexión, incluida la IP, durante 7 días. No se le envía tu lista ni los datos de tus cuentas.</li>
         <li><strong>JustWatch</strong> (<a href="https://www.justwatch.com" rel="noopener">justwatch.com</a>): los datos de «Dónde ver» llegan a través de TMDB, que los obtiene de JustWatch. La app no se conecta a JustWatch por su cuenta, salvo para abrir su enlace si lo tocas.</li>
         <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): información de episodios, usada para casar tus episodios vistos al pasar tu biblioteca entre servicios.</li>
         <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): premios y nominaciones de los títulos, y datos auxiliares de algunas series.</li>
@@ -71,7 +72,7 @@ const es = lang === 'es';
       <h2 id="firebase">Informes de fallos y estadísticas de uso (Firebase)</h2>
       <p>Para saber cuántos móviles usan la app, qué versiones y cuándo falla, la app usa <strong>Firebase</strong>, un servicio de Google: <strong>Crashlytics</strong> (informes de fallos) y <strong>Analytics</strong> (estadísticas de uso).</p>
       <ul>
-        <li><strong>Están activados por defecto.</strong> La app te avisa la primera vez y tiene dos interruptores en Ajustes, «Informes de errores» y «Estadísticas de uso». Al apagarlos, la app deja de enviar esos datos.</li>
+        <li><strong>Están activados por defecto, pero no se recoge ni se envía nada hasta que ves el aviso inicial.</strong> La app te lo muestra al empezar y tiene dos interruptores en Ajustes, «Informes de errores» y «Estadísticas de uso». Al apagarlos, la app deja de enviar esos datos.</li>
         <li><strong>Identificador de instalación:</strong> Firebase genera en tu móvil un identificador por instalación. No lo enlazamos con tu nombre ni con tus cuentas de Simkl o Trakt, y se renueva al reinstalar la app. Es un seudónimo, y la ley lo trata como dato personal.</li>
         <li><strong>Qué se envía con cada informe:</strong> modelo del móvil, versión de Android y de la app, idioma y país aproximado (deducido) y, si hay un fallo, la traza del error y el estado de la app en ese momento. Tu dirección IP llega a Google al enviarlo, como a cualquier servidor al que te conectas.</li>
         <li><strong>Estadísticas de uso:</strong> un conjunto cerrado de acciones (por ejemplo, que se abre la ficha de una película, serie o anime, o que se marca algo como visto y desde qué pantalla) y la fuente activa (Simkl, Trakt o sin cuenta).</li>
@@ -87,7 +88,7 @@ const es = lang === 'es';
       <h2 id="uso">Para qué usamos los datos y con qué base legal</h2>
       <ul>
         <li><strong>Hacer funcionar la app</strong> (tu biblioteca, tu cuenta de Trakt o Simkl, la copia de seguridad, los avisos): ocurre en tu teléfono o con los servicios que tú conectas, a petición tuya. La base es que lo pides al usar la app.</li>
-        <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes. Para ser claros: están activados desde el primer arranque, sin pedirte antes tu consentimiento, y por eso te avisamos y puedes apagarlos cuando quieras.</li>
+        <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes. Para ser claros: una vez que has visto el aviso inicial están activados sin pedirte antes tu consentimiento, y por eso te avisamos y puedes apagarlos cuando quieras. Antes de ver ese aviso no se recoge ni se envía nada.</li>
         <li><strong>Atender tus mensajes:</strong> si nos escribes, usamos tu correo y tu mensaje solo para responderte.</li>
       </ul>
       <p>No tomamos decisiones automatizadas sobre ti ni elaboramos perfiles, y no vendemos ni compartimos datos con fines publicitarios de terceros.</p>
@@ -118,7 +119,7 @@ const es = lang === 'es';
       <p>Como no tenemos tu biblioteca en servidores propios, no hay nada más que borrar de nuestro lado. Si crees que tratamos tus datos de forma incorrecta, puedes presentar una reclamación ante la autoridad de protección de datos de tu país; en España, la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos</a>.</p>
 
       <h2 id="menores">Menores</h2>
-      <p>Mediaddict no está dirigida a menores de 14 años (o de la edad mínima de consentimiento digital de tu país) y no recopilamos a sabiendas datos de menores. Si crees que un menor nos ha facilitado datos, escríbenos y los borraremos.</p>
+      <p>Mediaddict no está dirigida a menores de 13 años, ni a menores de la edad mínima de consentimiento digital de tu país cuando sea superior (en España, 14), y no recopilamos a sabiendas datos de menores. Si crees que un menor nos ha facilitado datos, escríbenos y los borraremos.</p>
 
       <h2 id="web">Sitio web</h2>
       <p>Este sitio es estático: no usa cookies ni herramientas de analítica, y sirve sus tipografías desde el propio sitio. La demostración de la portada carga los carteles desde los servidores de TMDB (image.tmdb.org), que ven tu dirección IP. Como cualquier alojamiento web, el proveedor que lo sirve (Cloudflare) puede registrar datos técnicos de conexión, como la dirección IP, con fines de seguridad y funcionamiento. El botón de Google Play te lleva a la tienda de Google, que tiene su propia política.</p>
@@ -135,7 +136,7 @@ const es = lang === 'es';
   ) : (
     <article class="legal">
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated: November 6, 2026</p>
+      <p class="updated">Last updated: November 9, 2026</p>
 
       <p>Mediaddict is an Android app to keep track of the movies, TV shows and anime you watch. This policy explains what data the app handles, where it goes, what it is used for and what control you have over it. It applies to the Mediaddict app and to this website, mediaddict.app. It is written to be understood: if something is unclear, write to us.</p>
 
@@ -146,7 +147,7 @@ const es = lang === 'es';
       <ul>
         <li>Mediaddict has <strong>no servers of its own</strong> to keep your library: we do not receive or store your list or your accounts. Your library lives on your phone.</li>
         <li>The app <strong>contains no advertising</strong>, and we do not sell or share your data with anyone.</li>
-        <li>The app does send Google, through Firebase, <strong>crash reports and usage statistics</strong>. They are on by default and have two switches in Settings. There is a full section on this below.</li>
+        <li>The app does send Google, through Firebase, <strong>crash reports and usage statistics</strong>. They have two switches in Settings and are on by default, but nothing is collected or sent until you see the initial notice. There is a full section on this below.</li>
         <li>The app connects directly from your phone to third-party services (TMDB, Trakt, Simkl…) to work. Each one sees your IP address, as any server you connect to does.</li>
         <li>You can use it with no account at all.</li>
       </ul>
@@ -168,6 +169,7 @@ const es = lang === 'es';
       <ul>
         <li><strong>Trakt</strong> (<a href="https://trakt.tv" rel="noopener">trakt.tv</a>) and <strong>Simkl</strong> (<a href="https://simkl.com" rel="noopener">simkl.com</a>): only if you choose to connect your account. With your authorization, the app reads and writes your history, lists, ratings and notes in that account. Sign-in happens on their website, not in the app. You can use the app with no account. Simkl applies a daily request limit to your account, shared with every app you connect.</li>
         <li><strong>TMDB</strong> (<a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org</a>): title details, cast, images, where to watch and content discovery. It is asked about specific titles and the content language you choose.</li>
+        <li><strong>wsrv.nl</strong> (<a href="https://wsrv.nl" rel="noopener">wsrv.nl</a>; <a href="https://github.com/weserv/images/blob/5.x/Privacy-Policy.md" rel="noopener">its privacy policy</a>): a free image service that Simkl recommends for its posters, backdrops and episode stills. When the app shows an image that comes from Simkl, it requests it through wsrv.nl, which receives the address of that image and your IP address, as any server does. Under its policy, it keeps connection logs, including the IP address, for 7 days. Your list and your account details are not sent to it.</li>
         <li><strong>JustWatch</strong> (<a href="https://www.justwatch.com" rel="noopener">justwatch.com</a>): the "Where to watch" data arrives through TMDB, which gets it from JustWatch. The app does not connect to JustWatch on its own, except to open its link if you tap it.</li>
         <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): episode information, used to match your watched episodes when moving your library between services.</li>
         <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): awards and nominations for titles, and auxiliary data for some series.</li>
@@ -193,7 +195,7 @@ const es = lang === 'es';
       <h2 id="firebase">Crash reports and usage statistics (Firebase)</h2>
       <p>To know how many phones use the app, which versions, and when it crashes, the app uses <strong>Firebase</strong>, a Google service: <strong>Crashlytics</strong> (crash reports) and <strong>Analytics</strong> (usage statistics).</p>
       <ul>
-        <li><strong>They are on by default.</strong> The app tells you the first time and has two switches in Settings, "Error reports" and "Usage statistics". When you turn them off, the app stops sending that data.</li>
+        <li><strong>They are on by default, but nothing is collected or sent until you see the initial notice.</strong> The app shows it to you when you start and has two switches in Settings, "Error reports" and "Usage statistics". When you turn them off, the app stops sending that data.</li>
         <li><strong>Installation identifier:</strong> Firebase generates an identifier per installation on your phone. We do not link it to your name or to your Simkl or Trakt accounts, and it is renewed when you reinstall the app. It is a pseudonym, and the law treats it as personal data.</li>
         <li><strong>What is sent with each report:</strong> phone model, Android and app version, language and approximate country (inferred) and, for a crash, the error trace and the state of the app at that moment. Your IP address reaches Google when it is sent, as with any server you connect to.</li>
         <li><strong>Usage statistics:</strong> a closed set of actions (for example, that a movie, show or anime page is opened, or that something is marked as watched and from which screen) and the active source (Simkl, Trakt or no account).</li>
@@ -209,7 +211,7 @@ const es = lang === 'es';
       <h2 id="use">What we use the data for and on what legal basis</h2>
       <ul>
         <li><strong>Making the app work</strong> (your library, your Trakt or Simkl account, backup, alerts): it happens on your phone or with the services you connect, at your request. The basis is that you ask for it by using the app.</li>
-        <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings. To be clear: they are on from the first launch, without asking for your consent beforehand, which is why we tell you and you can turn them off whenever you like.</li>
+        <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings. To be clear: once you have seen the initial notice they are on without asking for your consent beforehand, which is why we tell you and you can turn them off whenever you like. Nothing is collected or sent before you see that notice.</li>
         <li><strong>Answering your messages:</strong> if you write to us, we use your email and your message only to reply.</li>
       </ul>
       <p>We make no automated decisions about you and build no profiles, and we do not sell or share data for third-party advertising.</p>
@@ -240,7 +242,7 @@ const es = lang === 'es';
       <p>Since we hold no library of yours on servers of our own, there is nothing further to delete on our side. If you believe we are handling your data incorrectly, you can lodge a complaint with the data protection authority of your country; in Spain, the <a href="https://www.aepd.es" rel="noopener">Spanish Data Protection Agency</a>.</p>
 
       <h2 id="children">Children</h2>
-      <p>Mediaddict is not directed at children under 14 (or the minimum age of digital consent in your country) and we do not knowingly collect data from children. If you believe a child has given us data, write to us and we will delete it.</p>
+      <p>Mediaddict is not directed at children under 13, nor at children under the minimum age of digital consent in your country when that is higher (in Spain, 14), and we do not knowingly collect data from children. If you believe a child has given us data, write to us and we will delete it.</p>
 
       <h2 id="website">Website</h2>
       <p>This site is static: it uses no cookies and no analytics tools, and serves its fonts from the site itself. The demo on the home page loads posters from TMDB servers (image.tmdb.org), which see your IP address. As with any web hosting, the provider that serves it (Cloudflare) may log technical connection data, such as the IP address, for security and operation. The Google Play button takes you to Google's store, which has its own policy.</p>
