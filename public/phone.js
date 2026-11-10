@@ -1,4 +1,4 @@
-// Maqueta interactiva del móvil (réplica visual de la app). Generado desde el diseño; datos en #demo.
+// Interactive phone mock-up (a visual replica of the app). Generated from the design; data comes from #demo.
 (function(){
 const D=JSON.parse(document.getElementById('demo').textContent);const LANG=document.documentElement.lang==='en'?'en':'es';
 const EN_MAP = {
@@ -96,12 +96,12 @@ rot:'M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.6
 const svg=(k)=>`<svg viewBox="0 0 24 24"><path d="${IC[k]}"/></svg>`;
 const pad=n=>String(n).padStart(2,'0');
 
-// ---- datos ----
+// ---- data ----
 const T={},M={};D.tv.forEach(x=>T[x.q]=x);D.movie.forEach(x=>M[x.q]=x);
 const PR={};D.providers.forEach(p=>PR[p.name]=p.logo);
 const prov=(...n)=>n.map(k=>PR[k]).filter(Boolean);
-const MES=['ene','feb','mar','abr','may','jun','jul','ago','sept','oct','nov','dic'];
-const fd=s=>{if(!s)return '';const [y,m,d]=s.split('-');return `${+d} ${MES[m-1]} ${y}`};
+const MONTHS_ES=['ene','feb','mar','abr','may','jun','jul','ago','sept','oct','nov','dic'];
+const fd=s=>{if(!s)return '';const [y,m,d]=s.split('-');return `${+d} ${MONTHS_ES[m-1]} ${y}`};
 const R=x=>(x||0).toFixed(1).replace('.',',');
 let PROG_S=[
  {k:'Ranma 1/2',s:1,e:29,ep:'Las galletas de la rosa negra',d:'31 oct 2026 • 16:55',w:28,t:29,sin:7,b:['fv','pl']},
@@ -140,8 +140,8 @@ const CAL_S=[
 ];
 const DAYS=[['Sáb','7',3],['Dom','8',1],['Mar','10',2],['Mié','11',2],['Jue','12',3],['Próx. sem.','13',5],['Nov','',5]];
 
-// ---- estado ----
-let ST={tab:'progreso',stack:[],seg:{prog:'S',cal:'S',home:'cine',homeTab:'Programación'},segui:{tipo:'Series',chip:'Pendiente'},day:0,favs:{},lists:{},vq:{w:3},sw:{},xp:'pelicula',touched:false};
+// ---- state ----
+let ST={tab:'progress',stack:[],seg:{prog:'S',cal:'S',home:'movies',homeTab:'Programación'},watch:{type:'Series',chip:'Pendiente'},day:0,favs:{},lists:{},vq:{w:3},sw:{},xp:'movie',touched:false};
 const app=$('#app');
 function item(k){return T[k]||M[k]}
 function badges(b){return b&&b.length?`<div class="bdg">${b.map(x=>`<i class="${x==='pl'?'pl':x==='fv'?'fv':x==='ok'?'ok':''}">${svg(x==='pl'?'play':x==='fv'?'favf':x==='ok'?'okc':'bmf')}</i>`).join('')}</div>`:''}
@@ -149,13 +149,13 @@ function po(k,extra=''){const x=item(k);return `<div class="po"><img loading="la
 function wavy(w,t,flat){const p=t?Math.round(w/t*100):0;if(p>=100)return `<div class="prog"><div class="w ${flat?'flat':''}" style="flex:1"></div><span class="d"></span></div>`;
   return `<div class="prog">${p>0?`<div class="w ${flat?'flat':''}" style="width:${Math.max(p,6)}%"></div>`:''}<div class="t"></div><span class="d"></span></div>`}
 function statusbar(){return `<div class="status"><span>9:41</span><span class="r"><svg viewBox="0 0 24 24"><path d="M2 20h20V4z"/></svg><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0l-2 2a12 12 0 0 0-16 0zM6 13a9 9 0 0 1 12 0l-2 2a6 6 0 0 0-8 0zm4 4a3 3 0 0 1 4 0l-2 2z"/></svg><span class="bat">100 %</span></span></div>`}
-function nav(){const it=[['home','Inicio','home'],['progreso','Progreso','prog'],['calendario','Calendario','cal'],['seguimiento','Seguimiento','seg']];
+function nav(){const it=[['home','Inicio','home'],['progress','Progreso','prog'],['calendar','Calendario','cal'],['watchlist','Seguimiento','seg']];
   return `<div class="nav4">${it.map(([k,n,ic])=>`<button class="${ST.tab===k&&!ST.stack.length?'sel':''}" data-act="tab" data-k="${k}"><span class="pw">${svg(ic)}</span>${n}</button>`).join('')}</div><div class="gbar"></div>`}
 function topbar(t,grid){return `<div class="topbar"><h3>${t}</h3><span class="ib">${svg('search')}</span><span class="ib">${svg(grid?'grid':'list')}</span></div>`}
 function seg(items,sel,key){return `<div class="seg">${items.map(([k,n])=>`<button class="${sel===k?'sel':''}" data-act="${key}" data-k="${k}">${n}</button>`).join('')}</div>`}
 
-// ---- pantallas ----
-function vProgreso(){
+// ---- screens ----
+function vProgress(){
   const S=ST.seg.prog==='S';
   let h=topbar('Progreso',true)+seg([['S','Series'],['M','Películas']],ST.seg.prog,'segprog');
   if(S){
@@ -193,41 +193,41 @@ function vCal(){
     h+=L.map(([k,b,p,t],i)=>{const x=item(k);return `<div class="sech"><span>${t}<i>(1)</i></span>${svg('less')}</div><div class="grid" style="padding-top:0"><div class="card" data-act="open" data-k="${k}"><div class="po"><img src="${IMG(x.poster)}"><span class="rate">${R(x.vote)}</span><div class="scrim"></div><div class="provs" style="bottom:36px">${prov(...p).map(q=>`<img src="${IMG(q,'w92')}">`).join('')}</div><div class="band">${b}</div></div><div class="meta"><b>${x.name}</b></div><div style="height:12px"></div></div></div>`}).join('');
   }
   return h+'<div style="height:24px"></div>'}
-function vSeg(){
-  const tipo=ST.segui.tipo,chip=ST.segui.chip;
+function vWatchlist(){
+  const kind=ST.watch.type,chip=ST.watch.chip;
   const chips=[['En curso','play'],['Pendiente','bm'],['Visto','okc'],['Favorito','fav'],['Colección','col']];
-  const vis=tipo==='Películas'?chips.filter(c=>c[0]!=='En curso'):chips;
+  const vis=kind==='Películas'?chips.filter(c=>c[0]!=='En curso'):chips;
   const ch=vis.some(c=>c[0]===chip)?chip:vis[0][0];
   const S=SEG[ch].S.map(a=>({k:a[0],w:a[1],t:a[2],ep:1})),Mv=SEG[ch].M.map(k=>({k,ep:0}));
-  let items=tipo==='Series'?S:tipo==='Películas'?Mv:[...S,...Mv];
-  let h=topbar('Lista de seguimiento')+seg([['Todo','Todo'],['Películas','Películas'],['Series','Series']],tipo,'segseg')+
+  let items=kind==='Series'?S:kind==='Películas'?Mv:[...S,...Mv];
+  let h=topbar('Lista de seguimiento')+seg([['Todo','Todo'],['Películas','Películas'],['Series','Series']],kind,'segwatch')+
    `<div class="chiprow">${vis.map(([n,ic])=>`<span class="fchip ${ch===n?'sel':''}" data-act="schip" data-k="${n}">${svg(ic)}${n}</span>`).join('')}</div>
-   <div class="sortrow"><span class="sortchip">${ch==='En curso'?'Emitido recientemente':'Fecha de añadido'} ${svg('down')}</span><span class="count">${tipo==='Películas'?42:tipo==='Series'?13:72} elementos</span></div><div class="grid">`+
+   <div class="sortrow"><span class="sortchip">${ch==='En curso'?'Emitido recientemente':'Fecha de añadido'} ${svg('down')}</span><span class="count">${kind==='Películas'?42:kind==='Series'?13:72} elementos</span></div><div class="grid">`+
    items.map((r,i)=>{const x=item(r.k);return r.ep?cardP(r.k,`${r.w}/${r.t} episodios`,r.w,r.t,{b:ch==='En curso'?['pl']:null}).replace('class="card"','class="card" style="animation-delay:'+i*40+'ms"'):cardP(r.k,(x.date||'').slice(0,4),0,undefined)}).join('')+'</div>';
   return h}
 function vHome(){
   const tabs=[['Programación',98],['Pendiente',80],['Estrenos',8]];const ht=ST.seg.homeTab;
   const lst={Programación:[['Mandy\'s First Marriage','S03E05 • A Snotty Attitude and a…','Hoy'],['Elsbeth','S04E04 • A Bad Lie','Hoy'],['Grey\'s Anatomy','S23E04','Hoy']],Pendiente:[['Grey\'s Anatomy','S02E01 • Sigue lloviendo sobre mí','26 sept 2005'],['ONE PIECE','S04E92 • El héroe de Arabasta y la…','9 dic 2001']],Estrenos:[['The Super Mario Galaxy Movie','Hoy','Streaming'],['Normal','Dentro de 3 días','Físico']]}[ht];
-  const cine=ST.seg.home==='cine';
+  const cine=ST.seg.home==='movies';
   const disc=cine?['Resident Evil','Primetime','Verity','Supergirl']:['Grey\'s Anatomy','South Park','The Big Bang Theory','Friends'];
   return `<div class="search"><div class="bar">${svg('search')}Buscar…</div><div class="avatar">${svg('person')}</div></div>
-  <div class="hsec"><h4>Para ti</h4>${ht==='Estrenos'?'<span class="dd">Esta semana</span>':''}<a data-act="tab" data-k="${ht==='Programación'?'calendario':'progreso'}">${ht==='Estrenos'?'Películas':ht==='Programación'?'Calendario':'Progreso'}${svg('chev')}</a></div>
+  <div class="hsec"><h4>Para ti</h4>${ht==='Estrenos'?'<span class="dd">Esta semana</span>':''}<a data-act="tab" data-k="${ht==='Programación'?'calendar':'progress'}">${ht==='Estrenos'?'Películas':ht==='Programación'?'Calendario':'Progreso'}${svg('chev')}</a></div>
   <div class="seg" style="margin-top:16px">${tabs.map(([n,c])=>`<button class="${ht===n?'sel':''}" data-act="htab" data-k="${n}">${n}<span class="cnt">${c}</span></button>`).join('')}</div>
   <div class="hscroll">${lst.map(([k,a,b])=>{const x=item(k);const mk=ht==='Pendiente';return `<div class="bcard" data-act="open" data-k="${k}"><img src="${IMG(x.backdrop||x.poster,'w500')}"><div class="ct">${x.name.length>26?x.name.slice(0,25)+'…':x.name}<small>${a}</small>${ht==='Estrenos'?`<u>${b}</u>`:''}</div>${mk?`<button class="mk">${svg('chk')}</button>`:''}</div>`}).join('')}</div>
   <div class="hsec" style="padding-top:30px"><h4>Descubrir</h4><a>Ver todo${svg('chev')}</a></div>
-  ${seg([['cine','Cine'],['series','Series']],ST.seg.home,'seghome')}
+  ${seg([['movies','Cine'],['shows','Series']],ST.seg.home,'seghome')}
   <div class="chiprow"><span class="fchip">${cine?'Tendencias':'Las más maratoneadas'}${svg('more')}</span><span class="fchip">${cine?'':'Semana'}${cine?svg('tune')+'Filtros':svg('more')}</span><span class="fchip">Género</span></div>
   <div class="hscroll" style="padding-top:18px">${disc.map(k=>{const x=item(k);return `<div class="pcard"><div class="card" data-act="open" data-k="${k}"><div class="po"><img src="${IMG(x.poster)}"><span class="rate">${R(x.vote)}</span></div><div class="meta"><b>${x.name}</b><small>${(x.date||'').slice(0,4)}</small></div><div style="height:12px"></div></div></div>`}).join('')}</div><div style="height:160px"></div>
   <button class="fab" data-act="xp">${`<span class="ex">${svg('expl')}</span>`}<span>Explorar</span></button>`}
-function vXp(){
-  const p=ST.xp==='pelicula';
+function vExplore(){
+  const p=ST.xp==='movie';
   return `<div class="topbar back"><span class="ib" data-act="back">${svg('back')}</span><h3>Explorar</h3><span class="ib">${svg('dice')}</span><span class="fchip" style="height:48px;border-radius:24px;border:0;background:#2e2a30;color:#8d8794;margin-right:2px;padding:0 20px 0 14px">${svg('rot')}Empezar de nuevo</span></div>
   <div class="prog" style="padding:6px 16px 0;gap:8px;height:30px"><div class="w" style="width:44px"></div><div class="t"></div><span class="d"></span><span style="font-size:16px;color:var(--onv);white-space:nowrap;margin-left:6px">Paso 1 de 6</span></div>
   <div class="sentence"><small>${svg('edit').replace('<svg','<svg style="display:inline;width:16px;height:16px;vertical-align:middle;margin-right:6px"')} TU BÚSQUEDA</small>Busco ${p?'una':'una'} <u class="on">${p?'película':'serie'}</u> que <u>¿qué te apetece?</u>, de <u>¿cuánto dura?</u>, en <u>¿dónde?</u>, <u>¿qué nota?</u> y <u>¿algo que evitar?</u>. <u class="on" style="background:transparent;color:var(--gold);border-color:var(--gold)">+ más filtros</u></div>
   <div style="padding:18px 16px 0"><div style="font-size:32px">¿Película o serie?</div><div style="font-size:16px;color:var(--onv);margin-top:6px">Trakt separa su catálogo en dos. Elige por dónde empezamos.</div></div>
-  <div class="big2"><div class="big ${p?'sel':''}" data-act="xpsel" data-k="pelicula"><span class="okk">${svg('chk')}</span><div class="blob" style="background:#FFD16B;border-radius:48% 52% 46% 54%;color:#4D3A12">${svg('movie')}</div>Película</div><div class="big ${p?'':'sel'}" data-act="xpsel" data-k="serie"><span class="okk">${svg('chk')}</span><div class="blob" style="background:#B8D8FF;border-radius:36%;color:#0d2b4d">${svg('tv')}</div>Serie</div></div>
+  <div class="big2"><div class="big ${p?'sel':''}" data-act="xpsel" data-k="movie"><span class="okk">${svg('chk')}</span><div class="blob" style="background:#FFD16B;border-radius:48% 52% 46% 54%;color:#4D3A12">${svg('movie')}</div>Película</div><div class="big ${p?'':'sel'}" data-act="xpsel" data-k="show"><span class="okk">${svg('chk')}</span><div class="blob" style="background:#B8D8FF;border-radius:36%;color:#0d2b4d">${svg('tv')}</div>Serie</div></div>
   <div class="xpbot"><div class="n"><span class="pl">${svg('play')}</span><div><b>${p?'28.761':'9.314'}</b><small>${p?'películas':'series'} encajan contigo ahora mismo</small></div><a>Ver ya</a></div><div class="bt"><button class="sk">Saltar</button><button class="nx">Siguiente ${svg('arr')}</button></div></div>`}
-function vFicha(k){
+function vDetail(k){
   const x=item(k),V=(k==='VisionQuest')?D.vq:null;const name=V?V.det.name:x.name;
   const ov=V?V.det.overview:x.overview;const bd=V?V.det.backdrop:x.backdrop;
   const w=ST.vq.w,tot=7;const pct=Math.round(w/tot*100);
@@ -251,7 +251,7 @@ function vFicha(k){
   ${V?`<div class="h2">Reparto ${svg('chev')}</div><div class="circs">${V.cast.map(c=>`<div class="circ"><div class="ph">${c.img?`<img src="${IMG(c.img,'w185')}">`:svg('person')}</div><b>${c.name}</b><small>${c.role}</small></div>`).join('')}</div>`:''}
   <div style="height:170px"></div>
   <div class="floatbar"><div class="add"><button>Añadir a la lista</button><button>${svg('more')}</button></div><span class="c">${svg('chk')}</span><span class="st ${ST.favs[k]?'on':''}" data-act="fav" data-k="${k}">${svg(ST.favs[k]?'star':'star')}</span></div>`}
-function vTemporada(){
+function vSeason(){
   const V=D.vq,w=ST.vq.w;
   return `<div class="topbar back"><span class="ib" data-act="back">${svg('back')}</span><h3>Temporada 1</h3></div>
   <div style="display:flex;gap:16px;padding:6px 16px 0"><div style="width:100px;flex:none;aspect-ratio:2/3;border-radius:12px;overflow:hidden;border:1px solid var(--outl)"><img style="width:100%;height:100%;object-fit:cover" src="${IMG(V.season.poster,'w185')}"></div><div style="padding-top:16px"><div style="font-size:26px">Temporada 1</div><div style="color:var(--gold);font-size:18px">VisionQuest <span style="color:var(--onv)">•&nbsp; 2026</span></div><div style="color:var(--onv);font-size:16px;margin-top:6px">13 oct 2026<br>8 episodios</div></div></div>
@@ -275,19 +275,19 @@ function vEp(n){
 function view(){
   const top=ST.stack[ST.stack.length-1];
   let html,full=false;
-  if(top){full=top.t!=='xp';html=top.t==='ficha'?vFicha(top.k):top.t==='temporada'?vTemporada():top.t==='ep'?vEp(top.n):vXp();if(top.t==='xp')full=false}
-  else html=ST.tab==='home'?vHome():ST.tab==='progreso'?vProgreso():ST.tab==='calendario'?vCal():vSeg();
+  if(top){full=top.t!=='xp';html=top.t==='detail'?vDetail(top.k):top.t==='season'?vSeason():top.t==='ep'?vEp(top.n):vExplore();if(top.t==='xp')full=false}
+  else html=ST.tab==='home'?vHome():ST.tab==='progress'?vProgress():ST.tab==='calendar'?vCal():vWatchlist();
   const fullScreen=top&&top.t!=='xp';
   const keep=app.querySelector('.page');const sc=keep?keep.scrollTop:0;
   const _h=statusbar()+`<div class="page ${fullScreen?'full':(top&&top.t==='xp'?'xpage':'')}" id="page">${html}</div>`+(top&&top.t==='xp'?'':(fullScreen?'':nav()))+(fullScreen?'<div class="gbar"></div>':'');app.innerHTML=tr(_h);
   if(top&&top.t==='xp'){app.insertAdjacentHTML('beforeend','<div class="gbar"></div>')}
-  const fb=app.querySelector('#page .floatbar');if(fb)app.appendChild(fb);const fab0=app.querySelector('#page .fab');if(fab0)app.appendChild(fab0);const xb=app.querySelector('#page .xpbot');if(xb)app.appendChild(xb);const pg=$('#page');if(ST.keepScroll){pg.scrollTop=sc}else if(!top&&ST.tab==='progreso'&&ST.seg.prog==='S'){const t2=$('#sec-co');if(t2)pg.scrollTop=t2.offsetTop-150}ST.keepScroll=false;
+  const fb=app.querySelector('#page .floatbar');if(fb)app.appendChild(fb);const fab0=app.querySelector('#page .fab');if(fab0)app.appendChild(fab0);const xb=app.querySelector('#page .xpbot');if(xb)app.appendChild(xb);const pg=$('#page');if(ST.keepScroll){pg.scrollTop=sc}else if(!top&&ST.tab==='progress'&&ST.seg.prog==='S'){const t2=$('#sec-co');if(t2)pg.scrollTop=t2.offsetTop-150}ST.keepScroll=false;
   const stt=app.querySelector('.status');pg.addEventListener('scroll',()=>stt.classList.toggle('solid',pg.scrollTop>(fullScreen?150:6)));
 const fab=app.querySelector('.fab');if(fab){pg.addEventListener('scroll',()=>fab.classList.toggle('small',pg.scrollTop>30))}
 }
-function go(screen){ST.stack=[];if(screen==='ficha'){ST.tab='progreso';ST.stack=[{t:'ficha',k:'VisionQuest'}]}else ST.tab=screen;view()}
+function go(screen){ST.stack=[];if(screen==='detail'){ST.tab='progress';ST.stack=[{t:'detail',k:'VisionQuest'}]}else ST.tab=screen;view()}
 
-// ---- interacción ----
+// ---- interaction ----
 function ripple(el){const fx=document.createElement('span');fx.className='fx';el.appendChild(fx);el.classList.add('pop');setTimeout(()=>{fx.remove();el.classList.remove('pop')},800)}
 app.addEventListener('click',e=>{
   const a=e.target.closest('[data-act]');if(!a)return;const act=a.dataset.act,k=a.dataset.k;e.stopPropagation();
@@ -296,15 +296,15 @@ app.addEventListener('click',e=>{
   if(act==='segcal'){ST.seg.cal=k;view();return}
   if(act==='seghome'){ST.seg.home=k;ST.keepScroll=true;view();return}
   if(act==='htab'){ST.seg.homeTab=k;ST.keepScroll=true;view();return}
-  if(act==='segseg'){ST.segui.tipo=k;view();return}
-  if(act==='schip'){ST.segui.chip=k;ST.keepScroll=true;view();return}
+  if(act==='segwatch'){ST.watch.type=k;view();return}
+  if(act==='schip'){ST.watch.chip=k;ST.keepScroll=true;view();return}
   if(act==='day'){ST.day=+a.dataset.i;view();return}
   if(act==='jump'){const t=$('#sec-'+k);if(t)$('#page').scrollTo({top:t.offsetTop-110,behavior:'smooth'});return}
-  if(act==='open'){ST.stack.push({t:'ficha',k});view();return}
+  if(act==='open'){ST.stack.push({t:'detail',k});view();return}
   if(act==='back'){ST.stack.pop();view();return}
   if(act==='xp'){ST.stack.push({t:'xp'});view();return}
   if(act==='xpsel'){ST.xp=k;ST.keepScroll=true;view();return}
-  if(act==='season'){ST.stack.push({t:'temporada'});view();return}
+  if(act==='season'){ST.stack.push({t:'season'});view();return}
   if(act==='ep'){const n=+a.dataset.n;if(a.dataset.r)ST.stack[ST.stack.length-1]={t:'ep',n};else ST.stack.push({t:'ep',n});view();return}
   if(act==='fav'){ST.favs[k]=!ST.favs[k];ST.keepScroll=true;view();return}
   if(act==='mark'){const r=(a.dataset.l==='D'?DAY_S:PROG_S)[+a.dataset.i];ST.touched=true;a.classList.remove('pulse');document.querySelector('.hint .dot')&&(document.querySelector('.hint .dot').style.display='none');ripple(a);
@@ -318,27 +318,27 @@ app.addEventListener('click',e=>{
 function toast(){const old=app.querySelector('.toast');if(old)old.remove();const el=document.createElement('div');el.className='toast';
   el.innerHTML=tr('<div class="ap">'+(document.getElementById('app-icon')?document.getElementById('app-icon').innerHTML:'')+'</div><div><small>Mediaddict · ahora</small><b>Elsbeth: hoy se estrena S04E04</b></div>').replace('Mediaddict · ahora',LANG==='en'?'Mediaddict · now':'Mediaddict · ahora').replace('Elsbeth: hoy se estrena S04E04',LANG==='en'?'Elsbeth: S04E04 premieres today':'Elsbeth: hoy se estrena S04E04');
   app.appendChild(el);setTimeout(()=>el.classList.add('in'),60);setTimeout(()=>el.classList.remove('in'),4200);setTimeout(()=>el.remove(),5000)}
-// escenas por scroll
+// scroll-driven scenes
 const scenes=[...document.querySelectorAll('.scene')];
-const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&en.intersectionRatio>.55){scenes.forEach(s=>s.classList.toggle('on',s===en.target));const g=en.target.dataset.go;if(g&&ST.lastGo!==g){ST.lastGo=g;go(g);if(g==='calendario')setTimeout(toast,700)}}}),{threshold:[.55]});
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&en.intersectionRatio>.55){scenes.forEach(s=>s.classList.toggle('on',s===en.target));const g=en.target.dataset.go;if(g&&ST.lastGo!==g){ST.lastGo=g;go(g);if(g==='calendar')setTimeout(toast,700)}}}),{threshold:[.55]});
 scenes.forEach(s=>io.observe(s));
-// paleta
+// palette
 const PAL={amber:['#E9B824','#ff8a3d','#4D3A12','#F6DC8B','#4A4458'],teal:['#4EDAD2','#3b8ff0','#00504E','#6FF7EF','#3b4a4f'],crimson:['#FFB4AB','#ff4d6d','#6B1A18','#FFDAD6','#58434a'],azure:['#9ECAFF','#6a7bff','#00497D','#D1E4FF','#40485a'],purple:['#D0BCFF','#ff7ad9','#4F378B','#EADDFF','#4F4468'],emerald:['#8CD5A2','#2fbf8f','#00522B','#A8F2BE','#3d4f45']};
 const pal=$('#palette');Object.entries(PAL).forEach(([n,v])=>{const b=document.createElement('button');b.dataset.p=n;b.style.background=`linear-gradient(135deg,${v[0]} 50%,${v[1]} 50%)`;pal.appendChild(b)});
 pal.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const v=PAL[b.dataset.p];pal.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));
   const r=document.documentElement.style;r.setProperty('--acc',v[0]);r.setProperty('--acc-2',v[1]);const a=app.style;a.setProperty('--gold',v[0]);a.setProperty('--pric',v[2]);a.setProperty('--onpric',v[3]);a.setProperty('--secc',v[4])});
 pal.querySelector('button').classList.add('sel');
-// tamaño del móvil según la altura
+// phone size from the window height
 function fit(){const s=Math.max(.5,Math.min(.86,(innerHeight-210)/892));document.documentElement.style.setProperty('--s',s)}
 fit();addEventListener('resize',fit);
-// inclinación 3D
+// 3D tilt
 const t3=$('#tilt'),p3=$('#p3d');if(matchMedia('(pointer:fine)').matches){t3.addEventListener('mousemove',e=>{const r=t3.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p3.style.transform=`rotateY(${x*10}deg) rotateX(${-y*7}deg)`});t3.addEventListener('mouseleave',()=>p3.style.transform='')}
 view();
 (function(){
   const pl=document.getElementById('provline');if(pl)['Netflix','Amazon Prime Video','Disney Plus','Movistar Plus+','HBO Max','SkyShowtime'].forEach(n=>{if(PR[n]){const i=document.createElement('img');i.src=IMG(PR[n],'w92');i.alt=n;pl.appendChild(i)}});
   const cl=document.getElementById('castline');if(cl)D.vq.cast.slice(0,5).forEach(c=>{if(c.img){const i=document.createElement('img');i.src=IMG(c.img,'w185');i.alt=c.name;cl.appendChild(i)}});
   const words=[...document.querySelectorAll('.s4 .words span')];let wi=0,wt=null;
-  function hot(){words.forEach((w,i)=>w.classList.toggle('hot',i===wi));if(ST.stack.length===0&&ST.tab==='seguimiento'){ST.segui.tipo='Series';ST.segui.chip=words[wi].dataset.w;ST.keepScroll=true;view()}wi=(wi+1)%words.length}
+  function hot(){words.forEach((w,i)=>w.classList.toggle('hot',i===wi));if(ST.stack.length===0&&ST.tab==='watchlist'){ST.watch.type='Series';ST.watch.chip=words[wi].dataset.w;ST.keepScroll=true;view()}wi=(wi+1)%words.length}
   const s4=document.querySelector('.s4');
   new MutationObserver(()=>{if(s4.classList.contains('on')){if(!wt){wi=0;hot();wt=setInterval(hot,2300)}}else if(wt){clearInterval(wt);wt=null;words.forEach(w=>w.classList.remove('hot'))}}).observe(s4,{attributes:true,attributeFilter:['class']});
 })();

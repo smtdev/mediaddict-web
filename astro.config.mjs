@@ -2,10 +2,10 @@ import { defineConfig } from 'astro/config';
 import { copyFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
-// Con build.format 'file' se genera privacy.html, que Cloudflare Pages sirve en /privacy sin redirigir a /privacy/.
-// El efecto secundario es que /en/ sale como en.html; este gancho añade en/index.html para que /en/ y /en funcionen.
-const portadaIngles = {
-  name: 'portada-en-index',
+// With build.format 'file' the build emits privacy.html, which Cloudflare serves at /privacy without redirecting to /privacy/.
+// The side effect is that /en/ comes out as en.html; this hook adds en/index.html so that both /en/ and /en work.
+const englishHomeIndex = {
+  name: 'english-home-index',
   hooks: {
     'astro:build:done': async ({ dir }) => {
       const root = fileURLToPath(dir);
@@ -20,5 +20,5 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'ignore',
   build: { format: 'file' },
-  integrations: [portadaIngles],
+  integrations: [englishHomeIndex],
 });

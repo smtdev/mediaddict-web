@@ -56,11 +56,11 @@ const logos = [
     <link rel="preconnect" href="https://image.tmdb.org" />
   </head>
   <body>
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="contorno" x="-5%" y="-30%" width="110%" height="160%"><feMorphology in="SourceAlpha" operator="erode" radius="2" result="dentro"/><feComposite in="SourceGraphic" in2="dentro" operator="out"/></filter></svg>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="outline" x="-5%" y="-30%" width="110%" height="160%"><feMorphology in="SourceAlpha" operator="erode" radius="2" result="inside"/><feComposite in="SourceGraphic" in2="inside" operator="out"/></filter></svg>
     <div class="aurora"><i></i><i></i></div>
     <nav class="top">
       <a class="brand" href={href(lang, '')}><span class="ico" set:html={appIcon}></span>Mediaddict</a>
-      <div class="links"><a href="#funciones">{c.nav.features}</a><a href="#datos">{c.nav.data}</a><a href="#preguntas">{c.nav.faq}</a></div>
+      <div class="links"><a href="#features">{c.nav.features}</a><a href="#data">{c.nav.data}</a><a href="#faq">{c.nav.faq}</a></div>
       <div class="navr">
       <button class="themebtn" type="button" data-theme-toggle aria-label={t.theme} title={t.theme} set:html={sunMoon}></button>
       <div class="lang">
@@ -70,9 +70,9 @@ const logos = [
       </div>
     </nav>
 
-    <main class="stage" id="funciones">
+    <main class="stage" id="features">
       <div class="scenes" id="scenes">
-        <section class="scene on s1" data-go="progreso">
+        <section class="scene on s1" data-go="progress">
           <h1>{c.s1.h1a}<br /><em>{c.s1.h1b}</em></h1>
           <p class="lead">{c.s1.lead}</p>
           <div class="cta-row">
@@ -84,17 +84,17 @@ const logos = [
           </div>
           <p class="tiny">{c.s1.tiny}</p>
         </section>
-        <section class="scene s2" data-go="calendario">
+        <section class="scene s2" data-go="calendar">
           <div class="bigtime">{c.s2.time}</div>
           <h2>{c.s2.h2a} <em>{c.s2.h2b}</em></h2>
           <p class="lead">{c.s2.lead}</p>
           <div class="provline" id="provline"></div>
         </section>
-        <section class="scene s3" data-go="ficha">
+        <section class="scene s3" data-go="detail">
           <h2>{c.s3.h2a}<br /><em>{c.s3.h2c}</em></h2>
           <p class="lead">{c.s3.lead}</p>
         </section>
-        <section class="scene s4" data-go="seguimiento">
+        <section class="scene s4" data-go="watchlist">
           <h2 class="words">{c.s4.words.map((w, i) => <><span data-w={c.s4.keys[i]}>{w}.</span>{' '}</>)}</h2>
           <p class="lead">{c.s4.lead}</p>
         </section>
@@ -112,7 +112,7 @@ const logos = [
       </aside>
     </main>
 
-    <section class="band2" id="datos">
+    <section class="band2" id="data">
       <h2>{c.data.h2a}<br /><em>{c.data.h2b}</em></h2>
       <p class="lead">{c.data.lead}</p>
       <p class="fine">{c.data.fine}</p>
@@ -125,7 +125,7 @@ const logos = [
       </div>
     </section>
 
-    <section class="faq" id="preguntas">
+    <section class="faq" id="faq">
       <h2>{c.faqTitle}</h2>
       <div class="faqlist">
         {c.faq.map(([q, a, link]) => (

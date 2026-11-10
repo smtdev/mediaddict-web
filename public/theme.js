@@ -1,6 +1,6 @@
-// Modo claro / oscuro. Sin elección guardada sigue al sistema; el botón guarda la elección en este navegador.
+// Light / dark mode. With no saved choice it follows the system; the button saves the choice in this browser.
 (function () {
-  var KEY = 'mediaddict-tema';
+  var KEY = 'mediaddict-theme';
   var root = document.documentElement;
   var media = matchMedia('(prefers-color-scheme: light)');
   var forced = null;
@@ -26,7 +26,7 @@
       if (!b) return;
       var next = current() === 'light' ? 'dark' : 'light';
       forced = next;
-      try { localStorage.setItem(KEY, next); } catch (err) { /* sin almacenamiento: vale solo para esta visita */ }
+      try { localStorage.setItem(KEY, next); } catch (err) { /* no storage available: the choice lasts for this visit only */ }
       apply();
     });
   });
