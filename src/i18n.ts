@@ -16,6 +16,8 @@ export const ui = {
     privacy: 'Privacidad',
     terms: 'Términos',
     attrTmdb: 'This product uses the TMDB API but is not endorsed or certified by TMDB.',
+    // Required verbatim, in English, by Trakt's API Use Policy (2026-10-20).
+    attrTrakt: 'Mediaddict uses Trakt but is not endorsed or certified by Trakt.',
     attrData: 'Datos de títulos y de cuentas proporcionados por',
     and: ' y ',
     attrNotAffiliated:
@@ -38,6 +40,8 @@ export const ui = {
     privacy: 'Privacy',
     terms: 'Terms',
     attrTmdb: 'This product uses the TMDB API but is not endorsed or certified by TMDB.',
+    // Required verbatim, in English, by Trakt's API Use Policy (2026-10-20).
+    attrTrakt: 'Mediaddict uses Trakt but is not endorsed or certified by Trakt.',
     attrData: 'Title and account data provided by',
     and: ' and ',
     attrNotAffiliated:
