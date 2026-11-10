@@ -307,9 +307,9 @@ html[data-theme=light] .play{box-shadow:0 14px 34px -14px rgba(31,23,16,.6)}
 .s1 h1{font-size:clamp(48px,6.4vw,96px);line-height:.95}
 .tiny{margin-top:22px;font-size:14px;color:var(--mut);letter-spacing:.02em}
 .bigtime{font-family:'Bricolage Grotesque Variable',sans-serif;font-weight:800;font-size:clamp(90px,13vw,190px);line-height:.8;letter-spacing:-.03em;color:var(--acc-t);filter:url(#outline);margin-bottom:18px}
-.s4 .words{font-size:clamp(46px,6.2vw,92px);display:flex;flex-direction:column;gap:4px}
-.s4 .words span{opacity:.28;transition:opacity .5s,color .5s,transform .5s;display:block;transform-origin:left}
-.s4 .words span.hot{opacity:1;color:var(--acc-t);transform:translateX(18px)}
+.words{font-size:clamp(46px,6.2vw,92px);display:flex;flex-direction:column;gap:4px}
+.words span{opacity:.28;transition:opacity .5s,color .5s,transform .5s;display:block;transform-origin:left}
+.words span.hot{opacity:1;color:var(--acc-t);transform:translateX(18px)}
 .provline{display:flex;gap:10px;flex-wrap:wrap}
 .provline img{width:46px;height:46px;border-radius:12px;box-shadow:0 8px 22px -8px #000;border:1px solid var(--line)}
 .band2{max-width:1280px;padding:110px clamp(20px,5vw,64px) 40px}
@@ -344,7 +344,32 @@ nav.top .links a:hover{color:var(--txt)}
 .faqlist details p a{color:var(--acc-t)}
 .foot a{color:var(--mut)}
 html{scroll-padding-top:70px}
-@media(max-width:1020px){.stage{display:flex;flex-direction:column;gap:0}.scenes{display:contents}.scene{order:3}.scene.s1{order:1;padding-top:96px}.rail{order:2;margin-top:0}.sticky{position:relative;height:auto;padding:20px 0}.scene{min-height:auto;padding:46px 0;opacity:1;transform:none}.f1,.f2{display:none}}
+.sm,.short,.cap{display:none}
+/* Phone layout: the hero flows, then one phone sticks under the nav and the scenes become
+   scroll spacers; phone.js moves each scene's .sc into .cap and shows the active one. */
+@media(max-width:1020px){
+  .stage{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+  .scenes{display:contents}
+  .scene{opacity:1;transform:none}
+  .scene.s1{grid-row:1;grid-column:1;min-height:auto;padding:96px 0 28px}
+  .scene.sm{display:block;grid-row:2}.scene.s2{grid-row:3}.scene.s3{grid-row:4}.scene.s4{grid-row:5}
+  .scene.sm,.scene.s2,.scene.s3,.scene.s4{grid-column:1;min-height:0;height:85vh;height:85svh;padding:0}
+  .rail{grid-row:2/6;grid-column:1;z-index:2}
+  .sticky{top:var(--navh,60px);height:calc(100vh - var(--navh,60px));height:calc(100svh - var(--navh,60px));justify-content:flex-start;gap:14px;padding-top:6px}
+  .tilt,.cap{flex:none}
+  .cap{display:block;position:relative;width:100%;height:9.4rem}
+  .cap .sc{position:absolute;inset:0 0 auto;opacity:0;transform:translateY(10px);transition:opacity .45s,transform .45s;pointer-events:none}
+  .cap .sc.on{opacity:1;transform:none;pointer-events:auto}
+  .cap h2{font-size:clamp(24px,6.6vw,30px)}
+  .cap .words{flex-direction:row;flex-wrap:wrap;gap:0 .3em;font-size:clamp(22px,6vw,30px)}.cap .words span.hot{transform:none}
+  .cap .lead,.cap .bigtime{display:none}
+  .cap .short{display:block;margin:8px 0 10px;font-size:15px;line-height:1.4;color:var(--mut)}
+  .cap .provline{gap:8px}.cap .provline img{width:32px;height:32px;border-radius:9px}
+  .s1 .palette{margin-top:22px;width:max-content;max-width:100%}
+  .f1,.f2{display:none}
+}
+/* On a touch screen a drag over the demo scrolls the page, not the demo's list; taps still work. */
+@media(max-width:1020px) and (pointer:coarse){.page{overflow-y:hidden}}
 html[data-theme=light] .aurora{opacity:.3}
 html[data-theme=light] .device{box-shadow:0 0 0 1.5px #4a413b inset,0 50px 90px -34px rgba(31,23,16,.45),0 0 0 1px #000}
 html[data-theme=light] .provline img{box-shadow:0 8px 22px -10px rgba(31,23,16,.5)}

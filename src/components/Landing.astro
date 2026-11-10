@@ -85,19 +85,31 @@ const logos = [
           </div>
           <p class="tiny">{c.s1.tiny}</p>
         </section>
+        <section class="scene sm" data-go="progress">
+          <div class="sc"><h2>{c.m.tryH}</h2><p class="short">{c.m.tryL}</p></div>
+        </section>
         <section class="scene s2" data-go="calendar">
-          <div class="bigtime">{c.s2.time}</div>
-          <h2>{c.s2.h2a} <em>{c.s2.h2b}</em></h2>
-          <p class="lead">{c.s2.lead}</p>
-          <div class="provline" id="provline"></div>
+          <div class="sc">
+            <div class="bigtime">{c.s2.time}</div>
+            <h2>{c.s2.h2a} <em>{c.s2.h2b}</em></h2>
+            <p class="lead">{c.s2.lead}</p>
+            <p class="short">{c.m.s2}</p>
+            <div class="provline" id="provline"></div>
+          </div>
         </section>
         <section class="scene s3" data-go="detail">
-          <h2>{c.s3.h2a}<br /><em>{c.s3.h2c}</em></h2>
-          <p class="lead">{c.s3.lead}</p>
+          <div class="sc">
+            <h2>{c.s3.h2a}<br /><em>{c.s3.h2c}</em></h2>
+            <p class="lead">{c.s3.lead}</p>
+            <p class="short">{c.m.s3}</p>
+          </div>
         </section>
         <section class="scene s4" data-go="watchlist">
-          <h2 class="words">{c.s4.words.map((w, i) => <><span data-w={c.s4.keys[i]}>{w}.</span>{' '}</>)}</h2>
-          <p class="lead">{c.s4.lead}</p>
+          <div class="sc">
+            <h2 class="words">{c.s4.words.map((w, i) => <><span data-w={c.s4.keys[i]}>{w}.</span>{' '}</>)}</h2>
+            <p class="lead">{c.s4.lead}</p>
+            <p class="short">{c.m.s4}</p>
+          </div>
         </section>
       </div>
       <aside class="rail">
@@ -108,6 +120,7 @@ const logos = [
             <div class="float f2"><span><b>{c.float.b[0]}</b> · {c.float.b[1]}</span></div>
             <div class="device"><div class="screenwrap"><div class="app" id="app" aria-label="Demo"></div></div></div>
           </div></div>
+          <div class="cap" id="cap"></div>
           <div class="palette" id="palette"><span>{c.palette}</span></div>
         </div>
       </aside>
