@@ -13,7 +13,7 @@ const es = lang === 'es';
   {es ? (
     <article class="legal">
       <h1>Política de privacidad</h1>
-      <p class="updated">Última actualización: 9 de noviembre de 2026</p>
+      <p class="updated">Última actualización: 10 de noviembre de 2026</p>
 
       <p>Mediaddict es una app para Android para llevar el control de las películas, series y anime que ves. Esta política explica qué datos maneja la app, adónde van, para qué se usan y qué control tienes sobre ellos. Aplica a la app Mediaddict y a este sitio web, mediaddict.app. Está escrita para que se entienda: si algo no queda claro, escríbenos.</p>
 
@@ -27,6 +27,7 @@ const es = lang === 'es';
         <li>La app sí envía a Google, a través de Firebase, <strong>informes de fallos y estadísticas de uso</strong>. Tienen dos interruptores en Ajustes y están activados por defecto, pero no se recoge ni se envía nada hasta que ves el aviso inicial. Hay una sección entera sobre ello más abajo.</li>
         <li>La app se conecta directamente desde tu teléfono a servicios de terceros (TMDB, Trakt, Simkl…) para funcionar. Cada uno ve tu dirección IP, como cualquier servidor al que te conectas.</li>
         <li>Puedes usarla sin ninguna cuenta.</li>
+        <li>Las compras opcionales para apoyar la app las cobra <strong>Google Play</strong>: nunca vemos tus datos de pago.</li>
       </ul>
 
       <h2 id="telefono">Datos que se guardan en tu teléfono</h2>
@@ -51,7 +52,7 @@ const es = lang === 'es';
         <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): información de episodios, usada para casar tus episodios vistos al pasar tu biblioteca entre servicios.</li>
         <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): premios y nominaciones de los títulos, y datos auxiliares de algunas series.</li>
         <li><strong>KLIPY</strong> (<a href="https://klipy.com" rel="noopener">klipy.com</a>; <a href="https://klipy.com/support/privacy-policy" rel="noopener">su política de privacidad</a>): GIF cuando escribes un comentario en Trakt, en búsqueda o en tendencia. Se envía lo que buscas, tu dirección IP y un identificador aleatorio de la instalación, que no está ligado a tu identidad. Según su política, KLIPY puede guardar el historial de búsquedas y de contenido visto asociado a la IP y usarlo, entre otras cosas, para estadísticas y publicidad; no sabemos qué hace con el identificador de la instalación. No se le envía tu lista ni los datos de tus cuentas, y los GIF se cargan directamente desde sus servidores.</li>
-        <li><strong>Google</strong>: Google Drive, solo si activas la copia de seguridad en Drive (ver más abajo); y Firebase, para los informes de fallos y estadísticas de uso (ver más abajo).</li>
+        <li><strong>Google</strong>: Google Drive, solo si activas la copia de seguridad en Drive (ver más abajo); Firebase, para los informes de fallos y estadísticas de uso (ver más abajo); y Google Play, para las compras opcionales (ver más abajo).</li>
       </ul>
       <p>A estos servicios (excepto Trakt, Simkl y Google, que usan tu cuenta cuando tú la conectas) se les pide información sobre títulos concretos; no se les envía tu nombre, tu correo ni tu biblioteca.</p>
 
@@ -82,12 +83,22 @@ const es = lang === 'es';
       </ul>
       <p>Google trata estos datos según las <a href="https://firebase.google.com/support/privacy" rel="noopener">condiciones de privacidad de Firebase</a> y puede procesarlos en servidores fuera de la Unión Europea.</p>
 
+      <h2 id="compras">Compras (Google Play)</h2>
+      <p>La app ofrece formas opcionales de apoyar su desarrollo: una suscripción mensual o anual, un pago único «de por vida» e invitaciones sueltas. Ninguna desbloquea, quita ni cambia nada de la app. Se venden a través de <strong>Google Play</strong>, con los precios que Google Play te muestra.</p>
+      <ul>
+        <li><strong>El pago lo procesa Google Play.</strong> Pagas con el medio de pago de tu cuenta de Google, según las condiciones de Google Play y la <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad de Google</a>. Ni la app ni nosotros vemos ni guardamos tu tarjeta, tus datos bancarios ni tu dirección de facturación.</li>
+        <li><strong>Qué ve la app:</strong> Google Play le dice qué producto has comprado, cuándo, si el pago está pendiente y, en las suscripciones, si se renueva o está en pausa, junto con un identificador de la compra. La app usa ese identificador solo para confirmar la compra a Google Play; lo tiene en memoria mientras está abierta y nunca lo escribe en el teléfono ni en registros, ni lo envía a nadie más. No guarda el número de pedido ni el precio.</li>
+        <li><strong>Qué queda en el teléfono:</strong> el último estado que dio Google Play (por ejemplo, «de por vida desde tal fecha» o «suscripción anual que se renueva»), para mostrártelo. No entra en las copias de seguridad, y «Restaurar compras» se lo vuelve a preguntar a Google Play.</li>
+        <li><strong>Estadísticas de uso:</strong> la app no envía ningún evento propio sobre tus compras. Si tienes activadas las estadísticas de uso, Firebase Analytics puede registrar automáticamente que se hizo una compra dentro de la app (qué producto, su precio y su moneda), nunca tus datos de pago. Si apagas «Estadísticas de uso», deja de hacerlo.</li>
+      </ul>
+      <p>Cómo cancelar una suscripción y cómo pedir un reembolso se explica en las <a href={href('es', 'terms')}>condiciones del servicio</a>.</p>
+
       <h2 id="notificaciones">Notificaciones</h2>
       <p>Si lo permites, la app muestra avisos de estrenos. Se generan en tu teléfono a partir de tu biblioteca; no usamos un servicio de notificaciones push propio.</p>
 
       <h2 id="uso">Para qué usamos los datos y con qué base legal</h2>
       <ul>
-        <li><strong>Hacer funcionar la app</strong> (tu biblioteca, tu cuenta de Trakt o Simkl, la copia de seguridad, los avisos): ocurre en tu teléfono o con los servicios que tú conectas, a petición tuya. La base es que lo pides al usar la app.</li>
+        <li><strong>Hacer funcionar la app</strong> (tu biblioteca, tu cuenta de Trakt o Simkl, la copia de seguridad, los avisos, las compras que hagas): ocurre en tu teléfono o con los servicios que tú conectas, a petición tuya. La base es que lo pides al usar la app.</li>
         <li><strong>Informes de fallos y estadísticas de uso:</strong> para detectar y arreglar errores, y saber qué funciones se usan, con el fin de mantener y mejorar la app. La base es nuestro interés legítimo en ello (art. 6.1.f del RGPD), con aviso previo y la posibilidad de oponerte en cualquier momento apagando los interruptores en Ajustes. Para ser claros: una vez que has visto el aviso inicial están activados sin pedirte antes tu consentimiento, y por eso te avisamos y puedes apagarlos cuando quieras. Antes de ver ese aviso no se recoge ni se envía nada.</li>
         <li><strong>Atender tus mensajes:</strong> si nos escribes, usamos tu correo y tu mensaje solo para responderte.</li>
       </ul>
@@ -97,6 +108,7 @@ const es = lang === 'es';
       <ul>
         <li><strong>Datos del teléfono:</strong> mientras no los borres, desinstales la app o borres sus datos en Android.</li>
         <li><strong>Cuentas de Trakt, Simkl y Google:</strong> las gestionan ellos; conservan lo que tú tengas allí hasta que lo borres tú.</li>
+        <li><strong>Compras:</strong> el historial de pedidos lo guarda Google Play en tu cuenta de Google, según su política. En el teléfono, el estado de tus compras queda hasta que desinstales la app o borres sus datos.</li>
         <li><strong>Informes de fallos y estadísticas de uso:</strong> los conserva Firebase durante los plazos que fija Google para esos servicios. Los ajustaremos al mínimo razonable y los reflejaremos en esta política.</li>
         <li><strong>Correos que nos envíes:</strong> el tiempo necesario para atenderte.</li>
       </ul>
@@ -136,7 +148,7 @@ const es = lang === 'es';
   ) : (
     <article class="legal">
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated: November 9, 2026</p>
+      <p class="updated">Last updated: November 10, 2026</p>
 
       <p>Mediaddict is an Android app to keep track of the movies, TV shows and anime you watch. This policy explains what data the app handles, where it goes, what it is used for and what control you have over it. It applies to the Mediaddict app and to this website, mediaddict.app. It is written to be understood: if something is unclear, write to us.</p>
 
@@ -150,6 +162,7 @@ const es = lang === 'es';
         <li>The app does send Google, through Firebase, <strong>crash reports and usage statistics</strong>. They have two switches in Settings and are on by default, but nothing is collected or sent until you see the initial notice. There is a full section on this below.</li>
         <li>The app connects directly from your phone to third-party services (TMDB, Trakt, Simkl…) to work. Each one sees your IP address, as any server you connect to does.</li>
         <li>You can use it with no account at all.</li>
+        <li>Optional purchases to support the app are charged by <strong>Google Play</strong>: we never see your payment details.</li>
       </ul>
 
       <h2 id="phone">Data stored on your phone</h2>
@@ -174,7 +187,7 @@ const es = lang === 'es';
         <li><strong>TheTVDB</strong> (<a href="https://thetvdb.com/privacy-policy" rel="noopener">thetvdb.com</a>): episode information, used to match your watched episodes when moving your library between services.</li>
         <li><strong>Wikidata</strong> (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">wikidata.org</a>): awards and nominations for titles, and auxiliary data for some series.</li>
         <li><strong>KLIPY</strong> (<a href="https://klipy.com" rel="noopener">klipy.com</a>; <a href="https://klipy.com/support/privacy-policy" rel="noopener">its privacy policy</a>): GIFs when you write a Trakt comment, by search or trending. What you search for, your IP address and a random per-installation identifier, not tied to your identity, are sent. Under its policy, KLIPY may keep the history of searches and of content viewed tied to the IP and use it, among other things, for statistics and advertising; we do not know what it does with the installation identifier. Your list and your account data are not sent to it, and GIFs load directly from its servers.</li>
-        <li><strong>Google</strong>: Google Drive, only if you turn on Drive backup (see below); and Firebase, for crash reports and usage statistics (see below).</li>
+        <li><strong>Google</strong>: Google Drive, only if you turn on Drive backup (see below); Firebase, for crash reports and usage statistics (see below); and Google Play, for optional purchases (see below).</li>
       </ul>
       <p>These services (other than Trakt, Simkl and Google, which use your account when you connect it) are asked about specific titles; your name, email or library are not sent to them.</p>
 
@@ -205,12 +218,22 @@ const es = lang === 'es';
       </ul>
       <p>Google handles this data under <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy terms</a> and may process it on servers outside the European Union.</p>
 
+      <h2 id="purchases">Purchases (Google Play)</h2>
+      <p>The app offers optional ways to support its development: a monthly or yearly subscription, a one-time "lifetime" payment and one-off tips. None of them unlocks, removes or changes anything in the app. They are sold through <strong>Google Play</strong>, at the prices Google Play shows you.</p>
+      <ul>
+        <li><strong>Google Play processes the payment.</strong> You pay with the payment method in your Google account, under Google Play's terms and <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. Neither the app nor we see or store your card, your bank details or your billing address.</li>
+        <li><strong>What the app sees:</strong> Google Play tells it which product you bought, when, whether the payment is pending and, for subscriptions, whether it renews or is on hold, together with an identifier for the purchase. The app uses that identifier only to confirm the purchase to Google Play; it keeps it in memory while the app is open and never writes it to the phone or to logs, or sends it to anyone else. It does not store the order number or the price.</li>
+        <li><strong>What stays on the phone:</strong> the last state Google Play reported (for example, "lifetime since a given date" or "yearly subscription, renewing"), so the app can show it to you. It is not included in backups, and "Restore purchases" asks Google Play again.</li>
+        <li><strong>Usage statistics:</strong> the app sends no event of its own about your purchases. If usage statistics are on, Firebase Analytics may automatically record that an in-app purchase took place (which product, its price and its currency), never your payment details. If you turn "Usage statistics" off, it stops doing so.</li>
+      </ul>
+      <p>How to cancel a subscription and how to ask for a refund is explained in the <a href={href('en', 'terms')}>terms of service</a>.</p>
+
       <h2 id="notifications">Notifications</h2>
       <p>If you allow it, the app shows release alerts. They are generated on your phone from your library; we do not run a push notification service of our own.</p>
 
       <h2 id="use">What we use the data for and on what legal basis</h2>
       <ul>
-        <li><strong>Making the app work</strong> (your library, your Trakt or Simkl account, backup, alerts): it happens on your phone or with the services you connect, at your request. The basis is that you ask for it by using the app.</li>
+        <li><strong>Making the app work</strong> (your library, your Trakt or Simkl account, backup, alerts, the purchases you make): it happens on your phone or with the services you connect, at your request. The basis is that you ask for it by using the app.</li>
         <li><strong>Crash reports and usage statistics:</strong> to detect and fix errors, and to know which features are used, in order to maintain and improve the app. The basis is our legitimate interest in doing so (Art. 6(1)(f) GDPR), with prior notice and the ability to object at any time by turning the switches off in Settings. To be clear: once you have seen the initial notice they are on without asking for your consent beforehand, which is why we tell you and you can turn them off whenever you like. Nothing is collected or sent before you see that notice.</li>
         <li><strong>Answering your messages:</strong> if you write to us, we use your email and your message only to reply.</li>
       </ul>
@@ -220,6 +243,7 @@ const es = lang === 'es';
       <ul>
         <li><strong>Data on the phone:</strong> until you delete it, uninstall the app or clear its data in Android.</li>
         <li><strong>Trakt, Simkl and Google accounts:</strong> they run them; they keep what you have there until you delete it.</li>
+        <li><strong>Purchases:</strong> Google Play keeps the order history in your Google account, under its own policy. On the phone, the state of your purchases stays until you uninstall the app or clear its data.</li>
         <li><strong>Crash reports and usage statistics:</strong> kept by Firebase for the periods Google sets for those services. We will set them to the reasonable minimum and reflect them in this policy.</li>
         <li><strong>Emails you send us:</strong> for as long as needed to help you.</li>
       </ul>

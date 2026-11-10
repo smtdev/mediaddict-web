@@ -8,12 +8,12 @@ const es = lang === 'es';
   lang={lang}
   slug="terms"
   title={es ? 'Condiciones del servicio · Mediaddict' : 'Terms of service · Mediaddict'}
-  description={es ? 'Condiciones de uso de Mediaddict: licencia, uso aceptable, servicios de terceros, garantías, responsabilidad y ley aplicable.' : 'Terms of use for Mediaddict: license, acceptable use, third-party services, warranties, liability and governing law.'}
+  description={es ? 'Condiciones de uso de Mediaddict: licencia, uso aceptable, comentarios, servicios de terceros, garantías, responsabilidad y ley aplicable.' : 'Terms of use for Mediaddict: license, acceptable use, comments, third-party services, warranties, liability and governing law.'}
 >
   {es ? (
     <article class="legal">
       <h1>Condiciones del servicio</h1>
-      <p class="updated">Última actualización: 6 de noviembre de 2026</p>
+      <p class="updated">Última actualización: 10 de noviembre de 2026</p>
 
       <h2 id="quien">Quién ofrece Mediaddict y aceptación</h2>
       <p>Mediaddict la ofrece <strong>Sergio Martín</strong>, persona física y desarrollador independiente (en adelante, «nosotros»). Al instalar o usar la app Mediaddict o este sitio web aceptas estas condiciones. Si no estás de acuerdo, no los uses.</p>
@@ -34,15 +34,27 @@ const es = lang === 'es';
         <li>usar la app para recopilar de forma automatizada datos de esos servicios.</li>
       </ul>
 
+      <h2 id="comentarios">Comentarios</h2>
+      <p>Si escribes comentarios, reseñas o respuestas a través de la app, se publican en Trakt con tu cuenta y quedan sujetos también a las normas de Trakt. No publiques contenido objetable. En concreto, no publiques:</p>
+      <ul>
+        <li>insultos, acoso o amenazas, ni contenido que incite al odio o a la violencia contra personas o grupos;</li>
+        <li>contenido sexual explícito, ni ningún contenido sexual que implique a menores;</li>
+        <li>contenido ilegal o que infrinja derechos de autor u otros derechos de terceros;</li>
+        <li>datos personales de otras personas sin su permiso;</li>
+        <li>spam, publicidad o enlaces engañosos.</li>
+      </ul>
+      <p>Si ves un comentario así, puedes denunciarlo desde la app: la denuncia llega a los moderadores de Trakt, que deciden qué hacer con él. También puedes bloquear a su autor desde la app y dejarás de ver sus comentarios. Mediaddict no guarda ni modera los comentarios: viven en Trakt, que puede retirar el contenido que incumpla sus normas.</p>
+
       <h2 id="terceros">Servicios de terceros y no afiliación</h2>
-      <p>Mediaddict usa servicios de terceros: Trakt, Simkl, TMDB, TheTVDB, JustWatch (a través de TMDB), Wikidata, KLIPY y Google (Drive y Firebase). Su uso se rige por las condiciones y políticas de cada uno, que debes cumplir. Mediaddict es independiente y no está afiliada, respaldada ni patrocinada por ninguno de ellos. Los nombres y marcas pertenecen a sus propietarios.</p>
+      <p>Mediaddict usa servicios de terceros: Trakt, Simkl, TMDB, TheTVDB, JustWatch (a través de TMDB), Wikidata, KLIPY y Google (Drive, Firebase y Google Play). Su uso se rige por las condiciones y políticas de cada uno, que debes cumplir. Mediaddict es independiente y no está afiliada, respaldada ni patrocinada por ninguno de ellos. Los nombres y marcas pertenecen a sus propietarios.</p>
       <p>Esos servicios pueden cambiar, limitar, cobrar o dejar de funcionar sin que podamos evitarlo, y la app puede verse afectada en parte o por completo. No somos responsables de lo que hagan.</p>
       <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+      <p>Mediaddict uses Trakt but is not endorsed or certified by Trakt.</p>
 
       <h2 id="contenido">Contenido de terceros</h2>
       <ul>
         <li><strong>Fichas, carteles e imágenes:</strong> proceden de TMDB y de otros servicios, y pertenecen a sus titulares. Pueden ser incorrectos, estar incompletos o cambiar.</li>
-        <li><strong>Comentarios de Trakt:</strong> si lees o escribes comentarios a través de la app, son de sus autores y se rigen por las normas de Trakt. La app permite reportar y bloquear comentarios; nosotros no los moderamos.</li>
+        <li><strong>Comentarios de Trakt:</strong> si lees o escribes comentarios a través de la app, son de sus autores y se rigen por las normas de Trakt y por las del apartado <a href="#comentarios">Comentarios</a>. La app permite denunciar comentarios a los moderadores de Trakt y bloquear a sus autores; nosotros no los moderamos.</li>
         <li><strong>GIF:</strong> los ofrece KLIPY según sus condiciones.</li>
       </ul>
 
@@ -53,8 +65,19 @@ const es = lang === 'es';
       <h2 id="avisos">Notificaciones</h2>
       <p>Los avisos de estreno se generan en tu teléfono con los datos de terceros disponibles y pueden llegar tarde, no llegar o ser inexactos (por ejemplo, si una fecha cambia o el sistema Android limita la app en segundo plano). No dependas de ellos para nada importante.</p>
 
+      <h2 id="compras">Compras opcionales para apoyar la app</h2>
+      <p>La app es gratis y funciona igual con o sin compras. Si quieres apoyar su desarrollo, puedes hacerlo con una suscripción mensual o anual, con un pago único «de por vida» o con invitaciones sueltas. <strong>Ninguna compra desbloquea, quita ni cambia nada de la app</strong>, ni da derecho a funciones futuras: es un apoyo voluntario.</p>
+      <ul>
+        <li><strong>Google Play:</strong> las compras se hacen a través de Google Play y el pago se rige por sus condiciones. El precio, los impuestos y la moneda son los que Google Play te muestra antes de confirmar.</li>
+        <li><strong>Suscripciones:</strong> se renuevan automáticamente al final de cada periodo hasta que las canceles. Puedes cancelarlas cuando quieras en Google Play (Pagos y suscripciones); la app tiene un enlace a ese sitio. Al cancelar, la suscripción sigue hasta el final del periodo ya pagado y no se vuelve a cobrar. Los cambios entre el plan mensual y el anual los aplica Google Play según sus reglas.</li>
+        <li><strong>«De por vida»:</strong> es un pago único que no se renueva.</li>
+        <li><strong>Invitaciones:</strong> son pagos únicos; puedes hacer las que quieras.</li>
+        <li><strong>Reembolsos:</strong> se piden a Google Play y se resuelven según su política de reembolsos. Si tienes un problema con una compra, también puedes escribirnos a <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</li>
+      </ul>
+      <p>Nada de este apartado limita los derechos que la ley te reconozca como consumidor. Qué datos ve la app de tus compras se explica en la <a href={href('es', 'privacy')}>política de privacidad</a>.</p>
+
       <h2 id="disponibilidad">Disponibilidad y cambios en la app</h2>
-      <p>Podemos actualizar, cambiar, limitar o retirar funciones de la app, o la app entera, en cualquier momento, por ejemplo por cambios en los servicios de terceros. Intentaremos avisar con antelación cuando sea razonable. La app se ofrece gratis; si en el futuro se introdujera algún pago, se anunciaría y estas condiciones se actualizarían antes.</p>
+      <p>Podemos actualizar, cambiar, limitar o retirar funciones de la app, o la app entera, en cualquier momento, por ejemplo por cambios en los servicios de terceros. Intentaremos avisar con antelación cuando sea razonable. La app se descarga y se usa gratis; las compras opcionales del apartado anterior no desbloquean nada.</p>
 
       <h2 id="propiedad">Propiedad intelectual</h2>
       <p>La app Mediaddict, su código, diseño, nombre e iconos pertenecen a su autor. Los nombres, logotipos y marcas de terceros (Trakt, Simkl, TMDB, TheTVDB, JustWatch, Google y otros) pertenecen a sus propietarios, y su aparición aquí no implica respaldo. Necesitas nuestro permiso previo y por escrito para usar el nombre o el logotipo de Mediaddict con fines distintos de referirte a la app.</p>
@@ -80,7 +103,7 @@ const es = lang === 'es';
   ) : (
     <article class="legal">
       <h1>Terms of service</h1>
-      <p class="updated">Last updated: November 6, 2026</p>
+      <p class="updated">Last updated: November 10, 2026</p>
 
       <h2 id="who">Who offers Mediaddict, and acceptance</h2>
       <p>Mediaddict is offered by <strong>Sergio Martín</strong>, an individual and independent developer ("we"). By installing or using the Mediaddict app or this website you accept these terms. If you do not agree, do not use them.</p>
@@ -101,15 +124,27 @@ const es = lang === 'es';
         <li>use the app to collect data from those services in an automated way.</li>
       </ul>
 
+      <h2 id="comments">Comments</h2>
+      <p>If you write comments, reviews or replies through the app, they are posted on Trakt with your account and are also subject to Trakt's rules. Do not post objectionable content. In particular, do not post:</p>
+      <ul>
+        <li>insults, harassment or threats, or content that incites hatred or violence against people or groups;</li>
+        <li>sexually explicit content, or any sexual content involving minors;</li>
+        <li>content that is illegal or infringes copyright or other third-party rights;</li>
+        <li>other people's personal data without their permission;</li>
+        <li>spam, advertising or misleading links.</li>
+      </ul>
+      <p>If you see a comment like that, you can report it from the app: the report goes to Trakt's moderators, who decide what to do with it. You can also block its author from the app, and you will stop seeing their comments. Mediaddict does not store or moderate comments: they live on Trakt, which can remove content that breaks its rules.</p>
+
       <h2 id="third-parties">Third-party services and non-affiliation</h2>
-      <p>Mediaddict uses third-party services: Trakt, Simkl, TMDB, TheTVDB, JustWatch (through TMDB), Wikidata, KLIPY and Google (Drive and Firebase). Their use is governed by each one's own terms and policies, which you must follow. Mediaddict is independent and is not affiliated with, endorsed by or sponsored by any of them. Names and trademarks belong to their owners.</p>
+      <p>Mediaddict uses third-party services: Trakt, Simkl, TMDB, TheTVDB, JustWatch (through TMDB), Wikidata, KLIPY and Google (Drive, Firebase and Google Play). Their use is governed by each one's own terms and policies, which you must follow. Mediaddict is independent and is not affiliated with, endorsed by or sponsored by any of them. Names and trademarks belong to their owners.</p>
       <p>Those services may change, limit, charge for or stop working without our being able to prevent it, and the app may be affected in part or entirely. We are not responsible for what they do.</p>
       <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+      <p>Mediaddict uses Trakt but is not endorsed or certified by Trakt.</p>
 
       <h2 id="content">Third-party content</h2>
       <ul>
         <li><strong>Title pages, posters and images:</strong> they come from TMDB and other services, and belong to their holders. They may be incorrect, incomplete or change.</li>
-        <li><strong>Trakt comments:</strong> if you read or write comments through the app, they belong to their authors and follow Trakt's rules. The app lets you report and block comments; we do not moderate them.</li>
+        <li><strong>Trakt comments:</strong> if you read or write comments through the app, they belong to their authors and follow Trakt's rules and the <a href="#comments">Comments</a> section above. The app lets you report comments to Trakt's moderators and block their authors; we do not moderate them.</li>
         <li><strong>GIFs:</strong> provided by KLIPY under its own terms.</li>
       </ul>
 
@@ -120,8 +155,19 @@ const es = lang === 'es';
       <h2 id="alerts">Notifications</h2>
       <p>Release alerts are generated on your phone from the third-party data available and may arrive late, not arrive or be inaccurate (for example, if a date changes or Android limits the app in the background). Do not rely on them for anything important.</p>
 
+      <h2 id="purchases">Optional purchases to support the app</h2>
+      <p>The app is free and works the same with or without purchases. If you want to support its development, you can do so with a monthly or yearly subscription, a one-time "lifetime" payment or one-off tips. <strong>No purchase unlocks, removes or changes anything in the app</strong>, or entitles you to future features: it is voluntary support.</p>
+      <ul>
+        <li><strong>Google Play:</strong> purchases are made through Google Play, and payment is governed by its terms. The price, taxes and currency are the ones Google Play shows you before you confirm.</li>
+        <li><strong>Subscriptions:</strong> they renew automatically at the end of each period until you cancel them. You can cancel at any time in Google Play (Payments and subscriptions); the app has a link to it. When you cancel, the subscription runs until the end of the period already paid and you are not charged again. Switches between the monthly and the yearly plan are applied by Google Play under its rules.</li>
+        <li><strong>"Lifetime":</strong> a one-time payment that does not renew.</li>
+        <li><strong>Tips:</strong> one-time payments; you can leave as many as you like.</li>
+        <li><strong>Refunds:</strong> they are requested from Google Play and decided under its refund policy. If you have a problem with a purchase, you can also write to us at <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</li>
+      </ul>
+      <p>Nothing in this section limits the rights the law gives you as a consumer. What the app sees of your purchases is explained in the <a href={href('en', 'privacy')}>privacy policy</a>.</p>
+
       <h2 id="availability">Availability and changes to the app</h2>
-      <p>We may update, change, limit or withdraw features of the app, or the whole app, at any time, for example because of changes in third-party services. We will try to give notice in advance when reasonable. The app is free; if any payment were introduced in the future, it would be announced and these terms updated beforehand.</p>
+      <p>We may update, change, limit or withdraw features of the app, or the whole app, at any time, for example because of changes in third-party services. We will try to give notice in advance when reasonable. The app is free to download and use; the optional purchases in the previous section unlock nothing.</p>
 
       <h2 id="ip">Intellectual property</h2>
       <p>The Mediaddict app, its code, design, name and icons belong to its author. Third-party names, logos and trademarks (Trakt, Simkl, TMDB, TheTVDB, JustWatch, Google and others) belong to their owners, and their appearance here implies no endorsement. You need our prior written permission to use the Mediaddict name or logo for purposes other than referring to the app.</p>
