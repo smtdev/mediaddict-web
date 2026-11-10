@@ -2,8 +2,9 @@
 
 **Keep track of what you watch.** Mediaddict is an Android app to follow your movies, TV shows and anime: what you have watched, which episode you are on and what is coming next.
 
-- Website: [mediaddict.app](https://mediaddict.app)
-- Google Play: [Mediaddict](https://play.google.com/store/apps/details?id=smt.app.mediaddict)
+<a href="https://play.google.com/store/apps/details?id=smt.app.mediaddict"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80"></a>
+
+Website: [mediaddict.app](https://mediaddict.app)
 
 ## What it does
 
@@ -13,7 +14,17 @@
 - **Your library is yours.** No account of its own and no servers holding your list. Optional backups to a folder on your phone or to your own Google Drive.
 - **Free, with no ads.**
 
-Title data comes from [TMDB](https://www.themoviedb.org), [Trakt](https://trakt.tv), [Simkl](https://simkl.com) and [TheTVDB](https://thetvdb.com). This product uses the TMDB API but is not endorsed or certified by TMDB.
+## Powered by
+
+<p>
+  <a href="https://www.themoviedb.org"><img alt="TMDB" src=".github/readme/tmdb.svg" height="56"></a>
+  <a href="https://trakt.tv"><img alt="Trakt" src=".github/readme/trakt.svg" height="56"></a>
+  <a href="https://simkl.com"><img alt="Simkl" src=".github/readme/simkl.svg" height="56"></a>
+  <a href="https://thetvdb.com"><img alt="TheTVDB" src=".github/readme/thetvdb.svg" height="56"></a>
+  <a href="https://www.justwatch.com"><img alt="JustWatch" src=".github/readme/justwatch.svg" height="56"></a>
+</p>
+
+Movie, show and anime data from TMDB, Trakt, Simkl and TheTVDB; where to watch from JustWatch. This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ## Privacy and terms
 
