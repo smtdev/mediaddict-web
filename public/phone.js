@@ -320,7 +320,7 @@ function toast(){const old=app.querySelector('.toast');if(old)old.remove();const
   app.appendChild(el);setTimeout(()=>el.classList.add('in'),60);setTimeout(()=>el.classList.remove('in'),4200);setTimeout(()=>el.remove(),5000)}
 // scroll-driven scenes
 const scenes=[...document.querySelectorAll('.scene')];
-const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&en.intersectionRatio>.55){scenes.forEach(s=>s.classList.toggle('on',s===en.target));const g=en.target.dataset.go;if(g&&ST.lastGo!==g){ST.lastGo=g;go(g);if(g==='calendar')setTimeout(toast,700)}}}),{threshold:[.55]});
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&en.intersectionRatio>.55){scenes.forEach(s=>s.classList.toggle('on',s===en.target));syncCap();const g=en.target.dataset.go;if(g&&ST.lastGo!==g){ST.lastGo=g;go(g);if(g==='calendar')setTimeout(toast,700)}}}),{threshold:[.55]});
 scenes.forEach(s=>io.observe(s));
 // palette
 const PAL={amber:['#E9B824','#ff8a3d','#4D3A12','#F6DC8B','#4A4458'],teal:['#4EDAD2','#3b8ff0','#00504E','#6FF7EF','#3b4a4f'],crimson:['#FFB4AB','#ff4d6d','#6B1A18','#FFDAD6','#58434a'],azure:['#9ECAFF','#6a7bff','#00497D','#D1E4FF','#40485a'],purple:['#D0BCFF','#ff7ad9','#4F378B','#EADDFF','#4F4468'],emerald:['#8CD5A2','#2fbf8f','#00522B','#A8F2BE','#3d4f45']};
@@ -328,9 +328,20 @@ const pal=$('#palette');Object.entries(PAL).forEach(([n,v])=>{const b=document.c
 pal.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const v=PAL[b.dataset.p];pal.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));
   const r=document.documentElement.style;r.setProperty('--acc',v[0]);r.setProperty('--acc-2',v[1]);const a=app.style;a.setProperty('--gold',v[0]);a.setProperty('--pric',v[2]);a.setProperty('--onpric',v[3]);a.setProperty('--secc',v[4])});
 pal.querySelector('button').classList.add('sel');
-// phone size from the window height
-function fit(){const s=Math.max(.5,Math.min(.86,(innerHeight-210)/892));document.documentElement.style.setProperty('--s',s)}
-fit();addEventListener('resize',fit);
+// phone size. Wide screens: from the window height. Phone layout: from the width and the small
+// viewport height (100svh), computed once per width, so the browser bar hiding on scroll does not
+// resize the phone.
+const mq=matchMedia('(max-width:1020px)');
+const cap=$('#cap'),navEl=document.querySelector('nav.top');
+const probe=document.createElement('div');probe.style.cssText='position:fixed;top:0;left:0;width:0;height:100vh;height:100svh;visibility:hidden;pointer-events:none';document.body.appendChild(probe);
+let fitW=0;
+function fit(force){const r=document.documentElement.style;
+  if(!mq.matches){fitW=0;r.setProperty('--s',Math.max(.5,Math.min(.86,(innerHeight-210)/892)));return}
+  if(!force&&innerWidth===fitW)return;fitW=innerWidth;
+  const navh=navEl?navEl.offsetHeight:60,H=probe.offsetHeight||innerHeight,capH=cap?cap.offsetHeight:150;
+  r.setProperty('--navh',navh+'px');
+  r.setProperty('--s',Math.max(.38,Math.min(.86,(innerWidth-40-22)/412,(H-navh-capH-6-14-22-12)/892)))}
+fit(true);addEventListener('resize',()=>fit());
 // 3D tilt
 const t3=$('#tilt'),p3=$('#p3d');if(matchMedia('(pointer:fine)').matches){t3.addEventListener('mousemove',e=>{const r=t3.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p3.style.transform=`rotateY(${x*10}deg) rotateX(${-y*7}deg)`});t3.addEventListener('mouseleave',()=>p3.style.transform='')}
 view();
@@ -342,4 +353,12 @@ view();
   const s4=document.querySelector('.s4');
   new MutationObserver(()=>{if(s4.classList.contains('on')){if(!wt){wi=0;hot();wt=setInterval(hot,2300)}}else if(wt){clearInterval(wt);wt=null;words.forEach(w=>w.classList.remove('hot'))}}).observe(s4,{attributes:true,attributeFilter:['class']});
 })();
+// phone layout: one sticky phone, the caption of the scene being read under it
+const caps=[...document.querySelectorAll('.scene .sc')].map(sc=>({sc,home:sc.parentElement}));
+const palHome=pal.parentElement,palNext=pal.nextSibling,hero=document.querySelector('.scene.s1');
+function syncCap(){caps.forEach(p=>p.sc.classList.toggle('on',p.home.classList.contains('on')))}
+function layout(){if(mq.matches){caps.forEach(p=>cap.appendChild(p.sc));if(hero)hero.appendChild(pal)}
+  else{caps.forEach(p=>p.home.appendChild(p.sc));palHome.insertBefore(pal,palNext)}
+  syncCap();fit(true)}
+layout();mq.addEventListener?mq.addEventListener('change',layout):mq.addListener(layout);
 })();

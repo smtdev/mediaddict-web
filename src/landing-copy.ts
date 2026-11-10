@@ -12,6 +12,8 @@ export const landing = {
     s4: { words: ['Pendiente', 'En curso', 'Visto'], keys: ['Pendiente', 'En curso', 'Visto'], lead: 'Cada título tiene su estado. Filtra tu lista de seguimiento por lo que tienes pendiente, lo que estás viendo y lo que ya has visto.' },
     float: { a: ['Aviso', 'estreno hoy'], b: ['Visto', 'un toque'] },
     palette: 'Tu app, tus colores',
+    // Short lines for the phone layout, where the caption shares the screen with the demo.
+    m: { tryH: 'Pruébala aquí.', tryL: 'Marca episodios, abre fichas y explora.', s2: 'Te avisamos el día del estreno y ves en qué plataforma está.', s3: 'Sinopsis, reparto, valoraciones y episodios por temporada.', s4: 'Filtra por lo pendiente, lo que estás viendo y lo ya visto.' },
     data: {
       h2a: 'Tu biblioteca', h2b: 'es tuya.',
       lead: 'Mediaddict no tiene cuenta propia, ni servidores con tu lista, ni anuncios. Si conectas Trakt o Simkl, tu biblioteca ya queda guardada en tu cuenta. Si no, vive en tu móvil y puedes guardar copias en una carpeta o en tu propio Drive.',
@@ -38,6 +40,8 @@ export const landing = {
     s4: { words: ['Pending', 'In progress', 'Watched'], keys: ['Pendiente', 'En curso', 'Visto'], lead: 'Every title has a status. Filter your watchlist by what is pending, what you are watching and what you have already watched.' },
     float: { a: ['Alert', 'premiere today'], b: ['Watched', 'one tap'] },
     palette: 'Your app, your colors',
+    // Short lines for the phone layout, where the caption shares the screen with the demo.
+    m: { tryH: 'Try it right here.', tryL: 'Mark episodes, open titles and explore.', s2: 'We alert you on release day and show which platform it is on.', s3: 'Synopsis, cast, ratings and every episode by season.', s4: 'Filter by what is pending, in progress and already watched.' },
     data: {
       h2a: 'Your library', h2b: 'is yours.',
       lead: 'Mediaddict has no account of its own, no servers holding your list, and no ads. If you connect Trakt or Simkl, your library is already saved in your account. If not, it lives on your phone and you can save copies to a folder or your own Drive.',
