@@ -1,0 +1,5 @@
+# English moved to the root; keep the old /en/ addresses working (links already shared, older app builds).
+/en /  301
+/en/ /  301
+/en/privacy /privacy 301
+/en/terms /terms 301
