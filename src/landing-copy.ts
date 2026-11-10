@@ -1,4 +1,4 @@
-export const PLAY_URL = 'https://play.google.com/store/apps/details?id=me.smt.mediaddict';
+export const PLAY_URL = 'https://play.google.com/store/apps/details?id=smt.app.mediaddict';
 
 export const landing = {
   es: {
