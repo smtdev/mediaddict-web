@@ -3,10 +3,10 @@ export type Slug = '' | 'privacy' | 'terms';
 
 export const EMAIL = 'app@mediaddict.app';
 
-/** Path of a page in a language: Spanish at the root, English under /en/. */
+/** Path of a page in a language: English at the root, Spanish under /es/. */
 export function href(lang: Lang, slug: Slug): string {
-  if (slug === '') return lang === 'en' ? '/en/' : '/';
-  return lang === 'en' ? `/en/${slug}` : `/${slug}`;
+  if (slug === '') return lang === 'es' ? '/es/' : '/';
+  return lang === 'es' ? `/es/${slug}` : `/${slug}`;
 }
 
 export const ui = {

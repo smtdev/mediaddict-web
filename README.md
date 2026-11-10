@@ -3,7 +3,7 @@
 Static website for Mediaddict (Astro, no SSR), served by Cloudflare at https://mediaddict.app.
 
 - `npm install`, `npm run dev` (http://localhost:4321), `npm run build` (writes `dist/`, which is not committed).
-- Spanish at `/`, `/privacy` and `/terms`; English under `/en/`. Home page and footer copy live in `src/i18n.ts`; the legal pages in `src/components/Privacy.astro` and `Terms.astro`.
+- English (the default) at `/`, `/privacy` and `/terms`; Spanish under `/es/`. The old `/en/...` addresses redirect to the root (`public/_redirects`). Home page and footer copy live in `src/i18n.ts`; the legal pages in `src/components/Privacy.astro` and `Terms.astro`.
 - Cloudflare build: build command `npm run build`, deploy command `npx wrangler deploy`, production branch `main`.
 
 ## Interactive home page
