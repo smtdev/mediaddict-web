@@ -21,7 +21,7 @@ export const landing = {
     },
     faqTitle: 'Preguntas',
     faq: [
-      ['¿Es gratis?', 'Sí, y sin anuncios.'],
+      ['¿Es gratis?', 'Sí, y sin anuncios. Hay un premium opcional, por suscripción o pago único, para personalizar Inicio y las fichas y tener más iconos de la app.'],
       ['¿Necesito una cuenta?', 'No. Puedes usarla sin cuenta, con tu biblioteca en el móvil, o conectar Trakt o Simkl cuando quieras.'],
       ['¿Qué pasa con mis datos?', 'Si usas Trakt o Simkl, tu biblioteca se guarda en tu cuenta. Sin cuenta, vive en tu móvil, con copias opcionales en una carpeta o en tu propio Google Drive. El detalle completo está en la política de privacidad.', true],
       ['¿Hay versión para iPhone?', 'Ahora mismo, sólo Android.'],
@@ -49,7 +49,7 @@ export const landing = {
     },
     faqTitle: 'FAQ',
     faq: [
-      ['Is it free?', 'Yes, and with no ads.'],
+      ['Is it free?', 'Yes, and with no ads. There is optional premium, by subscription or one-time payment, to customize Home and title pages and get more app icons.'],
       ['Do I need an account?', 'No. You can use it with no account and your library on your phone, or connect Trakt or Simkl whenever you like.'],
       ['What happens to my data?', 'If you use Trakt or Simkl, your library is saved in your account. With no account, it lives on your phone, with optional copies to a folder or your own Google Drive. The full details are in the privacy policy.', true],
       ['Is there an iPhone version?', 'Android only, for now.'],
