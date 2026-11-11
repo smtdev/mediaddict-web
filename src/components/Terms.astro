@@ -8,12 +8,12 @@ const es = lang === 'es';
   lang={lang}
   slug="terms"
   title={es ? 'Condiciones del servicio · Mediaddict' : 'Terms of service · Mediaddict'}
-  description={es ? 'Condiciones de uso de Mediaddict: licencia, uso aceptable, comentarios, servicios de terceros, garantías, responsabilidad y ley aplicable.' : 'Terms of use for Mediaddict: license, acceptable use, comments, third-party services, warranties, liability and governing law.'}
+  description={es ? 'Condiciones de uso de Mediaddict: licencia, uso aceptable, comentarios, premium y compras, servicios de terceros, garantías, responsabilidad y ley aplicable.' : 'Terms of use for Mediaddict: license, acceptable use, comments, premium and purchases, third-party services, warranties, liability and governing law.'}
 >
   {es ? (
     <article class="legal">
       <h1>Condiciones del servicio</h1>
-      <p class="updated">Última actualización: 10 de noviembre de 2026</p>
+      <p class="updated">Última actualización: 11 de noviembre de 2026</p>
 
       <h2 id="quien">Quién ofrece Mediaddict y aceptación</h2>
       <p>Mediaddict la ofrece <strong>Sergio Martín</strong>, persona física y desarrollador independiente (en adelante, «nosotros»). Al instalar o usar la app Mediaddict o este sitio web aceptas estas condiciones. Si no estás de acuerdo, no los uses.</p>
@@ -65,19 +65,29 @@ const es = lang === 'es';
       <h2 id="avisos">Notificaciones</h2>
       <p>Los avisos de estreno se generan en tu teléfono con los datos de terceros disponibles y pueden llegar tarde, no llegar o ser inexactos (por ejemplo, si una fecha cambia o el sistema Android limita la app en segundo plano). No dependas de ellos para nada importante.</p>
 
-      <h2 id="compras">Compras opcionales para apoyar la app</h2>
-      <p>La app es gratis y funciona igual con o sin compras. Si quieres apoyar su desarrollo, puedes hacerlo con una suscripción mensual o anual, con un pago único «de por vida» o con invitaciones sueltas. <strong>Ninguna compra desbloquea, quita ni cambia nada de la app</strong>, ni da derecho a funciones futuras: es un apoyo voluntario.</p>
+      <h2 id="compras">Premium y compras</h2>
+      <p>La app se descarga gratis y no tiene anuncios. Puedes llevar tu biblioteca, marcar lo que ves, recibir avisos de estreno y usar tus cuentas de Trakt o Simkl sin pagar nada. Desde <strong>«¡Apoya a Mediaddict!»</strong> puedes, si quieres, conseguir el premium y apoyar el desarrollo de la app.</p>
+      <p><strong>Qué incluye el premium:</strong></p>
       <ul>
-        <li><strong>Google Play:</strong> las compras se hacen a través de Google Play y el pago se rige por sus condiciones. El precio, los impuestos y la moneda son los que Google Play te muestra antes de confirmar.</li>
-        <li><strong>Suscripciones:</strong> se renuevan automáticamente al final de cada periodo hasta que las canceles. Puedes cancelarlas cuando quieras en Google Play (Pagos y suscripciones); la app tiene un enlace a ese sitio. Al cancelar, la suscripción sigue hasta el final del periodo ya pagado y no se vuelve a cobrar. Los cambios entre el plan mensual y el anual los aplica Google Play según sus reglas.</li>
-        <li><strong>«De por vida»:</strong> es un pago único que no se renueva.</li>
-        <li><strong>Invitaciones:</strong> son pagos únicos; puedes hacer las que quieras.</li>
+        <li>personalizar las secciones de Inicio;</li>
+        <li>plegar, desplegar, ordenar y ocultar las secciones de las fichas (título, temporada y episodio);</li>
+        <li>todos los iconos de la app (los tres primeros son gratis para todos).</li>
+      </ul>
+      <p><strong>Cómo se consigue:</strong> con una suscripción mensual, con una suscripción anual o con un pago único «de por vida». El precio, los impuestos y la moneda son los que Google Play te muestra antes de confirmar. Las <strong>invitaciones</strong> («Invítame a algo») son pagos únicos de apoyo: puedes hacer las que quieras, pero no desbloquean nada.</p>
+      <ul>
+        <li><strong>Google Play:</strong> todas las compras se hacen a través de Google Play y el pago se rige por sus condiciones.</li>
+        <li><strong>Suscripciones:</strong> se renuevan automáticamente al final de cada periodo hasta que las canceles. Puedes cancelarlas cuando quieras en Google Play (Pagos y suscripciones); la app tiene un enlace a ese sitio. Al cancelar, el premium sigue hasta el final del periodo ya pagado y no se vuelve a cobrar. Los cambios entre el plan mensual y el anual los aplica Google Play según sus reglas.</li>
+        <li><strong>«De por vida»:</strong> es un pago único que no se renueva y da el premium mientras la app exista y Google Play mantenga la compra.</li>
+        <li><strong>Dónde vale:</strong> el premium va con la cuenta de Google con la que compraste, no con tu cuenta de Trakt o Simkl. La app lo comprueba con Google Play desde tu teléfono; no tenemos servidores que guarden tus compras. En otro dispositivo con la misma cuenta de Google, usa «Restaurar compras».</li>
+        <li><strong>Si pierdes el premium</strong> (la suscripción caduca o la cancelas y termina el periodo pagado, se reembolsa la compra, Google Play no consigue cobrar la renovación o pausas la suscripción), lo que depende de él vuelve a como viene de serie: las secciones de Inicio y de las fichas recuperan su orden y aspecto de serie (en las fichas, todas desplegadas) y los iconos de pago dejan de estar disponibles. <strong>Tus preferencias se conservan</strong> en el teléfono: si recuperas el premium (renovando, suscribiéndote de nuevo o con «Restaurar compras»), vuelven tal y como las dejaste.</li>
+        <li><strong>Pagos pendientes:</strong> si Google Play deja un pago pendiente, el premium llega cuando Google Play lo confirme.</li>
         <li><strong>Reembolsos:</strong> se piden a Google Play y se resuelven según su política de reembolsos. Si tienes un problema con una compra, también puedes escribirnos a <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</li>
+        <li><strong>Cambios en el premium:</strong> podemos añadirle funciones. Si cambiáramos lo que incluye de una forma que te perjudique, te avisaremos con antelación y podrás cancelar la suscripción.</li>
       </ul>
       <p>Nada de este apartado limita los derechos que la ley te reconozca como consumidor. Qué datos ve la app de tus compras se explica en la <a href={href('es', 'privacy')}>política de privacidad</a>.</p>
 
       <h2 id="disponibilidad">Disponibilidad y cambios en la app</h2>
-      <p>Podemos actualizar, cambiar, limitar o retirar funciones de la app, o la app entera, en cualquier momento, por ejemplo por cambios en los servicios de terceros. Intentaremos avisar con antelación cuando sea razonable. La app se descarga y se usa gratis; las compras opcionales del apartado anterior no desbloquean nada.</p>
+      <p>Podemos actualizar, cambiar, limitar o retirar funciones de la app, o la app entera, en cualquier momento, por ejemplo por cambios en los servicios de terceros. Intentaremos avisar con antelación cuando sea razonable. Lo que incluye el premium y cómo cambia se explica en el apartado anterior.</p>
 
       <h2 id="propiedad">Propiedad intelectual</h2>
       <p>La app Mediaddict, su código, diseño, nombre e iconos pertenecen a su autor. Los nombres, logotipos y marcas de terceros (Trakt, Simkl, TMDB, TheTVDB, JustWatch, Google y otros) pertenecen a sus propietarios, y su aparición aquí no implica respaldo. Necesitas nuestro permiso previo y por escrito para usar el nombre o el logotipo de Mediaddict con fines distintos de referirte a la app.</p>
@@ -103,7 +113,7 @@ const es = lang === 'es';
   ) : (
     <article class="legal">
       <h1>Terms of service</h1>
-      <p class="updated">Last updated: November 10, 2026</p>
+      <p class="updated">Last updated: November 11, 2026</p>
 
       <h2 id="who">Who offers Mediaddict, and acceptance</h2>
       <p>Mediaddict is offered by <strong>Sergio Martín</strong>, an individual and independent developer ("we"). By installing or using the Mediaddict app or this website you accept these terms. If you do not agree, do not use them.</p>
@@ -155,19 +165,29 @@ const es = lang === 'es';
       <h2 id="alerts">Notifications</h2>
       <p>Release alerts are generated on your phone from the third-party data available and may arrive late, not arrive or be inaccurate (for example, if a date changes or Android limits the app in the background). Do not rely on them for anything important.</p>
 
-      <h2 id="purchases">Optional purchases to support the app</h2>
-      <p>The app is free and works the same with or without purchases. If you want to support its development, you can do so with a monthly or yearly subscription, a one-time "lifetime" payment or one-off tips. <strong>No purchase unlocks, removes or changes anything in the app</strong>, or entitles you to future features: it is voluntary support.</p>
+      <h2 id="purchases">Premium and purchases</h2>
+      <p>The app is free to download and has no ads. You can keep your library, mark what you watch, get release alerts and use your Trakt or Simkl account without paying anything. From <strong>"Support Mediaddict!"</strong> you can, if you like, get premium and support the app's development.</p>
+      <p><strong>What premium includes:</strong></p>
       <ul>
-        <li><strong>Google Play:</strong> purchases are made through Google Play, and payment is governed by its terms. The price, taxes and currency are the ones Google Play shows you before you confirm.</li>
-        <li><strong>Subscriptions:</strong> they renew automatically at the end of each period until you cancel them. You can cancel at any time in Google Play (Payments and subscriptions); the app has a link to it. When you cancel, the subscription runs until the end of the period already paid and you are not charged again. Switches between the monthly and the yearly plan are applied by Google Play under its rules.</li>
-        <li><strong>"Lifetime":</strong> a one-time payment that does not renew.</li>
-        <li><strong>Tips:</strong> one-time payments; you can leave as many as you like.</li>
+        <li>customizing the sections of Home;</li>
+        <li>collapsing, expanding, reordering and hiding the sections of title pages (title, season and episode);</li>
+        <li>all app icons (the first three are free for everyone).</li>
+      </ul>
+      <p><strong>How to get it:</strong> with a monthly subscription, a yearly subscription or a one-time "lifetime" payment. The price, taxes and currency are the ones Google Play shows you before you confirm. <strong>Tips</strong> ("Treat me to something") are one-time payments to support the app: you can leave as many as you like, but they unlock nothing.</p>
+      <ul>
+        <li><strong>Google Play:</strong> all purchases are made through Google Play, and payment is governed by its terms.</li>
+        <li><strong>Subscriptions:</strong> they renew automatically at the end of each period until you cancel them. You can cancel at any time in Google Play (Payments and subscriptions); the app has a link to it. When you cancel, premium runs until the end of the period already paid and you are not charged again. Switches between the monthly and the yearly plan are applied by Google Play under its rules.</li>
+        <li><strong>"Lifetime":</strong> a one-time payment that does not renew and gives you premium for as long as the app exists and Google Play keeps the purchase.</li>
+        <li><strong>Where it applies:</strong> premium goes with the Google account you bought it with, not with your Trakt or Simkl account. The app checks it with Google Play from your phone; we have no servers that store your purchases. On another device with the same Google account, use "Restore purchases".</li>
+        <li><strong>If you lose premium</strong> (the subscription expires, or you cancel it and the paid period ends, the purchase is refunded, Google Play cannot charge the renewal, or you pause the subscription), whatever depends on it goes back to how it comes out of the box: the sections of Home and of title pages return to their default order and look (on title pages, all expanded) and the paid icons are no longer available. <strong>Your preferences are kept</strong> on the phone: if you get premium back (by renewing, subscribing again or with "Restore purchases"), they return just as you left them.</li>
+        <li><strong>Pending payments:</strong> if Google Play leaves a payment pending, premium arrives when Google Play confirms it.</li>
         <li><strong>Refunds:</strong> they are requested from Google Play and decided under its refund policy. If you have a problem with a purchase, you can also write to us at <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</li>
+        <li><strong>Changes to premium:</strong> we may add features to it. If we ever changed what it includes in a way that is worse for you, we will tell you in advance and you can cancel the subscription.</li>
       </ul>
       <p>Nothing in this section limits the rights the law gives you as a consumer. What the app sees of your purchases is explained in the <a href={href('en', 'privacy')}>privacy policy</a>.</p>
 
       <h2 id="availability">Availability and changes to the app</h2>
-      <p>We may update, change, limit or withdraw features of the app, or the whole app, at any time, for example because of changes in third-party services. We will try to give notice in advance when reasonable. The app is free to download and use; the optional purchases in the previous section unlock nothing.</p>
+      <p>We may update, change, limit or withdraw features of the app, or the whole app, at any time, for example because of changes in third-party services. We will try to give notice in advance when reasonable. What premium includes and how it may change is explained in the previous section.</p>
 
       <h2 id="ip">Intellectual property</h2>
       <p>The Mediaddict app, its code, design, name and icons belong to its author. Third-party names, logos and trademarks (Trakt, Simkl, TMDB, TheTVDB, JustWatch, Google and others) belong to their owners, and their appearance here implies no endorsement. You need our prior written permission to use the Mediaddict name or logo for purposes other than referring to the app.</p>
