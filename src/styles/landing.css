@@ -344,7 +344,7 @@ nav.top .links a:hover{color:var(--txt)}
 .faqlist details p a{color:var(--acc-t)}
 .foot a{color:var(--mut)}
 html{scroll-padding-top:70px}
-.sm,.short,.cap{display:none}
+.scene.sm,.short,.cap{display:none}
 /* Phone layout: the hero flows, then one phone sticks under the nav and the scenes become
    scroll spacers; phone.js moves each scene's .sc into .cap and shows the active one. */
 @media(max-width:1020px){
